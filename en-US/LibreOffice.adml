@@ -1,0 +1,127 @@
+<!-- 2014 Creator: Thomas Higgins -->
+<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+  <displayName>
+  </displayName>
+  <description>
+  </description>
+  <resources>
+    <stringTable>
+	  <!-- General GPO -->
+	  <string id="SupportedWinVersion">At least Microsoft Vista onwards</string>
+	  <!-- Categories -->
+	  <!-- LibreOffce -->
+      <string id="CAT_LibreOfficeRoot">LibreOffice 4.2</string>
+	  <string id="CAT_LibreOffice">LibreOffice</string>
+	  <string id="CAT_LibreOfficeUserData">User Data</string>
+	  <string id="CAT_LibreOfficeGeneral">General</string>
+	  <string id="CAT_LibreOfficeMemory">Memory</string>
+	  <string id="CAT_LibreOfficeView">View</string>
+	  <string id="CAT_LibreOfficePrint">Print</string>
+	  <string id="CAT_LibreOfficePaths">Paths</string>
+	  <string id="CAT_LibreOfficeColors">Colors</string>
+	  <string id="CAT_LibreOfficeFonts">Fonts</string>
+	  <string id="CAT_LibreOfficeSecurity">Security</string>
+	  <string id="CAT_LibreOfficePersonalization">Personalization</string>
+	  <string id="CAT_LibreOfficeAppearance">Appearance</string>
+	  <string id="CAT_LibreOfficeAccessibility">Accessibility</string>
+	  <string id="CAT_LibreOfficeAdvanced">Advanced</string>
+	  <!-- Load/ Save -->
+	  <string id="CAT_LoadSave">Load / Save</string>
+	  <string id="CAT_LoadSaveGeneral">General</string>
+	  <!-- Language Settings -->
+	  <!-- LibreOffice Writer -->
+	  <string id="CAT_LibreOfficeWriter">LibreOffice Writer</string>
+	  <string id="CAT_LibreOfficeWriterBasicFonts">Basic Fonts</string>
+	  <!-- LibreOffice Writer/Web -->
+	  <!-- LibreOffice Base -->
+	  <!-- Charts -->
+	  <!-- Internet -->
+	  <!-- Predefined Settings -->
+	  <string id="LibreOfficeCommon_True">true</string>
+	  <string id="LibreOfficeCommon_False">false</string>
+	  <string id="LibreOfficeCommon_VHigh">very high</string>
+	  <string id="LibreOfficeCommon_High">high</string>
+	  <string id="LibreOfficeCommon_Medium">medium</string>
+	  <string id="LibreOfficeCommon_Low">low</string>
+      <!-- Descriptions -->
+	  <string id="UseSystemFileDialog">Use LibreOffice dialogs</string>
+	  <string id="UseSystemFileDialog_Help">Set whether LibreOffice uses standard Windows dialogs or LibreOffice ones</string>
+      <string id="FileMetaDataOnSave">Ask for Document metadata on LibreOffice exit</string>
+      <string id="FileMetaDataOnSave_Help">If true, the user will be prompted to enter in file metadata when initially saving a file.</string>
+	  <string id="CompanyName">Company Name</string>
+      <string id="CompanyName_Help">Enter the Company Name.</string>
+	  <string id="BasicFonts">Basic Fonts</string>
+      <string id="BasicFonts_Help">Enter the default font.</string>
+	  <string id="MacroSecurityLevel">Macro Security Level</string>
+      <string id="MacroSecurityLevel_Help">Choose the Macro Security Level</string>
+	  <string id="UndoSteps">Number of undo steps</string>
+	  <string id="UndoSteps_Help">Set the number of undo steps LibreOffice should remember</string>
+	  <string id="ConvertToGreyscales">Convert colors to grayscale</string>
+	  <string id="ConvertToGreyscales_Help">Convert colors to grayscale</string>
+	  <string id="Persona">LibreOffice Persona</string>
+	  <string id="Persona_Help">True will use the pre-installed theme, False will set LibreOffice to plain look</string>
+	  <string id="IsAllowAnimatedGraphics">Allow animated graphics</string>
+	  <string id="IsAllowAnimatedGraphics_Help">Enables or disables animated graphics</string>
+    </stringTable>
+    <presentationTable>
+	  <!-- User Data -->
+	  <presentation id="CompanyName">
+        <textBox refId="CompanyName_Text">
+          <label>Company Name (o):</label>
+        </textBox>
+        <checkBox refId="CompanyName_Enforce">Enforce</checkBox>
+      </presentation>
+	  <!-- General -->
+	  <presentation id="UseSystemFileDialog">
+	    <checkBox refId="UseSystemFileDialog_BOOL">Use LibreOffice dialogs</checkBox>
+      </presentation>
+	  <!-- Memory -->
+	  <presentation id="UndoSteps">
+	    <decimalTextBox refId="UndoStepsCount" defaultValue="100" spinStep="10">Number of steps:</decimalTextBox>
+      </presentation>
+	  <!-- View -->
+	  <!-- Print -->
+	  <presentation id="ConvertToGreyscales">
+		<checkBox refId="ConvertToGreyscales_BOOL">Convert colors to grayscale</checkBox>
+      </presentation>
+	  <!-- Security -->
+	  <presentation id="MacroSecurityLevel">
+	    <dropdownList refId="MacroSecurityLevelOp" noSort="true" defaultItem="1">Macro Security:</dropdownList>
+        <checkBox refId="MacroSecurityLevel_Enforce">Enforce</checkBox>
+      </presentation>
+	  <!-- Personalization -->
+	  <presentation id="Persona">
+	    <dropdownList refId="PersonaOp" noSort="true" defaultItem="1">Firefox Theme:</dropdownList>
+        <checkBox refId="Persona_Enforce">Enforce</checkBox>
+      </presentation>
+	  <!-- Accessibility -->
+	  <presentation id="IsAllowAnimatedGraphics">
+		<checkBox refId="IsAllowAnimatedGraphics_BOOL">Allow animated graphics</checkBox>
+	    <checkBox refId="IsAllowAnimatedGraphics_Enforce">Enforce</checkBox>
+      </presentation>
+	  <!-- Load/Save -->
+	  <presentation id="FileMetaDataOnSave">
+		<checkBox refId="FileMetaDataOnSave_BOOL">Edit Properties on save</checkBox>
+	    <checkBox refId="FileMetaDataOnSave_Enforce">Enforce</checkBox>
+      </presentation>
+	  <!-- Basic Fonts -->
+	  <presentation id="BasicFonts">
+        <textBox refId="BasicFonts_Caption">
+          <label>Caption:</label>
+        </textBox>
+		<textBox refId="BasicFonts_Index">
+          <label>Index:</label>
+        </textBox>
+		<textBox refId="BasicFonts_List">
+          <label>List:</label>
+        </textBox>
+		<textBox refId="BasicFonts_Standard">
+          <label>Standard:</label>
+        </textBox>
+		<textBox refId="BasicFonts_Heading">
+          <label>Heading:</label>
+        </textBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
