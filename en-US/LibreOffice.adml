@@ -43,9 +43,25 @@
 	  <string id="LibreOfficeCommon_High">high</string>
 	  <string id="LibreOfficeCommon_Medium">medium</string>
 	  <string id="LibreOfficeCommon_Low">low</string>
+	  <string id="DefaultFileType_WR8T">ODF Text Document Template</string>
+	  <string id="DefaultFileType_WR8">ODF Text Document</string>
+	  <string id="DefaultFileType_DOCT">Microsoft Word 97/2000/XP/2003 Template</string>
+	  <string id="DefaultFileType_TXT">Text</string>
+	  <string id="DefaultFileType_OOX">Office Open XML Text</string>
+	  <string id="DefaultFileType_ODT">Flat XML ODF Text Document</string>
+	  <string id="DefaultFileType_UOF">Unified Office Format text</string>
+	  <string id="DefaultFileType_DOC">Microsoft Word 97/2000/XP/2003</string>
+	  <string id="DefaultFileType_DOCX">Microsoft Word 2007/2010/2013 XML</string>
+	  <string id="DefaultFileType_HTML">HTML Document (Writer)</string>
+	  <string id="DefaultFileType_MSX">Microsoft Word 2003 XML</string>
+	  <string id="DefaultFileType_TXC">Text - Choose Encoding</string>
+	  <string id="DefaultFileType_RTF">Rich Text</string>
+	  <string id="DefaultFileType_DCB">DocBook</string>
       <!-- Descriptions -->
 	  <string id="UseSystemFileDialog">Use LibreOffice dialogs</string>
 	  <string id="UseSystemFileDialog_Help">Set whether LibreOffice uses standard Windows dialogs or LibreOffice ones</string>
+      <string id="FileDefaultSaveType">Configure default file type on document save</string>
+      <string id="FileDefaultSaveType_Help">Specify the default file type when saving from Writer. Remember that if you do not enforce the setting, local user configuration will override this.</string>
       <string id="FileMetaDataOnSave">Ask for Document metadata on LibreOffice exit</string>
       <string id="FileMetaDataOnSave_Help">If true, the user will be prompted to enter in file metadata when initially saving a file.</string>
 	  <string id="CompanyName">Company Name</string>
@@ -104,6 +120,10 @@
 		<checkBox refId="FileMetaDataOnSave_BOOL">Edit Properties on save</checkBox>
 	    <checkBox refId="FileMetaDataOnSave_Enforce">Enforce</checkBox>
       </presentation>
+	  <presentation id="FileDefaultSaveType">
+	    <dropdownList refId="FileTypeOp" noSort="true" defaultItem="7">Default Type:</dropdownList>
+            <checkBox refId="FileDefaultSaveType_Enforce">Enforce</checkBox>
+          </presentation>
 	  <!-- Basic Fonts -->
 	  <presentation id="BasicFonts">
         <textBox refId="BasicFonts_Caption">
