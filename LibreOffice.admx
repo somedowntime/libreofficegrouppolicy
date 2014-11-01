@@ -444,6 +444,96 @@
         </boolean>
       </elements>
     </policy>
+    <policy name="Presentation_FileDefaultSaveType" class="Machine"
+            displayName="$(string.Presentation_FileDefaultSaveType)"
+            explainText="$(string.Presentation_FileDefaultSaveType_Help)"
+            presentation="$(presentation.Presentation_FileDefaultSaveType)"
+            key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.presentation.PresentationDocument']\ooSetupFactoryDefaultFilter">
+      <parentCategory ref="CAT_LoadSaveGeneral"/>
+      <supportedOn ref="SupportedWinVersion"/>
+      <elements>
+        <enum id="Presentation_FileDefaultSaveTypeOp" valueName="Value">
+          <item displayName="$(string.Presentation_FileDefaultSaveType_ODFT)">
+            <value>
+              <string>impress8_template</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_ODFD)">
+            <value>
+              <string>impress8_draw</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_OOX)">
+            <value>
+              <string>Impress Office Open XML</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_UOF)">
+            <value>
+              <string>UOF presentation</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_PPTXT)">
+            <value>
+              <string>Impress MS PowerPoint 2007 XML Template</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_PPTT)">
+            <value>
+              <string>MS PowerPoint 97 Vorlage</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_PPTA)">
+            <value>
+              <string>MS PowerPoint 97 AutoPlay</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_ODFP)">
+            <value>
+              <string>impress8</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_OOXA)">
+            <value>
+              <string>Impress Office Open XML AutoPlay</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_OOXT)">
+            <value>
+              <string>Impress Office Open XML Template</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_ODFXP)">
+            <value>
+              <string>OpenDocument Presentation Flat XML</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_PPT)">
+            <value>
+              <string>MS PowerPoint 97</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_PPTXA)">
+            <value>
+              <string>Impress MS PowerPoint 2007 XML AutoPlay</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_PPTX)">
+            <value>
+              <string>Impress MS PowerPoint 2007 XML</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="Presentation_FileDefaultSaveType_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
     <!-- LibreOffice Writer -->
     <!-- Basic Fonts -->
     <policy name="DefaultFont" class="Machine" displayName="$(string.BasicFonts)"

@@ -73,6 +73,21 @@
       <string id="Spreadsheet_FileDefaultSaveType_HTML">HTML Document (Calc)</string>
       <string id="Spreadsheet_FileDefaultSaveType_DIF">Data Interchange Format</string>
       <string id="Spreadsheet_FileDefaultSaveType_XLSX">Microsoft Excel 2007/2010/2013 XML</string>
+      <!-- Load/Save Presentation document defaults -->
+      <string id="Presentation_FileDefaultSaveType_ODFT">ODF Presentation Template</string>
+      <string id="Presentation_FileDefaultSaveType_ODFD">ODF Drawing (Impress)</string>
+      <string id="Presentation_FileDefaultSaveType_OOX">Office Open XML Presentation</string>
+      <string id="Presentation_FileDefaultSaveType_UOF">Unified Office Format presentation</string>
+      <string id="Presentation_FileDefaultSaveType_PPTXT">Microsoft PowerPoint 2007/2010/2013 XML Template</string>
+      <string id="Presentation_FileDefaultSaveType_PPTT">Microsoft PowerPoint 97/2000/XP/2003 Template</string>
+      <string id="Presentation_FileDefaultSaveType_PPTA">Microsoft PowerPoint 97/2000/XP/2003 AutoPlay</string>
+      <string id="Presentation_FileDefaultSaveType_ODFP">ODF Presentation</string>
+      <string id="Presentation_FileDefaultSaveType_OOXA">Office Open XML Presentation AutoPlay</string>
+      <string id="Presentation_FileDefaultSaveType_OOXT">Office Open XML Presentation Template</string>
+      <string id="Presentation_FileDefaultSaveType_ODFXP">Flat XML ODF Presentation</string>
+      <string id="Presentation_FileDefaultSaveType_PPT">Microsoft PowerPoint 97/2000/XP/2003</string>
+      <string id="Presentation_FileDefaultSaveType_PPTXA">Microsoft PowerPoint 2007/2010/2013 XML AutoPlay</string>
+      <string id="Presentation_FileDefaultSaveType_PPTX">Microsoft PowerPoint 2007/2010/2013 XML</string>
       <!-- Descriptions -->
       <string id="UseSystemFileDialog">Use LibreOffice dialogs</string>
       <string id="UseSystemFileDialog_Help">Set whether LibreOffice uses standard Windows dialogs or LibreOffice ones</string>
@@ -80,6 +95,8 @@
       <string id="Text_FileDefaultSaveType_Help">Specify the default file type when saving from Writer. Remember that if you do not enforce the setting, local user configuration will override this.</string>
       <string id="Spreadsheet_FileDefaultSaveType">Calc: Configure default save file type</string>
       <string id="Spreadsheet_FileDefaultSaveType_Help">Specify the default file type when saving from Calc. Remember that if you do not enforce the setting, local user configuration will override this.</string>
+      <string id="Presentation_FileDefaultSaveType">Impress: Configure default save file type</string>
+      <string id="Presentation_FileDefaultSaveType_Help">Specify the default file type when saving from Impress. Remember that if you do not enforce the setting, local user configuration will override this.</string>
       <string id="FileMetaDataOnSave">Ask for Document metadata on LibreOffice exit</string>
       <string id="FileMetaDataOnSave_Help">If true, the user will be prompted to enter in file metadata when initially saving a file.</string>
       <string id="CompanyName">Company Name</string>
@@ -145,6 +162,10 @@
       <presentation id="Spreadsheet_FileDefaultSaveType">
         <dropdownList refId="Spreadsheet_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>
         <checkBox refId="Spreadsheet_FileDefaultSaveType_Enforce">Enforce</checkBox>
+      </presentation>
+      <presentation id="Presentation_FileDefaultSaveType">
+        <dropdownList refId="Presentation_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>
+        <checkBox refId="Presentation_FileDefaultSaveType_Enforce">Enforce</checkBox>
       </presentation>
       <!-- Basic Fonts -->
       <presentation id="BasicFonts">
