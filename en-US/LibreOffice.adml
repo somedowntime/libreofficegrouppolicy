@@ -6,139 +6,182 @@
   </description>
   <resources>
     <stringTable>
-	  <!-- General GPO -->
-	  <string id="SupportedWinVersion">At least Microsoft Vista onwards</string>
-	  <!-- Categories -->
-	  <!-- LibreOffce -->
+      <!-- General GPO -->
+      <string id="SupportedWinVersion">At least Microsoft Vista onwards</string>
+      <!-- Categories -->
+      <!-- LibreOffce -->
       <string id="CAT_LibreOfficeRoot">LibreOffice 4.2</string>
-	  <string id="CAT_LibreOffice">LibreOffice</string>
-	  <string id="CAT_LibreOfficeUserData">User Data</string>
-	  <string id="CAT_LibreOfficeGeneral">General</string>
-	  <string id="CAT_LibreOfficeMemory">Memory</string>
-	  <string id="CAT_LibreOfficeView">View</string>
-	  <string id="CAT_LibreOfficePrint">Print</string>
-	  <string id="CAT_LibreOfficePaths">Paths</string>
-	  <string id="CAT_LibreOfficeColors">Colors</string>
-	  <string id="CAT_LibreOfficeFonts">Fonts</string>
-	  <string id="CAT_LibreOfficeSecurity">Security</string>
-	  <string id="CAT_LibreOfficePersonalization">Personalization</string>
-	  <string id="CAT_LibreOfficeAppearance">Appearance</string>
-	  <string id="CAT_LibreOfficeAccessibility">Accessibility</string>
-	  <string id="CAT_LibreOfficeAdvanced">Advanced</string>
-	  <!-- Load/ Save -->
-	  <string id="CAT_LoadSave">Load / Save</string>
-	  <string id="CAT_LoadSaveGeneral">General</string>
-	  <!-- Language Settings -->
-	  <!-- LibreOffice Writer -->
-	  <string id="CAT_LibreOfficeWriter">LibreOffice Writer</string>
-	  <string id="CAT_LibreOfficeWriterBasicFonts">Basic Fonts</string>
-	  <!-- LibreOffice Writer/Web -->
-	  <!-- LibreOffice Base -->
-	  <!-- Charts -->
-	  <!-- Internet -->
-	  <!-- Predefined Settings -->
-	  <string id="LibreOfficeCommon_True">true</string>
-	  <string id="LibreOfficeCommon_False">false</string>
-	  <string id="LibreOfficeCommon_VHigh">very high</string>
-	  <string id="LibreOfficeCommon_High">high</string>
-	  <string id="LibreOfficeCommon_Medium">medium</string>
-	  <string id="LibreOfficeCommon_Low">low</string>
-	  <string id="DefaultFileType_WR8T">ODF Text Document Template</string>
-	  <string id="DefaultFileType_WR8">ODF Text Document</string>
-	  <string id="DefaultFileType_DOCT">Microsoft Word 97/2000/XP/2003 Template</string>
-	  <string id="DefaultFileType_TXT">Text</string>
-	  <string id="DefaultFileType_OOX">Office Open XML Text</string>
-	  <string id="DefaultFileType_ODT">Flat XML ODF Text Document</string>
-	  <string id="DefaultFileType_UOF">Unified Office Format text</string>
-	  <string id="DefaultFileType_DOC">Microsoft Word 97/2000/XP/2003</string>
-	  <string id="DefaultFileType_DOCX">Microsoft Word 2007/2010/2013 XML</string>
-	  <string id="DefaultFileType_HTML">HTML Document (Writer)</string>
-	  <string id="DefaultFileType_MSX">Microsoft Word 2003 XML</string>
-	  <string id="DefaultFileType_TXC">Text - Choose Encoding</string>
-	  <string id="DefaultFileType_RTF">Rich Text</string>
-	  <string id="DefaultFileType_DCB">DocBook</string>
+      <string id="CAT_LibreOffice">LibreOffice</string>
+      <string id="CAT_LibreOfficeUserData">User Data</string>
+      <string id="CAT_LibreOfficeGeneral">General</string>
+      <string id="CAT_LibreOfficeMemory">Memory</string>
+      <string id="CAT_LibreOfficeView">View</string>
+      <string id="CAT_LibreOfficePrint">Print</string>
+      <string id="CAT_LibreOfficePaths">Paths</string>
+      <string id="CAT_LibreOfficeColors">Colors</string>
+      <string id="CAT_LibreOfficeFonts">Fonts</string>
+      <string id="CAT_LibreOfficeSecurity">Security</string>
+      <string id="CAT_LibreOfficePersonalization">Personalization</string>
+      <string id="CAT_LibreOfficeAppearance">Appearance</string>
+      <string id="CAT_LibreOfficeAccessibility">Accessibility</string>
+      <string id="CAT_LibreOfficeAdvanced">Advanced</string>
+      <!-- Load/ Save -->
+      <string id="CAT_LoadSave">Load / Save</string>
+      <string id="CAT_LoadSaveGeneral">General</string>
+      <!-- Language Settings -->
+      <!-- LibreOffice Writer -->
+      <string id="CAT_LibreOfficeWriter">LibreOffice Writer</string>
+      <string id="CAT_LibreOfficeWriterBasicFonts">Basic Fonts</string>
+      <!-- LibreOffice Writer/Web -->
+      <!-- LibreOffice Base -->
+      <!-- Charts -->
+      <!-- Internet -->
+      <!-- Predefined Settings -->
+      <string id="LibreOfficeCommon_True">true</string>
+      <string id="LibreOfficeCommon_False">false</string>
+      <string id="LibreOfficeCommon_VHigh">very high</string>
+      <string id="LibreOfficeCommon_High">high</string>
+      <string id="LibreOfficeCommon_Medium">medium</string>
+      <string id="LibreOfficeCommon_Low">low</string>
+      <!-- Load/Save Text document defaults -->
+      <string id="Text_FileDefaultSaveType_WR8T">ODF Text Document Template</string>
+      <string id="Text_FileDefaultSaveType_WR8">ODF Text Document</string>
+      <string id="Text_FileDefaultSaveType_DOCT">Microsoft Word 97/2000/XP/2003 Template</string>
+      <string id="Text_FileDefaultSaveType_TXT">Text</string>
+      <string id="Text_FileDefaultSaveType_OOX">Office Open XML Text</string>
+      <string id="Text_FileDefaultSaveType_ODT">Flat XML ODF Text Document</string>
+      <string id="Text_FileDefaultSaveType_UOF">Unified Office Format text</string>
+      <string id="Text_FileDefaultSaveType_DOC">Microsoft Word 97/2000/XP/2003</string>
+      <string id="Text_FileDefaultSaveType_DOCX">Microsoft Word 2007/2010/2013 XML</string>
+      <string id="Text_FileDefaultSaveType_HTML">HTML Document (Writer)</string>
+      <string id="Text_FileDefaultSaveType_MSX">Microsoft Word 2003 XML</string>
+      <string id="Text_FileDefaultSaveType_TXC">Text - Choose Encoding</string>
+      <string id="Text_FileDefaultSaveType_RTF">Rich Text</string>
+      <string id="Text_FileDefaultSaveType_DCB">DocBook</string>
+      <!-- Load/Save Spreadsheet document defaults -->
+      <string id="Spreadsheet_FileDefaultSaveType_ODFT">ODF Spreadsheet Template</string>
+      <string id="Spreadsheet_FileDefaultSaveType_ODF">ODF Spreadsheet</string>
+      <string id="Spreadsheet_FileDefaultSaveType_OOX">Office Open XML Spreadsheet</string>
+      <string id="Spreadsheet_FileDefaultSaveType_CSV">Text CSV</string>
+      <string id="Spreadsheet_FileDefaultSaveType_SYLK">SYLK</string>
+      <string id="Spreadsheet_FileDefaultSaveType_UOF">Unified Office Format spreadsheet</string>
+      <string id="Spreadsheet_FileDefaultSaveType_ODFX">Flat XML ODF Spreadsheet</string>
+      <string id="Spreadsheet_FileDefaultSaveType_XLSX2K3">Microsoft Excel 2003 XML</string>
+      <string id="Spreadsheet_FileDefaultSaveType_DBS">dBASE</string>
+      <string id="Spreadsheet_FileDefaultSaveType_XLST">Microsoft Excel 97/2000/XP/2003 Template</string>
+      <string id="Spreadsheet_FileDefaultSaveType_XLS">Microsoft Excel 97/2000/XP/2003</string>
+      <string id="Spreadsheet_FileDefaultSaveType_HTML">HTML Document (Calc)</string>
+      <string id="Spreadsheet_FileDefaultSaveType_DIF">Data Interchange Format</string>
+      <string id="Spreadsheet_FileDefaultSaveType_XLSX">Microsoft Excel 2007/2010/2013 XML</string>
+      <!-- Load/Save Presentation document defaults -->
+      <string id="Presentation_FileDefaultSaveType_ODFT">ODF Presentation Template</string>
+      <string id="Presentation_FileDefaultSaveType_ODFD">ODF Drawing (Impress)</string>
+      <string id="Presentation_FileDefaultSaveType_OOX">Office Open XML Presentation</string>
+      <string id="Presentation_FileDefaultSaveType_UOF">Unified Office Format presentation</string>
+      <string id="Presentation_FileDefaultSaveType_PPTXT">Microsoft PowerPoint 2007/2010/2013 XML Template</string>
+      <string id="Presentation_FileDefaultSaveType_PPTT">Microsoft PowerPoint 97/2000/XP/2003 Template</string>
+      <string id="Presentation_FileDefaultSaveType_PPTA">Microsoft PowerPoint 97/2000/XP/2003 AutoPlay</string>
+      <string id="Presentation_FileDefaultSaveType_ODFP">ODF Presentation</string>
+      <string id="Presentation_FileDefaultSaveType_OOXA">Office Open XML Presentation AutoPlay</string>
+      <string id="Presentation_FileDefaultSaveType_OOXT">Office Open XML Presentation Template</string>
+      <string id="Presentation_FileDefaultSaveType_ODFXP">Flat XML ODF Presentation</string>
+      <string id="Presentation_FileDefaultSaveType_PPT">Microsoft PowerPoint 97/2000/XP/2003</string>
+      <string id="Presentation_FileDefaultSaveType_PPTXA">Microsoft PowerPoint 2007/2010/2013 XML AutoPlay</string>
+      <string id="Presentation_FileDefaultSaveType_PPTX">Microsoft PowerPoint 2007/2010/2013 XML</string>
       <!-- Descriptions -->
-	  <string id="UseSystemFileDialog">Use LibreOffice dialogs</string>
-	  <string id="UseSystemFileDialog_Help">Set whether LibreOffice uses standard Windows dialogs or LibreOffice ones</string>
-      <string id="FileDefaultSaveType">Configure default file type on document save</string>
-      <string id="FileDefaultSaveType_Help">Specify the default file type when saving from Writer. Remember that if you do not enforce the setting, local user configuration will override this.</string>
+      <string id="UseSystemFileDialog">Use LibreOffice dialogs</string>
+      <string id="UseSystemFileDialog_Help">Set whether LibreOffice uses standard Windows dialogs or LibreOffice ones</string>
+      <string id="Text_FileDefaultSaveType">Writer: Configure default save file type</string>
+      <string id="Text_FileDefaultSaveType_Help">Specify the default file type when saving from Writer. Remember that if you do not enforce the setting, local user configuration will override this.</string>
+      <string id="Spreadsheet_FileDefaultSaveType">Calc: Configure default save file type</string>
+      <string id="Spreadsheet_FileDefaultSaveType_Help">Specify the default file type when saving from Calc. Remember that if you do not enforce the setting, local user configuration will override this.</string>
+      <string id="Presentation_FileDefaultSaveType">Impress: Configure default save file type</string>
+      <string id="Presentation_FileDefaultSaveType_Help">Specify the default file type when saving from Impress. Remember that if you do not enforce the setting, local user configuration will override this.</string>
       <string id="FileMetaDataOnSave">Ask for Document metadata on LibreOffice exit</string>
       <string id="FileMetaDataOnSave_Help">If true, the user will be prompted to enter in file metadata when initially saving a file.</string>
-	  <string id="CompanyName">Company Name</string>
+      <string id="CompanyName">Company Name</string>
       <string id="CompanyName_Help">Enter the Company Name.</string>
-	  <string id="BasicFonts">Basic Fonts</string>
+      <string id="BasicFonts">Basic Fonts</string>
       <string id="BasicFonts_Help">Enter the default font.</string>
-	  <string id="MacroSecurityLevel">Macro Security Level</string>
+      <string id="MacroSecurityLevel">Macro Security Level</string>
       <string id="MacroSecurityLevel_Help">Choose the Macro Security Level</string>
-	  <string id="UndoSteps">Number of undo steps</string>
-	  <string id="UndoSteps_Help">Set the number of undo steps LibreOffice should remember</string>
-	  <string id="ConvertToGreyscales">Convert colors to grayscale</string>
-	  <string id="ConvertToGreyscales_Help">Convert colors to grayscale</string>
-	  <string id="Persona">LibreOffice Persona</string>
-	  <string id="Persona_Help">True will use the pre-installed theme, False will set LibreOffice to plain look</string>
-	  <string id="IsAllowAnimatedGraphics">Allow animated graphics</string>
-	  <string id="IsAllowAnimatedGraphics_Help">Enables or disables animated graphics</string>
+      <string id="UndoSteps">Number of undo steps</string>
+      <string id="UndoSteps_Help">Set the number of undo steps LibreOffice should remember</string>
+      <string id="ConvertToGreyscales">Convert colors to grayscale</string>
+      <string id="ConvertToGreyscales_Help">Convert colors to grayscale</string>
+      <string id="Persona">LibreOffice Persona</string>
+      <string id="Persona_Help">True will use the pre-installed theme, False will set LibreOffice to plain look</string>
+      <string id="IsAllowAnimatedGraphics">Allow animated graphics</string>
+      <string id="IsAllowAnimatedGraphics_Help">Enables or disables animated graphics</string>
     </stringTable>
     <presentationTable>
-	  <!-- User Data -->
-	  <presentation id="CompanyName">
+      <!-- User Data -->
+      <presentation id="CompanyName">
         <textBox refId="CompanyName_Text">
           <label>Company Name (o):</label>
         </textBox>
         <checkBox refId="CompanyName_Enforce">Enforce</checkBox>
       </presentation>
-	  <!-- General -->
-	  <presentation id="UseSystemFileDialog">
-	    <checkBox refId="UseSystemFileDialog_BOOL">Use LibreOffice dialogs</checkBox>
+      <!-- General -->
+      <presentation id="UseSystemFileDialog">
+        <checkBox refId="UseSystemFileDialog_BOOL">Use LibreOffice dialogs</checkBox>
       </presentation>
-	  <!-- Memory -->
-	  <presentation id="UndoSteps">
-	    <decimalTextBox refId="UndoStepsCount" defaultValue="100" spinStep="10">Number of steps:</decimalTextBox>
+      <!-- Memory -->
+      <presentation id="UndoSteps">
+        <decimalTextBox refId="UndoStepsCount" defaultValue="100" spinStep="10">Number of steps:</decimalTextBox>
       </presentation>
-	  <!-- View -->
-	  <!-- Print -->
-	  <presentation id="ConvertToGreyscales">
-		<checkBox refId="ConvertToGreyscales_BOOL">Convert colors to grayscale</checkBox>
+      <!-- View -->
+      <!-- Print -->
+      <presentation id="ConvertToGreyscales">
+        <checkBox refId="ConvertToGreyscales_BOOL">Convert colors to grayscale</checkBox>
       </presentation>
-	  <!-- Security -->
-	  <presentation id="MacroSecurityLevel">
-	    <dropdownList refId="MacroSecurityLevelOp" noSort="true" defaultItem="1">Macro Security:</dropdownList>
+      <!-- Security -->
+      <presentation id="MacroSecurityLevel">
+        <dropdownList refId="MacroSecurityLevelOp" noSort="true" defaultItem="1">Macro Security:</dropdownList>
         <checkBox refId="MacroSecurityLevel_Enforce">Enforce</checkBox>
       </presentation>
-	  <!-- Personalization -->
-	  <presentation id="Persona">
-	    <dropdownList refId="PersonaOp" noSort="true" defaultItem="1">Firefox Theme:</dropdownList>
+      <!-- Personalization -->
+      <presentation id="Persona">
+        <dropdownList refId="PersonaOp" noSort="true" defaultItem="1">Firefox Theme:</dropdownList>
         <checkBox refId="Persona_Enforce">Enforce</checkBox>
       </presentation>
-	  <!-- Accessibility -->
-	  <presentation id="IsAllowAnimatedGraphics">
-		<checkBox refId="IsAllowAnimatedGraphics_BOOL">Allow animated graphics</checkBox>
-	    <checkBox refId="IsAllowAnimatedGraphics_Enforce">Enforce</checkBox>
+      <!-- Accessibility -->
+      <presentation id="IsAllowAnimatedGraphics">
+        <checkBox refId="IsAllowAnimatedGraphics_BOOL">Allow animated graphics</checkBox>
+        <checkBox refId="IsAllowAnimatedGraphics_Enforce">Enforce</checkBox>
       </presentation>
-	  <!-- Load/Save -->
-	  <presentation id="FileMetaDataOnSave">
-		<checkBox refId="FileMetaDataOnSave_BOOL">Edit Properties on save</checkBox>
-	    <checkBox refId="FileMetaDataOnSave_Enforce">Enforce</checkBox>
+      <!-- Load/Save -->
+      <presentation id="FileMetaDataOnSave">
+        <checkBox refId="FileMetaDataOnSave_BOOL">Edit Properties on save</checkBox>
+        <checkBox refId="FileMetaDataOnSave_Enforce">Enforce</checkBox>
       </presentation>
-	  <presentation id="FileDefaultSaveType">
-	    <dropdownList refId="FileTypeOp" noSort="true" defaultItem="7">Default Type:</dropdownList>
-            <checkBox refId="FileDefaultSaveType_Enforce">Enforce</checkBox>
-          </presentation>
-	  <!-- Basic Fonts -->
-	  <presentation id="BasicFonts">
+      <presentation id="Text_FileDefaultSaveType">
+        <dropdownList refId="Text_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>
+        <checkBox refId="Text_FileDefaultSaveType_Enforce">Enforce</checkBox>
+      </presentation>
+      <presentation id="Spreadsheet_FileDefaultSaveType">
+        <dropdownList refId="Spreadsheet_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>
+        <checkBox refId="Spreadsheet_FileDefaultSaveType_Enforce">Enforce</checkBox>
+      </presentation>
+      <presentation id="Presentation_FileDefaultSaveType">
+        <dropdownList refId="Presentation_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>
+        <checkBox refId="Presentation_FileDefaultSaveType_Enforce">Enforce</checkBox>
+      </presentation>
+      <!-- Basic Fonts -->
+      <presentation id="BasicFonts">
         <textBox refId="BasicFonts_Caption">
           <label>Caption:</label>
         </textBox>
-		<textBox refId="BasicFonts_Index">
+        <textBox refId="BasicFonts_Index">
           <label>Index:</label>
         </textBox>
-		<textBox refId="BasicFonts_List">
+        <textBox refId="BasicFonts_List">
           <label>List:</label>
         </textBox>
-		<textBox refId="BasicFonts_Standard">
+        <textBox refId="BasicFonts_Standard">
           <label>Standard:</label>
         </textBox>
-		<textBox refId="BasicFonts_Heading">
+        <textBox refId="BasicFonts_Heading">
           <label>Heading:</label>
         </textBox>
       </presentation>

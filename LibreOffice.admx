@@ -1,72 +1,112 @@
 <!-- 2014 Creator: Thomas Higgins -->
 <policyDefinitions revision="1.0" schemaVersion="1.0">
   <policyNamespaces>
-    <target prefix="LibreOffice" namespace="LibreOffice.Policies.LibreOffice" />
-    <using prefix="windows" namespace="Microsoft.Policies.Windows" />
+    <target prefix="LibreOffice" namespace="LibreOffice.Policies.LibreOffice"/>
+    <using prefix="windows" namespace="Microsoft.Policies.Windows"/>
   </policyNamespaces>
-  <supersededAdm fileName="" />
-  <resources minRequiredRevision="1.0" />
+  <supersededAdm fileName=""/>
+  <resources minRequiredRevision="1.0"/>
   <supportedOn>
     <definitions>
-      <definition name="SupportedWinVersion" displayName="$(string.SupportedWinVersion)" />
+      <definition name="SupportedWinVersion" displayName="$(string.SupportedWinVersion)"/>
     </definitions>
   </supportedOn>
   <categories>
     <!-- Root -->
-    <category name="CAT_LibreOfficeRoot" displayName="$(string.CAT_LibreOfficeRoot)" />
-	<!-- Categories -->
-	<!-- LibreOffce -->
-	<category name="CAT_LibreOffice" displayName="$(string.CAT_LibreOffice)"><parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" /></category>
-	<category name="CAT_LibreOfficeUserData" displayName="$(string.CAT_LibreOfficeUserData)"><parentCategory ref="LibreOffice:CAT_LibreOffice" /></category>
-	<category name="CAT_LibreOfficeGeneral" displayName="$(string.CAT_LibreOfficeGeneral)"><parentCategory ref="LibreOffice:CAT_LibreOffice" /></category>
-	<category name="CAT_LibreOfficeMemory" displayName="$(string.CAT_LibreOfficeMemory)"><parentCategory ref="LibreOffice:CAT_LibreOffice" /></category>
-	<category name="CAT_LibreOfficeView" displayName="$(string.CAT_LibreOfficeView)"><parentCategory ref="LibreOffice:CAT_LibreOffice" /></category>
-	<category name="CAT_LibreOfficePrint" displayName="$(string.CAT_LibreOfficePrint)"><parentCategory ref="LibreOffice:CAT_LibreOffice" /></category>
-	<category name="CAT_LibreOfficePaths" displayName="$(string.CAT_LibreOfficePaths)"><parentCategory ref="LibreOffice:CAT_LibreOffice" /></category>
-	<category name="CAT_LibreOfficeColors" displayName="$(string.CAT_LibreOfficeColors)"><parentCategory ref="LibreOffice:CAT_LibreOffice" /></category>
-	<category name="CAT_LibreOfficeFonts" displayName="$(string.CAT_LibreOfficeFonts)"><parentCategory ref="LibreOffice:CAT_LibreOffice" /></category>
-	<category name="CAT_LibreOfficeSecurity" displayName="$(string.CAT_LibreOfficeSecurity)"><parentCategory ref="LibreOffice:CAT_LibreOffice" /></category>
-	<category name="CAT_LibreOfficePersonalization" displayName="$(string.CAT_LibreOfficePersonalization)"><parentCategory ref="LibreOffice:CAT_LibreOffice" /></category>
-	<category name="CAT_LibreOfficeAppearance" displayName="$(string.CAT_LibreOfficeAppearance)"><parentCategory ref="LibreOffice:CAT_LibreOffice" /></category>
-	<category name="CAT_LibreOfficeAccessibility" displayName="$(string.CAT_LibreOfficeAccessibility)"><parentCategory ref="LibreOffice:CAT_LibreOffice" /></category>
-	<category name="CAT_LibreOfficeAdvanced" displayName="$(string.CAT_LibreOfficeAdvanced)"><parentCategory ref="LibreOffice:CAT_LibreOffice" /></category>
-	<!-- Load/ Save -->
-	<category name="CAT_LoadSave" displayName="$(string.CAT_LoadSave)"><parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" /></category>
-	<category name="CAT_LoadSaveGeneral" displayName="$(string.CAT_LoadSaveGeneral)"><parentCategory ref="LibreOffice:CAT_LoadSave" /></category>
-	<!-- Language Settings -->
-	<!-- LibreOffice Writer -->
-	<category name="CAT_LibreOfficeWriter" displayName="$(string.CAT_LibreOfficeWriter)"><parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" /></category>
-	<category name="CAT_LibreOfficeWriterBasicFonts" displayName="$(string.CAT_LibreOfficeWriterBasicFonts)"><parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" /></category>
-	<!-- LibreOffice Writer/Web -->
-	<!-- LibreOffice Base -->
-	<!-- Charts -->
-	<!-- Internet -->
+    <category name="CAT_LibreOfficeRoot" displayName="$(string.CAT_LibreOfficeRoot)"/>
+    <!-- Categories -->
+    <!-- LibreOffce -->
+    <category name="CAT_LibreOffice" displayName="$(string.CAT_LibreOffice)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot"/>
+    </category>
+    <category name="CAT_LibreOfficeUserData" displayName="$(string.CAT_LibreOfficeUserData)">
+      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+    </category>
+    <category name="CAT_LibreOfficeGeneral" displayName="$(string.CAT_LibreOfficeGeneral)">
+      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+    </category>
+    <category name="CAT_LibreOfficeMemory" displayName="$(string.CAT_LibreOfficeMemory)">
+      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+    </category>
+    <category name="CAT_LibreOfficeView" displayName="$(string.CAT_LibreOfficeView)">
+      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+    </category>
+    <category name="CAT_LibreOfficePrint" displayName="$(string.CAT_LibreOfficePrint)">
+      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+    </category>
+    <category name="CAT_LibreOfficePaths" displayName="$(string.CAT_LibreOfficePaths)">
+      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+    </category>
+    <category name="CAT_LibreOfficeColors" displayName="$(string.CAT_LibreOfficeColors)">
+      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+    </category>
+    <category name="CAT_LibreOfficeFonts" displayName="$(string.CAT_LibreOfficeFonts)">
+      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+    </category>
+    <category name="CAT_LibreOfficeSecurity" displayName="$(string.CAT_LibreOfficeSecurity)">
+      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+    </category>
+    <category name="CAT_LibreOfficePersonalization" displayName="$(string.CAT_LibreOfficePersonalization)">
+      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+    </category>
+    <category name="CAT_LibreOfficeAppearance" displayName="$(string.CAT_LibreOfficeAppearance)">
+      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+    </category>
+    <category name="CAT_LibreOfficeAccessibility" displayName="$(string.CAT_LibreOfficeAccessibility)">
+      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+    </category>
+    <category name="CAT_LibreOfficeAdvanced" displayName="$(string.CAT_LibreOfficeAdvanced)">
+      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+    </category>
+    <!-- Load/ Save -->
+    <category name="CAT_LoadSave" displayName="$(string.CAT_LoadSave)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot"/>
+    </category>
+    <category name="CAT_LoadSaveGeneral" displayName="$(string.CAT_LoadSaveGeneral)">
+      <parentCategory ref="LibreOffice:CAT_LoadSave"/>
+    </category>
+    <!-- Language Settings -->
+    <!-- LibreOffice Writer -->
+    <category name="CAT_LibreOfficeWriter" displayName="$(string.CAT_LibreOfficeWriter)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot"/>
+    </category>
+    <category name="CAT_LibreOfficeWriterBasicFonts" displayName="$(string.CAT_LibreOfficeWriterBasicFonts)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter"/>
+    </category>
+    <!-- LibreOffice Writer/Web -->
+    <!-- LibreOffice Base -->
+    <!-- Charts -->
+    <!-- Internet -->
   </categories>
   <policies>
     <!-- LibreOffce -->
-	<!-- User Data -->
-  	<policy name="CompanyName" class="Machine" displayName="$(string.CompanyName)" explainText="$(string.CompanyName_Help)" presentation="$(presentation.CompanyName)" key="Software\policies\LibreOffice\org.openoffice.UserProfile\Data\o">
-      <parentCategory ref="CAT_LibreOfficeUserData" />
-      <supportedOn ref="SupportedWinVersion" />
+    <!-- User Data -->
+    <policy name="CompanyName" class="Machine" displayName="$(string.CompanyName)"
+            explainText="$(string.CompanyName_Help)" presentation="$(presentation.CompanyName)"
+            key="Software\policies\LibreOffice\org.openoffice.UserProfile\Data\o">
+      <parentCategory ref="CAT_LibreOfficeUserData"/>
+      <supportedOn ref="SupportedWinVersion"/>
       <elements>
         <text id="CompanyName_Text" valueName="Value" required="true" expandable="true"/>
         <boolean id="CompanyName_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1" />
+            <decimal value="1"/>
           </trueValue>
           <falseValue>
-            <decimal value="0" />
+            <decimal value="0"/>
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<!-- General -->
-  	<policy name="UseSystemFileDialog" class="Machine" displayName="$(string.UseSystemFileDialog)" explainText="$(string.UseSystemFileDialog_Help)" presentation="$(presentation.UseSystemFileDialog)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\UseSystemFileDialog">
-      <parentCategory ref="CAT_LibreOfficeGeneral" />
-      <supportedOn ref="SupportedWinVersion" />
+    <!-- General -->
+    <policy name="UseSystemFileDialog" class="Machine" displayName="$(string.UseSystemFileDialog)"
+            explainText="$(string.UseSystemFileDialog_Help)" presentation="$(presentation.UseSystemFileDialog)"
+            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\UseSystemFileDialog">
+      <parentCategory ref="CAT_LibreOfficeGeneral"/>
+      <supportedOn ref="SupportedWinVersion"/>
       <elements>
-		<!-- Yes true / false has to be reversed for this item -->
-		<boolean id="UseSystemFileDialog_BOOL" valueName="Value">
+        <!-- Yes true / false has to be reversed for this item -->
+        <boolean id="UseSystemFileDialog_BOOL" valueName="Value">
           <trueValue>
             <string>false</string>
           </trueValue>
@@ -76,21 +116,25 @@
         </boolean>
       </elements>
     </policy>
-	<!-- Memory -->
-  	<policy name="UndoSteps" class="Machine" displayName="$(string.UndoSteps)" explainText="$(string.UndoSteps_Help)" presentation="$(presentation.UndoSteps)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Undo\Steps">
-      <parentCategory ref="CAT_LibreOfficeMemory" />
-      <supportedOn ref="SupportedWinVersion" />
+    <!-- Memory -->
+    <policy name="UndoSteps" class="Machine" displayName="$(string.UndoSteps)"
+            explainText="$(string.UndoSteps_Help)" presentation="$(presentation.UndoSteps)"
+            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Undo\Steps">
+      <parentCategory ref="CAT_LibreOfficeMemory"/>
+      <supportedOn ref="SupportedWinVersion"/>
       <elements>
-	    <decimal id="UndoStepsCount" valueName="Value" minValue="1" maxValue="999" storeAsText="true" />
+        <decimal id="UndoStepsCount" valueName="Value" minValue="1" maxValue="999" storeAsText="true"/>
       </elements>
     </policy>
-	<!-- View -->
-	<!-- Print -->
-	<policy name="ConvertToGreyscales" class="Machine" displayName="$(string.ConvertToGreyscales)" explainText="$(string.ConvertToGreyscales_Help)" presentation="$(presentation.ConvertToGreyscales)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer\ConvertToGreyscales">
-      <parentCategory ref="CAT_LibreOfficePrint" />
-      <supportedOn ref="SupportedWinVersion" />
+    <!-- View -->
+    <!-- Print -->
+    <policy name="ConvertToGreyscales" class="Machine" displayName="$(string.ConvertToGreyscales)"
+            explainText="$(string.ConvertToGreyscales_Help)" presentation="$(presentation.ConvertToGreyscales)"
+            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer\ConvertToGreyscales">
+      <parentCategory ref="CAT_LibreOfficePrint"/>
+      <supportedOn ref="SupportedWinVersion"/>
       <elements>
-		<boolean id="ConvertToGreyscales_BOOL" valueName="Value">
+        <boolean id="ConvertToGreyscales_BOOL" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -100,13 +144,15 @@
         </boolean>
       </elements>
     </policy>
-	<!-- Paths -->
-	<!-- Security -->
-	<policy name="MacroSecurityLevel" class="Machine" displayName="$(string.MacroSecurityLevel)" explainText="$(string.MacroSecurityLevel_Help)" presentation="$(presentation.MacroSecurityLevel)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\MacroSecurityLevel">
-      <parentCategory ref="CAT_LibreOfficeSecurity" />
-      <supportedOn ref="SupportedWinVersion" />
+    <!-- Paths -->
+    <!-- Security -->
+    <policy name="MacroSecurityLevel" class="Machine" displayName="$(string.MacroSecurityLevel)"
+            explainText="$(string.MacroSecurityLevel_Help)" presentation="$(presentation.MacroSecurityLevel)"
+            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\MacroSecurityLevel">
+      <parentCategory ref="CAT_LibreOfficeSecurity"/>
+      <supportedOn ref="SupportedWinVersion"/>
       <elements>
-	    <enum id="MacroSecurityLevelOp" valueName="Value">
+        <enum id="MacroSecurityLevelOp" valueName="Value">
           <item displayName="$(string.LibreOfficeCommon_VHigh)">
             <value>
               <string>3</string>
@@ -117,12 +163,12 @@
               <string>2</string>
             </value>
           </item>
-		  <item displayName="$(string.LibreOfficeCommon_Medium)">
+          <item displayName="$(string.LibreOfficeCommon_Medium)">
             <value>
               <string>1</string>
             </value>
           </item>
-		  <item displayName="$(string.LibreOfficeCommon_Low)">
+          <item displayName="$(string.LibreOfficeCommon_Low)">
             <value>
               <string>0</string>
             </value>
@@ -130,18 +176,20 @@
         </enum>
         <boolean id="MacroSecurityLevel_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1" />
+            <decimal value="1"/>
           </trueValue>
           <falseValue>
-            <decimal value="0" />
+            <decimal value="0"/>
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<!-- Personalization -->
-	<policy name="Persona" class="Machine" displayName="$(string.Persona)" explainText="$(string.Persona_Help)" presentation="$(presentation.Persona)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\Persona">
-      <parentCategory ref="CAT_LibreOfficePersonalization" />
-      <supportedOn ref="SupportedWinVersion" />
+    <!-- Personalization -->
+    <policy name="Persona" class="Machine" displayName="$(string.Persona)" explainText="$(string.Persona_Help)"
+            presentation="$(presentation.Persona)"
+            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\Persona">
+      <parentCategory ref="CAT_LibreOfficePersonalization"/>
+      <supportedOn ref="SupportedWinVersion"/>
       <elements>
         <enum id="PersonaOp" valueName="Value">
           <item displayName="$(string.LibreOfficeCommon_True)">
@@ -155,22 +203,25 @@
             </value>
           </item>
         </enum>
-		<boolean id="Persona_Enforce" valueName="Final">
+        <boolean id="Persona_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1" />
+            <decimal value="1"/>
           </trueValue>
           <falseValue>
-            <decimal value="0" />
+            <decimal value="0"/>
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<!-- Accessibility -->
-	<policy name="IsAllowAnimatedGraphics" class="Machine" displayName="$(string.IsAllowAnimatedGraphics)" explainText="$(string.IsAllowAnimatedGraphics_Help)" presentation="$(presentation.IsAllowAnimatedGraphics)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Accessibility\IsAllowAnimatedGraphics">
-      <parentCategory ref="CAT_LibreOfficeAccessibility" />
-      <supportedOn ref="SupportedWinVersion" />
+    <!-- Accessibility -->
+    <policy name="IsAllowAnimatedGraphics" class="Machine" displayName="$(string.IsAllowAnimatedGraphics)"
+            explainText="$(string.IsAllowAnimatedGraphics_Help)"
+            presentation="$(presentation.IsAllowAnimatedGraphics)"
+            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Accessibility\IsAllowAnimatedGraphics">
+      <parentCategory ref="CAT_LibreOfficeAccessibility"/>
+      <supportedOn ref="SupportedWinVersion"/>
       <elements>
-		<boolean id="IsAllowAnimatedGraphics_BOOL" valueName="Value">
+        <boolean id="IsAllowAnimatedGraphics_BOOL" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -178,23 +229,25 @@
             <string>false</string>
           </falseValue>
         </boolean>
-		<boolean id="IsAllowAnimatedGraphics_Enforce" valueName="Final">
+        <boolean id="IsAllowAnimatedGraphics_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1" />
+            <decimal value="1"/>
           </trueValue>
           <falseValue>
-            <decimal value="0" />
+            <decimal value="0"/>
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<!-- Load/Save -->
-	<!-- General -->
-	<policy name="FileMetaDataOnSave" class="Machine" displayName="$(string.FileMetaDataOnSave)" explainText="$(string.FileMetaDataOnSave_Help)" presentation="$(presentation.FileMetaDataOnSave)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\EditProperty">
-      <parentCategory ref="CAT_LoadSaveGeneral" />
-      <supportedOn ref="SupportedWinVersion" />
+    <!-- Load/Save -->
+    <!-- General -->
+    <policy name="FileMetaDataOnSave" class="Machine" displayName="$(string.FileMetaDataOnSave)"
+            explainText="$(string.FileMetaDataOnSave_Help)" presentation="$(presentation.FileMetaDataOnSave)"
+            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\EditProperty">
+      <parentCategory ref="CAT_LoadSaveGeneral"/>
+      <supportedOn ref="SupportedWinVersion"/>
       <elements>
-		<boolean id="FileMetaDataOnSave_BOOL" valueName="Value">
+        <boolean id="FileMetaDataOnSave_BOOL" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -204,111 +257,306 @@
         </boolean>
         <boolean id="FileMetaDataOnSave_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1" />
+            <decimal value="1"/>
           </trueValue>
           <falseValue>
-            <decimal value="0" />
+            <decimal value="0"/>
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<policy name="FileDefaultSaveType" class="Machine" displayName="$(string.FileDefaultSaveType)" explainText="$(string.FileDefaultSaveType_Help)" presentation="$(presentation.FileDefaultSaveType)" key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.text.TextDocument']\ooSetupFactoryDefaultFilter">
-      <parentCategory ref="CAT_LoadSaveGeneral" />
-      <supportedOn ref="SupportedWinVersion" />
-<elements>
-        <enum id="FileTypeOp" valueName="Value">
-          <item displayName="$(string.DefaultFileType_WR8T)">
+    <policy name="Text_FileDefaultSaveType" class="Machine" displayName="$(string.Text_FileDefaultSaveType)"
+            explainText="$(string.Text_FileDefaultSaveType_Help)"
+            presentation="$(presentation.Text_FileDefaultSaveType)"
+            key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.text.TextDocument']\ooSetupFactoryDefaultFilter">
+      <parentCategory ref="CAT_LoadSaveGeneral"/>
+      <supportedOn ref="SupportedWinVersion"/>
+      <elements>
+        <enum id="Text_FileDefaultSaveTypeOp" valueName="Value">
+          <item displayName="$(string.Text_FileDefaultSaveType_WR8T)">
             <value>
               <string>writer8_template</string>
             </value>
           </item>
-          <item displayName="$(string.DefaultFileType_WR8)">
+          <item displayName="$(string.Text_FileDefaultSaveType_WR8)">
             <value>
               <string>writer8</string>
             </value>
           </item>
-          <item displayName="$(string.DefaultFileType_DOCT)">
+          <item displayName="$(string.Text_FileDefaultSaveType_DOCT)">
             <value>
               <string>MS Word 97 Vorlage</string>
             </value>
           </item>
-          <item displayName="$(string.DefaultFileType_TXT)">
+          <item displayName="$(string.Text_FileDefaultSaveType_TXT)">
             <value>
               <string>Text</string>
             </value>
           </item>
-          <item displayName="$(string.DefaultFileType_OOX)">
+          <item displayName="$(string.Text_FileDefaultSaveType_OOX)">
             <value>
               <string>Office Open XML Text</string>
             </value>
           </item>
-          <item displayName="$(string.DefaultFileType_ODT)">
+          <item displayName="$(string.Text_FileDefaultSaveType_ODT)">
             <value>
               <string>OpenDocument Text Flat XML</string>
             </value>
           </item>
-          <item displayName="$(string.DefaultFileType_UOF)">
+          <item displayName="$(string.Text_FileDefaultSaveType_UOF)">
             <value>
-              <string>Unified Office Format text</string>
+              <string>UOF text</string>
             </value>
           </item>
-          <item displayName="$(string.DefaultFileType_DOC)">
+          <item displayName="$(string.Text_FileDefaultSaveType_DOC)">
             <value>
               <string>MS Word 97</string>
             </value>
           </item>
-          <item displayName="$(string.DefaultFileType_DOCX)">
+          <item displayName="$(string.Text_FileDefaultSaveType_DOCX)">
             <value>
               <string>MS Word 2007 XML</string>
             </value>
           </item>
-          <item displayName="$(string.DefaultFileType_HTML)">
+          <item displayName="$(string.Text_FileDefaultSaveType_HTML)">
             <value>
               <string>HTML (StarWriter)</string>
             </value>
           </item>
-          <item displayName="$(string.DefaultFileType_MSX)">
+          <item displayName="$(string.Text_FileDefaultSaveType_MSX)">
             <value>
               <string>MS Word 2003 XML</string>
             </value>
           </item>
-          <item displayName="$(string.DefaultFileType_TXC)">
+          <item displayName="$(string.Text_FileDefaultSaveType_TXC)">
             <value>
               <string>Text (encoded)</string>
             </value>
           </item>
-          <item displayName="$(string.DefaultFileType_RTF)">
+          <item displayName="$(string.Text_FileDefaultSaveType_RTF)">
             <value>
               <string>Rich Text Format</string>
             </value>
           </item>
-          <item displayName="$(string.DefaultFileType_DCB)">
+          <item displayName="$(string.Text_FileDefaultSaveType_DCB)">
             <value>
               <string>DocBook File</string>
             </value>
           </item>
         </enum>
-		<boolean id="FileDefaultSaveType_Enforce" valueName="Final">
+        <boolean id="Text_FileDefaultSaveType_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1" />
+            <decimal value="1"/>
           </trueValue>
           <falseValue>
-            <decimal value="0" />
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="Spreadsheet_FileDefaultSaveType" class="Machine"
+            displayName="$(string.Spreadsheet_FileDefaultSaveType)"
+            explainText="$(string.Spreadsheet_FileDefaultSaveType_Help)"
+            presentation="$(presentation.Spreadsheet_FileDefaultSaveType)"
+            key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.sheet.SpreadsheetDocument']\ooSetupFactoryDefaultFilter">
+      <parentCategory ref="CAT_LoadSaveGeneral"/>
+      <supportedOn ref="SupportedWinVersion"/>
+      <elements>
+        <enum id="Spreadsheet_FileDefaultSaveTypeOp" valueName="Value">
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_ODFT)">
+            <value>
+              <string>calc8_template</string>
+            </value>
+          </item>
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_ODF)">
+            <value>
+              <string>calc8</string>
+            </value>
+          </item>
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_OOX)">
+            <value>
+              <string>Calc Office Open XML</string>
+            </value>
+          </item>
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_CSV)">
+            <value>
+              <string>Text - txt - csv (StarCalc)</string>
+            </value>
+          </item>
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_SYLK)">
+            <value>
+              <string>SYLK</string>
+            </value>
+          </item>
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_UOF)">
+            <value>
+              <string>UOF spreadsheet</string>
+            </value>
+          </item>
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_ODFX)">
+            <value>
+              <string>OpenDocument Spreadsheet Flat XML</string>
+            </value>
+          </item>
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_XLSX2K3)">
+            <value>
+              <string>MS Excel 2003 XML</string>
+            </value>
+          </item>
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_DBS)">
+            <value>
+              <string>dBase</string>
+            </value>
+          </item>
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_XLST)">
+            <value>
+              <string>MS Excel 97 Vorlage/Template</string>
+            </value>
+          </item>
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_XLS)">
+            <value>
+              <string>MS Excel 97</string>
+            </value>
+          </item>
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_HTML)">
+            <value>
+              <string>HTML (StarCalc)</string>
+            </value>
+          </item>
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_DIF)">
+            <value>
+              <string>DIF</string>
+            </value>
+          </item>
+          <item displayName="$(string.Spreadsheet_FileDefaultSaveType_XLSX)">
+            <value>
+              <string>Calc MS Excel 2007 XML</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="Spreadsheet_FileDefaultSaveType_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="Presentation_FileDefaultSaveType" class="Machine"
+            displayName="$(string.Presentation_FileDefaultSaveType)"
+            explainText="$(string.Presentation_FileDefaultSaveType_Help)"
+            presentation="$(presentation.Presentation_FileDefaultSaveType)"
+            key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.presentation.PresentationDocument']\ooSetupFactoryDefaultFilter">
+      <parentCategory ref="CAT_LoadSaveGeneral"/>
+      <supportedOn ref="SupportedWinVersion"/>
+      <elements>
+        <enum id="Presentation_FileDefaultSaveTypeOp" valueName="Value">
+          <item displayName="$(string.Presentation_FileDefaultSaveType_ODFT)">
+            <value>
+              <string>impress8_template</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_ODFD)">
+            <value>
+              <string>impress8_draw</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_OOX)">
+            <value>
+              <string>Impress Office Open XML</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_UOF)">
+            <value>
+              <string>UOF presentation</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_PPTXT)">
+            <value>
+              <string>Impress MS PowerPoint 2007 XML Template</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_PPTT)">
+            <value>
+              <string>MS PowerPoint 97 Vorlage</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_PPTA)">
+            <value>
+              <string>MS PowerPoint 97 AutoPlay</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_ODFP)">
+            <value>
+              <string>impress8</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_OOXA)">
+            <value>
+              <string>Impress Office Open XML AutoPlay</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_OOXT)">
+            <value>
+              <string>Impress Office Open XML Template</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_ODFXP)">
+            <value>
+              <string>OpenDocument Presentation Flat XML</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_PPT)">
+            <value>
+              <string>MS PowerPoint 97</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_PPTXA)">
+            <value>
+              <string>Impress MS PowerPoint 2007 XML AutoPlay</string>
+            </value>
+          </item>
+          <item displayName="$(string.Presentation_FileDefaultSaveType_PPTX)">
+            <value>
+              <string>Impress MS PowerPoint 2007 XML</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="Presentation_FileDefaultSaveType_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
           </falseValue>
         </boolean>
       </elements>
     </policy>
     <!-- LibreOffice Writer -->
-	<!-- Basic Fonts -->
-    <policy name="DefaultFont" class="Machine" displayName="$(string.BasicFonts)" explainText="$(string.BasicFonts_Help)" presentation="$(presentation.BasicFonts)" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont">
-      <parentCategory ref="CAT_LibreOfficeWriterBasicFonts" />
-      <supportedOn ref="SupportedWinVersion" />
+    <!-- Basic Fonts -->
+    <policy name="DefaultFont" class="Machine" displayName="$(string.BasicFonts)"
+            explainText="$(string.BasicFonts_Help)" presentation="$(presentation.BasicFonts)"
+            key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont">
+      <parentCategory ref="CAT_LibreOfficeWriterBasicFonts"/>
+      <supportedOn ref="SupportedWinVersion"/>
       <elements>
-        <text id="BasicFonts_Caption" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Caption" valueName="Value" required="true" expandable="true"/>
-		<text id="BasicFonts_Index" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Index" valueName="Value" required="true" expandable="true"/>
-		<text id="BasicFonts_List" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\List" valueName="Value" required="true" expandable="true"/>
-        <text id="BasicFonts_Standard" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Standard" valueName="Value" required="true" expandable="true"/>
-		<text id="BasicFonts_Heading" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Heading" valueName="Value" required="true" expandable="true"/>
+        <text id="BasicFonts_Caption"
+              key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Caption"
+              valueName="Value" required="true" expandable="true"/>
+        <text id="BasicFonts_Index"
+              key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Index"
+              valueName="Value" required="true" expandable="true"/>
+        <text id="BasicFonts_List"
+              key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\List"
+              valueName="Value" required="true" expandable="true"/>
+        <text id="BasicFonts_Standard"
+              key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Standard"
+              valueName="Value" required="true" expandable="true"/>
+        <text id="BasicFonts_Heading"
+              key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Heading"
+              valueName="Value" required="true" expandable="true"/>
       </elements>
     </policy>
   </policies>
