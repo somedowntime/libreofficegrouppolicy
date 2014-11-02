@@ -98,13 +98,27 @@
       <string id="Presentation_FileDefaultSaveType">Impress: Configure default save file type</string>
       <string id="Presentation_FileDefaultSaveType_Help">Specify the default file type when saving from Impress. Remember that if you do not enforce the setting, local user configuration will override this.</string>
       <string id="FileMetaDataOnSave">Ask for Document metadata on LibreOffice exit</string>
-      <string id="FileMetaDataOnSave_Help">If true, the user will be prompted to enter in file metadata when initially saving a file.</string>
+      <string id="FileMetaDataOnSave_Help">If true, users will be prompted to enter in file metadata when initially saving a file.</string>
       <string id="CompanyName">Company Name</string>
       <string id="CompanyName_Help">Enter the Company Name.</string>
       <string id="BasicFonts">Basic Fonts</string>
       <string id="BasicFonts_Help">Enter the default font.</string>
       <string id="MacroSecurityLevel">Macro Security Level</string>
       <string id="MacroSecurityLevel_Help">Choose the Macro Security Level</string>
+	  <string id="HyperlinksWithCtrlClick">Ctrl-Click required to follow Hyperlinks</string>
+      <string id="HyperlinksWithCtrlClick_Help">If true, users will need to hold down the Ctrl key in order to click Hyperlinks</string>
+	  <string id="WarnCreatePDF">Warn when creating PDF files</string>
+      <string id="WarnCreatePDF_Help">Warn when creating PDF files</string>
+	  <string id="WarnSignDoc">Warn when signing a document</string>
+      <string id="WarnSignDoc_Help">Warn when signing a document</string>
+	  <string id="WarnSaveOrSendDoc">Warn when saving or sending</string>
+      <string id="WarnSaveOrSendDoc_Help">Warn when saving or sending</string>
+	  <string id="WarnPrintDoc">Warn when printing documents</string>
+      <string id="WarnPrintDoc_Help">Warn when printing documents</string>
+	  <string id="RecommendPasswordProtection">Recommend password protection on saving</string>
+      <string id="RecommendPasswordProtection_Help">Recommend password protection on saving</string>
+	  <string id="RemovePersonalInfoOnSaving">Remove personal information on saving</string>
+      <string id="RemovePersonalInfoOnSaving_Help">Remove personal information on saving</string>
       <string id="UndoSteps">Number of undo steps</string>
       <string id="UndoSteps_Help">Set the number of undo steps LibreOffice should remember</string>
       <string id="ConvertToGreyscales">Convert colors to grayscale</string>
@@ -139,6 +153,34 @@
       <presentation id="MacroSecurityLevel">
         <dropdownList refId="MacroSecurityLevelOp" noSort="true" defaultItem="1">Macro Security:</dropdownList>
         <checkBox refId="MacroSecurityLevel_Enforce">Enforce</checkBox>
+      </presentation>
+	  <presentation id="HyperlinksWithCtrlClick">
+        <checkBox refId="HyperlinksWithCtrlClick_BOOL">Ctrl-Click required to follow hyperlinks</checkBox>
+        <checkBox refId="HyperlinksWithCtrlClick_Enforce">Enforce</checkBox>
+      </presentation>
+	  <presentation id="WarnCreatePDF">
+        <checkBox refId="WarnCreatePDF_BOOL">Warn when creating PDF files</checkBox>
+        <checkBox refId="WarnCreatePDF_Enforce">Enforce</checkBox>
+      </presentation>
+	  <presentation id="WarnSignDoc">
+        <checkBox refId="WarnSignDoc_BOOL">Warn when signing a document</checkBox>
+        <checkBox refId="WarnSignDoc_Enforce">Enforce</checkBox>
+      </presentation>
+	  <presentation id="WarnSaveOrSendDoc">
+        <checkBox refId="WarnSaveOrSendDoc_BOOL">Warn when saving or sending</checkBox>
+        <checkBox refId="WarnSaveOrSendDoc_Enforce">Enforce</checkBox>
+      </presentation>
+	  <presentation id="WarnPrintDoc">
+        <checkBox refId="WarnPrintDoc_BOOL">Warn when printing documents</checkBox>
+        <checkBox refId="WarnPrintDoc_Enforce">Enforce</checkBox>
+      </presentation>
+	  <presentation id="RecommendPasswordProtection">
+        <checkBox refId="RecommendPasswordProtection_BOOL">Recommend password protection on saving</checkBox>
+        <checkBox refId="RecommendPasswordProtection_Enforce">Enforce</checkBox>
+      </presentation>
+	  <presentation id="RemovePersonalInfoOnSaving">
+        <checkBox refId="RemovePersonalInfoOnSaving_BOOL">Remove personal information on saving</checkBox>
+        <checkBox refId="RemovePersonalInfoOnSaving_Enforce">Enforce</checkBox>
       </presentation>
       <!-- Personalization -->
       <presentation id="Persona">
