@@ -305,7 +305,7 @@
           </item>
           <item displayName="$(string.Text_FileDefaultSaveType_UOF)">
             <value>
-              <string>Unified Office Format text</string>
+              <string>UOF text</string>
             </value>
           </item>
           <item displayName="$(string.Text_FileDefaultSaveType_DOC)">
