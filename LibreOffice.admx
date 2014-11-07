@@ -433,7 +433,31 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="Text_FileDefaultSaveType" class="Machine" displayName="$(string.Text_FileDefaultSaveType)"
+	<policy name="LoadPrinter" class="Machine" displayName="$(string.LoadPrinter)"
+            explainText="$(string.LoadPrinter_Help)" presentation="$(presentation.LoadPrinter)"
+            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\LoadPrinter">
+      <parentCategory ref="CAT_LoadSaveGeneral"/>
+      <supportedOn ref="SupportedWinVersion"/>
+      <elements>
+        <boolean id="LoadPrinter_BOOL" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="LoadPrinter_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+	<policy name="Text_FileDefaultSaveType" class="Machine" displayName="$(string.Text_FileDefaultSaveType)"
             explainText="$(string.Text_FileDefaultSaveType_Help)"
             presentation="$(presentation.Text_FileDefaultSaveType)"
             key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.text.TextDocument']\ooSetupFactoryDefaultFilter">

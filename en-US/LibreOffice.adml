@@ -99,6 +99,8 @@
       <string id="Presentation_FileDefaultSaveType_Help">Specify the default file type when saving from Impress. Remember that if you do not enforce the setting, local user configuration will override this.</string>
       <string id="FileMetaDataOnSave">Ask for Document metadata on LibreOffice exit</string>
       <string id="FileMetaDataOnSave_Help">If true, users will be prompted to enter in file metadata when initially saving a file.</string>
+	  <string id="LoadPrinter">Load Printer settings with the document</string>
+      <string id="LoadPrinter_Help">Load Printer settings with the document.</string>
       <string id="CompanyName">Company Name</string>
       <string id="CompanyName_Help">Enter the Company Name.</string>
       <string id="BasicFonts">Basic Fonts</string>
@@ -196,6 +198,10 @@
       <presentation id="FileMetaDataOnSave">
         <checkBox refId="FileMetaDataOnSave_BOOL">Edit Properties on save</checkBox>
         <checkBox refId="FileMetaDataOnSave_Enforce">Enforce</checkBox>
+      </presentation>
+      <presentation id="LoadPrinter">
+        <checkBox refId="LoadPrinter_BOOL">Load Printer settings with the document</checkBox>
+        <checkBox refId="LoadPrinter_Enforce">Enforce</checkBox>
       </presentation>
       <presentation id="Text_FileDefaultSaveType">
         <dropdownList refId="Text_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>
