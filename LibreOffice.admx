@@ -8,7 +8,8 @@
   <resources minRequiredRevision="1.0"/>
   <supportedOn>
     <definitions>
-      <definition name="SupportedWinVersion" displayName="$(string.SupportedWinVersion)"/>
+      <definition name="SupportedLO4_2" displayName="$(string.SupportedLO4_2)"/>
+	  <definition name="SupportedLO4_3" displayName="$(string.SupportedLO4_3)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -70,6 +71,9 @@
     <category name="CAT_LibreOfficeWriter" displayName="$(string.CAT_LibreOfficeWriter)">
       <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot"/>
     </category>
+	<category name="CAT_LibreOfficeWriterGeneral" displayName="$(string.CAT_LibreOfficeWriterGeneral)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter"/>
+    </category>
     <category name="CAT_LibreOfficeWriterBasicFonts" displayName="$(string.CAT_LibreOfficeWriterBasicFonts)">
       <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter"/>
     </category>
@@ -85,7 +89,7 @@
             explainText="$(string.CompanyName_Help)" presentation="$(presentation.CompanyName)"
             key="Software\policies\LibreOffice\org.openoffice.UserProfile\Data\o">
       <parentCategory ref="CAT_LibreOfficeUserData"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <text id="CompanyName_Text" valueName="Value" required="true" expandable="true"/>
         <boolean id="CompanyName_Enforce" valueName="Final">
@@ -103,7 +107,7 @@
             explainText="$(string.UseSystemFileDialog_Help)" presentation="$(presentation.UseSystemFileDialog)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\UseSystemFileDialog">
       <parentCategory ref="CAT_LibreOfficeGeneral"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <!-- Yes true / false has to be reversed for this item -->
         <boolean id="UseSystemFileDialog_BOOL" valueName="Value">
@@ -114,6 +118,14 @@
             <string>true</string>
           </falseValue>
         </boolean>
+		<boolean id="UseSystemFileDialog_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
     <!-- Memory -->
@@ -121,7 +133,7 @@
             explainText="$(string.UndoSteps_Help)" presentation="$(presentation.UndoSteps)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Undo\Steps">
       <parentCategory ref="CAT_LibreOfficeMemory"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <decimal id="UndoStepsCount" valueName="Value" minValue="1" maxValue="999" storeAsText="true"/>
       </elements>
@@ -132,7 +144,7 @@
             explainText="$(string.ConvertToGreyscales_Help)" presentation="$(presentation.ConvertToGreyscales)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer\ConvertToGreyscales">
       <parentCategory ref="CAT_LibreOfficePrint"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <boolean id="ConvertToGreyscales_BOOL" valueName="Value">
           <trueValue>
@@ -150,7 +162,7 @@
             explainText="$(string.MacroSecurityLevel_Help)" presentation="$(presentation.MacroSecurityLevel)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\MacroSecurityLevel">
       <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <enum id="MacroSecurityLevelOp" valueName="Value">
           <item displayName="$(string.LibreOfficeCommon_VHigh)">
@@ -188,7 +200,7 @@
             explainText="$(string.HyperlinksWithCtrlClick_Help)" presentation="$(presentation.HyperlinksWithCtrlClick)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\HyperlinksWithCtrlClick">
       <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <boolean id="HyperlinksWithCtrlClick_BOOL" valueName="Value">
           <trueValue>
@@ -212,7 +224,7 @@
             explainText="$(string.WarnCreatePDF_Help)" presentation="$(presentation.WarnCreatePDF)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnCreatePDF">
       <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <boolean id="WarnCreatePDF_BOOL" valueName="Value">
           <trueValue>
@@ -236,7 +248,7 @@
             explainText="$(string.WarnSignDoc_Help)" presentation="$(presentation.WarnSignDoc)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnSignDoc">
       <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <boolean id="WarnSignDoc_BOOL" valueName="Value">
           <trueValue>
@@ -260,7 +272,7 @@
             explainText="$(string.WarnSaveOrSendDoc_Help)" presentation="$(presentation.WarnSaveOrSendDoc)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnSaveOrSendDoc">
       <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <boolean id="WarnSaveOrSendDoc_BOOL" valueName="Value">
           <trueValue>
@@ -284,7 +296,7 @@
             explainText="$(string.WarnPrintDoc_Help)" presentation="$(presentation.WarnPrintDoc)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnPrintDoc">
       <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <boolean id="WarnPrintDoc_BOOL" valueName="Value">
           <trueValue>
@@ -308,7 +320,7 @@
             explainText="$(string.RecommendPasswordProtection_Help)" presentation="$(presentation.RecommendPasswordProtection)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\RecommendPasswordProtection">
       <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <boolean id="RecommendPasswordProtection_BOOL" valueName="Value">
           <trueValue>
@@ -332,7 +344,7 @@
             explainText="$(string.RemovePersonalInfoOnSaving_Help)" presentation="$(presentation.RemovePersonalInfoOnSaving)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\RemovePersonalInfoOnSaving">
       <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <boolean id="RemovePersonalInfoOnSaving_BOOL" valueName="Value">
           <trueValue>
@@ -357,7 +369,7 @@
             presentation="$(presentation.Persona)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\Persona">
       <parentCategory ref="CAT_LibreOfficePersonalization"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <enum id="PersonaOp" valueName="Value">
           <item displayName="$(string.LibreOfficeCommon_True)">
@@ -387,7 +399,7 @@
             presentation="$(presentation.IsAllowAnimatedGraphics)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Accessibility\IsAllowAnimatedGraphics">
       <parentCategory ref="CAT_LibreOfficeAccessibility"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <boolean id="IsAllowAnimatedGraphics_BOOL" valueName="Value">
           <trueValue>
@@ -413,7 +425,7 @@
             explainText="$(string.FileMetaDataOnSave_Help)" presentation="$(presentation.FileMetaDataOnSave)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\EditProperty">
       <parentCategory ref="CAT_LoadSaveGeneral"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <boolean id="FileMetaDataOnSave_BOOL" valueName="Value">
           <trueValue>
@@ -462,7 +474,7 @@
             presentation="$(presentation.Text_FileDefaultSaveType)"
             key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.text.TextDocument']\ooSetupFactoryDefaultFilter">
       <parentCategory ref="CAT_LoadSaveGeneral"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <enum id="Text_FileDefaultSaveTypeOp" valueName="Value">
           <item displayName="$(string.Text_FileDefaultSaveType_WR8T)">
@@ -552,7 +564,7 @@
             presentation="$(presentation.Spreadsheet_FileDefaultSaveType)"
             key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.sheet.SpreadsheetDocument']\ooSetupFactoryDefaultFilter">
       <parentCategory ref="CAT_LoadSaveGeneral"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <enum id="Spreadsheet_FileDefaultSaveTypeOp" valueName="Value">
           <item displayName="$(string.Spreadsheet_FileDefaultSaveType_ODFT)">
@@ -642,7 +654,7 @@
             presentation="$(presentation.Presentation_FileDefaultSaveType)"
             key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.presentation.PresentationDocument']\ooSetupFactoryDefaultFilter">
       <parentCategory ref="CAT_LoadSaveGeneral"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <enum id="Presentation_FileDefaultSaveTypeOp" valueName="Value">
           <item displayName="$(string.Presentation_FileDefaultSaveType_ODFT)">
@@ -728,11 +740,35 @@
     </policy>
     <!-- LibreOffice Writer -->
     <!-- Basic Fonts -->
-    <policy name="DefaultFont" class="Machine" displayName="$(string.BasicFonts)"
+	<policy name="ShowStandardizedPageCount" class="Machine" displayName="$(string.ShowStandardizedPageCount)"
+            explainText="$(string.ShowStandardizedPageCount_Help)" presentation="$(presentation.ShowStandardizedPageCount)"
+            key="Software\policies\LibreOffice\org.openoffice.Office.Writer\WordCount\ShowStandardizedPageCount">
+      <parentCategory ref="CAT_LibreOfficeWriterGeneral"/>
+      <supportedOn ref="SupportedLO4_3"/>
+      <elements>
+        <boolean id="ShowStandardizedPageCount_BOOL" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+		<boolean id="ShowStandardizedPageCount_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+	<policy name="DefaultFont" class="Machine" displayName="$(string.BasicFonts)"
             explainText="$(string.BasicFonts_Help)" presentation="$(presentation.BasicFonts)"
             key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont">
       <parentCategory ref="CAT_LibreOfficeWriterBasicFonts"/>
-      <supportedOn ref="SupportedWinVersion"/>
+      <supportedOn ref="SupportedLO4_2"/>
       <elements>
         <text id="BasicFonts_Caption"
               key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Caption"

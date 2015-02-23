@@ -7,10 +7,11 @@
   <resources>
     <stringTable>
       <!-- General GPO -->
-      <string id="SupportedWinVersion">At least Microsoft Vista onwards</string>
+      <string id="SupportedLO4_2">At least LibreOffice 4.2</string>
+	  <string id="SupportedLO4_3">At least LibreOffice 4.3</string>
       <!-- Categories -->
       <!-- LibreOffce -->
-      <string id="CAT_LibreOfficeRoot">LibreOffice 4.2</string>
+      <string id="CAT_LibreOfficeRoot">LibreOffice</string>
       <string id="CAT_LibreOffice">LibreOffice</string>
       <string id="CAT_LibreOfficeUserData">User Data</string>
       <string id="CAT_LibreOfficeGeneral">General</string>
@@ -31,6 +32,7 @@
       <!-- Language Settings -->
       <!-- LibreOffice Writer -->
       <string id="CAT_LibreOfficeWriter">LibreOffice Writer</string>
+	  <string id="CAT_LibreOfficeWriterGeneral">General</string>
       <string id="CAT_LibreOfficeWriterBasicFonts">Basic Fonts</string>
       <!-- LibreOffice Writer/Web -->
       <!-- LibreOffice Base -->
@@ -129,6 +131,8 @@
       <string id="Persona_Help">True will use the pre-installed theme, False will set LibreOffice to plain look</string>
       <string id="IsAllowAnimatedGraphics">Allow animated graphics</string>
       <string id="IsAllowAnimatedGraphics_Help">Enables or disables animated graphics</string>
+	  <string id="ShowStandardizedPageCount">Show Standardized Page Count</string>
+      <string id="ShowStandardizedPageCount_Help">Show Standardized Page Count</string>
     </stringTable>
     <presentationTable>
       <!-- User Data -->
@@ -141,6 +145,7 @@
       <!-- General -->
       <presentation id="UseSystemFileDialog">
         <checkBox refId="UseSystemFileDialog_BOOL">Use LibreOffice dialogs</checkBox>
+		<checkBox refId="UseSystemFileDialog_Enforce">Enforce</checkBox>
       </presentation>
       <!-- Memory -->
       <presentation id="UndoSteps">
@@ -215,7 +220,12 @@
         <dropdownList refId="Presentation_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>
         <checkBox refId="Presentation_FileDefaultSaveType_Enforce">Enforce</checkBox>
       </presentation>
-      <!-- Basic Fonts -->
+	  <!-- Writer General -->
+	  <presentation id="ShowStandardizedPageCount">
+        <checkBox refId="ShowStandardizedPageCount_BOOL">Show Standardized Page Count</checkBox>
+        <checkBox refId="ShowStandardizedPageCount_Enforce">Enforce</checkBox>
+      </presentation>
+	  <!-- Basic Fonts -->
       <presentation id="BasicFonts">
         <textBox refId="BasicFonts_Caption">
           <label>Caption:</label>
