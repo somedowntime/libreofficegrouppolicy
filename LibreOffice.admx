@@ -236,7 +236,7 @@
     <!--Privacy-->
     <policy name="CollectUsageInformation" class="Machine" displayName="$(string.CollectUsageInformation)" explainText="$(string.CollectUsageInformation_Help)" presentation="$(presentation.CollectUsageInformation)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\CollectUsageInformation">
       <parentCategory ref="CAT_LibreOfficeGeneral" />
-      <supportedOn ref="SupportedLO4_2" />
+      <supportedOn ref="SupportedLO4_4" />
       <elements>
         <boolean id="CollectUsageInformation_BOOL" valueName="Value">
           <trueValue>
