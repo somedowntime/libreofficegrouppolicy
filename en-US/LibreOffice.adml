@@ -1,16 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- 2014 Creator: Thomas Higgins -->
 <policyDefinitionResources revision="1.0" schemaVersion="1.0">
-  <displayName>
-  </displayName>
-  <description>
-  </description>
+  <displayName></displayName>
+  <description></description>
   <resources>
     <stringTable>
       <!-- General GPO -->
       <string id="SupportedLO4_2">At least LibreOffice 4.2</string>
-	  <string id="SupportedLO4_3">At least LibreOffice 4.3</string>
-      <!-- Categories -->
-      <!-- LibreOffce -->
+      <string id="SupportedLO4_3">At least LibreOffice 4.3</string>
+      <string id="SupportedLO4_4">At least LibreOffice 4.4</string>
+      <!--#### CATEGORIES ####-->
+      <!--## LIBREOFFICE ##-->
       <string id="CAT_LibreOfficeRoot">LibreOffice</string>
       <string id="CAT_LibreOffice">LibreOffice</string>
       <string id="CAT_LibreOfficeUserData">User Data</string>
@@ -26,19 +26,96 @@
       <string id="CAT_LibreOfficeAppearance">Appearance</string>
       <string id="CAT_LibreOfficeAccessibility">Accessibility</string>
       <string id="CAT_LibreOfficeAdvanced">Advanced</string>
-      <!-- Load/ Save -->
+      <!--## LOAD SAVE ##-->
       <string id="CAT_LoadSave">Load / Save</string>
       <string id="CAT_LoadSaveGeneral">General</string>
-      <!-- Language Settings -->
-      <!-- LibreOffice Writer -->
+      <!--## LANGUAGE SETTINGS ##-->
+      <!--## LIBREOFFICE WRITER ##-->
       <string id="CAT_LibreOfficeWriter">LibreOffice Writer</string>
-	  <string id="CAT_LibreOfficeWriterGeneral">General</string>
+      <string id="CAT_LibreOfficeWriterGeneral">General</string>
       <string id="CAT_LibreOfficeWriterBasicFonts">Basic Fonts</string>
-      <!-- LibreOffice Writer/Web -->
-      <!-- LibreOffice Base -->
-      <!-- Charts -->
-      <!-- Internet -->
-      <!-- Predefined Settings -->
+      <!--## LIBREOFFICE WRITER/WEB ##-->
+      <!--## LIBREOFFICE BASE ##-->
+      <!--## CHARTS ##-->
+      <!--## INTERNET ##-->
+      <!--#### DESCRIPTIONS ####-->
+      <!--## LIBREOFFICE ##-->
+      <!--# USER DATA #-->
+      <string id="CompanyName">Company Name</string>
+      <string id="CompanyName_Help">Enter the Company Name.</string>
+      <!--# GENERAL #-->
+      <!--Help-->
+      <string id="Tip">Show Tips</string>
+      <string id="Tip_Help">Set whether LibreOffice shows tips</string>
+      <string id="ExtendedTip">Show Extended Tips</string>
+      <string id="ExtendedTip_Help">Show Extended Tips</string>
+      <!--Open/Save Dialogs-->
+      <string id="UseSystemFileDialog">Use LibreOffice dialogs</string>
+      <string id="UseSystemFileDialog_Help">Set whether LibreOffice uses standard Windows dialogs or LibreOffice ones</string>
+      <!--Document Status-->
+      <string id="PrintingModifiesDocument">Printing modifies document</string>
+      <string id="PrintingModifiesDocument_Help">Printing sets "document modified" status</string>
+      <string id="AlwaysAllowSave">Always Allow Saving</string>
+      <string id="AlwaysAllowSave_Help">Allow to save document even when the document is not modified</string>
+      <!--Year (Two Digits)-->
+      <string id="TwoDigitYear">Interpret two digit years</string>
+      <string id="TwoDigitYear_Help">Interpret two digit years from the year specified + 1000 years.</string>
+      <!--Privacy-->
+      <string id="CollectUsageInformation">Collect usage information</string>
+      <string id="CollectUsageInformation_Help">Collect and send usage information to TDF servers</string>
+      <!--# MEMORY #-->
+      <string id="UndoSteps">Number of undo steps</string>
+      <string id="UndoSteps_Help">Set the number of undo steps LibreOffice should remember</string>
+      <!--# VIEW #-->
+      <!--# PRINT #-->
+      <string id="ConvertToGreyscales">Convert colors to grayscale</string>
+      <string id="ConvertToGreyscales_Help">Convert colors to grayscale</string>
+      <!--# SECURITY #-->
+      <string id="MacroSecurityLevel">Macro Security Level</string>
+      <string id="MacroSecurityLevel_Help">Choose the Macro Security Level</string>
+      <string id="HyperlinksWithCtrlClick">Ctrl-Click required to follow Hyperlinks</string>
+      <string id="HyperlinksWithCtrlClick_Help">If true, users will need to hold down the Ctrl key in order to click Hyperlinks</string>
+      <string id="WarnCreatePDF">Warn when creating PDF files</string>
+      <string id="WarnCreatePDF_Help">Warn when creating PDF files</string>
+      <string id="WarnSignDoc">Warn when signing a document</string>
+      <string id="WarnSignDoc_Help">Warn when signing a document</string>
+      <string id="WarnSaveOrSendDoc">Warn when saving or sending</string>
+      <string id="WarnSaveOrSendDoc_Help">Warn when saving or sending</string>
+      <string id="WarnPrintDoc">Warn when printing documents</string>
+      <string id="WarnPrintDoc_Help">Warn when printing documents</string>
+      <string id="RecommendPasswordProtection">Recommend password protection on saving</string>
+      <string id="RecommendPasswordProtection_Help">Recommend password protection on saving</string>
+      <string id="RemovePersonalInfoOnSaving">Remove personal information on saving</string>
+      <string id="RemovePersonalInfoOnSaving_Help">Remove personal information on saving</string>
+      <!--# PERSONALIZATION #-->
+      <string id="Persona">LibreOffice Persona</string>
+      <string id="Persona_Help">True will use the pre-installed theme, False will set LibreOffice to plain look</string>
+      <!--# ACCESSIBILITY #-->
+      <string id="IsAllowAnimatedGraphics">Allow animated graphics</string>
+      <string id="IsAllowAnimatedGraphics_Help">Enables or disables animated graphics</string>
+      <!--## LOAD SAVE ##-->
+      <!--# GENERAL #-->
+      <string id="LoadDocumentSettings">Load user-specific settings with the document</string>
+      <string id="LoadDocumentSettings_Help">Load user-specific settings with the document</string>
+      <string id="LoadDocumentPrinterSettings">Load printer settings with the document</string>
+      <string id="LoadDocumentPrinterSettings_Help">Load printer settings with the document</string>
+      <string id="FileMetaDataOnSave">Ask for Document metadata on LibreOffice exit</string>
+      <string id="FileMetaDataOnSave_Help">If true, users will be prompted to enter in file metadata when initially saving a file.</string>
+      <!--Default File Format-->
+      <string id="Text_FileDefaultSaveType">Writer: Configure default save file type</string>
+      <string id="Text_FileDefaultSaveType_Help">Specify the default file type when saving from Writer. Remember that if you do not enforce the setting, local user configuration will override this.</string>
+      <string id="Spreadsheet_FileDefaultSaveType">Calc: Configure default save file type</string>
+      <string id="Spreadsheet_FileDefaultSaveType_Help">Specify the default file type when saving from Calc. Remember that if you do not enforce the setting, local user configuration will override this.</string>
+      <string id="Presentation_FileDefaultSaveType">Impress: Configure default save file type</string>
+      <string id="Presentation_FileDefaultSaveType_Help">Specify the default file type when saving from Impress. Remember that if you do not enforce the setting, local user configuration will override this.</string>
+      <!--## LIBREOFFICE WRITER ##-->
+      <!--# GENERAL #-->
+      <string id="ShowStandardizedPageCount">Show Standardized Page Count</string>
+      <string id="ShowStandardizedPageCount_Help">Show Standardized Page Count</string>
+      <!--# BASIC FONTS #-->
+      <string id="BasicFonts">Basic Fonts</string>
+      <string id="BasicFonts_Help">Enter the default font.</string>
+      <!--## PREDEFINED SETTINGS ##-->
       <string id="LibreOfficeCommon_True">true</string>
       <string id="LibreOfficeCommon_False">false</string>
       <string id="LibreOfficeCommon_VHigh">very high</string>
@@ -90,123 +167,116 @@
       <string id="Presentation_FileDefaultSaveType_PPT">Microsoft PowerPoint 97/2000/XP/2003</string>
       <string id="Presentation_FileDefaultSaveType_PPTXA">Microsoft PowerPoint 2007/2010/2013 XML AutoPlay</string>
       <string id="Presentation_FileDefaultSaveType_PPTX">Microsoft PowerPoint 2007/2010/2013 XML</string>
-      <!-- Descriptions -->
-      <string id="UseSystemFileDialog">Use LibreOffice dialogs</string>
-      <string id="UseSystemFileDialog_Help">Set whether LibreOffice uses standard Windows dialogs or LibreOffice ones</string>
-      <string id="Text_FileDefaultSaveType">Writer: Configure default save file type</string>
-      <string id="Text_FileDefaultSaveType_Help">Specify the default file type when saving from Writer. Remember that if you do not enforce the setting, local user configuration will override this.</string>
-      <string id="Spreadsheet_FileDefaultSaveType">Calc: Configure default save file type</string>
-      <string id="Spreadsheet_FileDefaultSaveType_Help">Specify the default file type when saving from Calc. Remember that if you do not enforce the setting, local user configuration will override this.</string>
-      <string id="Presentation_FileDefaultSaveType">Impress: Configure default save file type</string>
-      <string id="Presentation_FileDefaultSaveType_Help">Specify the default file type when saving from Impress. Remember that if you do not enforce the setting, local user configuration will override this.</string>
-      <string id="FileMetaDataOnSave">Ask for Document metadata on LibreOffice exit</string>
-      <string id="FileMetaDataOnSave_Help">If true, users will be prompted to enter in file metadata when initially saving a file.</string>
-	  <string id="LoadPrinter">Load Printer settings with the document</string>
-      <string id="LoadPrinter_Help">Load Printer settings with the document.</string>
-      <string id="CompanyName">Company Name</string>
-      <string id="CompanyName_Help">Enter the Company Name.</string>
-      <string id="BasicFonts">Basic Fonts</string>
-      <string id="BasicFonts_Help">Enter the default font.</string>
-      <string id="MacroSecurityLevel">Macro Security Level</string>
-      <string id="MacroSecurityLevel_Help">Choose the Macro Security Level</string>
-	  <string id="HyperlinksWithCtrlClick">Ctrl-Click required to follow Hyperlinks</string>
-      <string id="HyperlinksWithCtrlClick_Help">If true, users will need to hold down the Ctrl key in order to click Hyperlinks</string>
-	  <string id="WarnCreatePDF">Warn when creating PDF files</string>
-      <string id="WarnCreatePDF_Help">Warn when creating PDF files</string>
-	  <string id="WarnSignDoc">Warn when signing a document</string>
-      <string id="WarnSignDoc_Help">Warn when signing a document</string>
-	  <string id="WarnSaveOrSendDoc">Warn when saving or sending</string>
-      <string id="WarnSaveOrSendDoc_Help">Warn when saving or sending</string>
-	  <string id="WarnPrintDoc">Warn when printing documents</string>
-      <string id="WarnPrintDoc_Help">Warn when printing documents</string>
-	  <string id="RecommendPasswordProtection">Recommend password protection on saving</string>
-      <string id="RecommendPasswordProtection_Help">Recommend password protection on saving</string>
-	  <string id="RemovePersonalInfoOnSaving">Remove personal information on saving</string>
-      <string id="RemovePersonalInfoOnSaving_Help">Remove personal information on saving</string>
-      <string id="UndoSteps">Number of undo steps</string>
-      <string id="UndoSteps_Help">Set the number of undo steps LibreOffice should remember</string>
-      <string id="ConvertToGreyscales">Convert colors to grayscale</string>
-      <string id="ConvertToGreyscales_Help">Convert colors to grayscale</string>
-      <string id="Persona">LibreOffice Persona</string>
-      <string id="Persona_Help">True will use the pre-installed theme, False will set LibreOffice to plain look</string>
-      <string id="IsAllowAnimatedGraphics">Allow animated graphics</string>
-      <string id="IsAllowAnimatedGraphics_Help">Enables or disables animated graphics</string>
-	  <string id="ShowStandardizedPageCount">Show Standardized Page Count</string>
-      <string id="ShowStandardizedPageCount_Help">Show Standardized Page Count</string>
     </stringTable>
     <presentationTable>
-      <!-- User Data -->
+      <!--## LIBREOFFICE ##-->
+      <!--# USER DATA #-->
       <presentation id="CompanyName">
         <textBox refId="CompanyName_Text">
           <label>Company Name (o):</label>
         </textBox>
         <checkBox refId="CompanyName_Enforce">Enforce</checkBox>
       </presentation>
-      <!-- General -->
+      <!--# GENERAL #-->
+      <!--Help-->
+      <presentation id="Tip">
+        <checkBox refId="Tip_BOOL">Show Tips</checkBox>
+        <checkBox refId="Tip_Enforce">Enforce</checkBox>
+      </presentation>
+      <presentation id="ExtendedTip">
+        <checkBox refId="ExtendedTip_BOOL">Show Extended Tips</checkBox>
+        <checkBox refId="ExtendedTip_Enforce">Enforce</checkBox>
+      </presentation>
+      <!--Open/Save Dialogs-->
       <presentation id="UseSystemFileDialog">
         <checkBox refId="UseSystemFileDialog_BOOL">Use LibreOffice dialogs</checkBox>
-		<checkBox refId="UseSystemFileDialog_Enforce">Enforce</checkBox>
+        <checkBox refId="UseSystemFileDialog_Enforce">Enforce</checkBox>
       </presentation>
-      <!-- Memory -->
+      <!--Document Status-->
+      <presentation id="PrintingModifiesDocument">
+        <checkBox refId="PrintingModifiesDocument_BOOL">Printing modifies document</checkBox>
+        <checkBox refId="PrintingModifiesDocument_Enforce">Enforce</checkBox>
+      </presentation>
+      <presentation id="AlwaysAllowSave">
+        <checkBox refId="AlwaysAllowSave_BOOL">Always Allow Save</checkBox>
+        <checkBox refId="AlwaysAllowSave_Enforce">Enforce</checkBox>
+      </presentation>
+      <!--Year (Two Digits)-->
+      <presentation id="TwoDigitYear">
+        <decimalTextBox refId="TwoDigitYearYear" defaultValue="1925" spinStep="1">Initial Year:</decimalTextBox>
+        <checkBox refId="TwoDigitYearYear_Enforce">Enforce</checkBox>
+      </presentation>
+      <!--Privacy-->
+      <presentation id="CollectUsageInformation">
+        <checkBox refId="CollectUsageInformation_BOOL">Collect usage information</checkBox>
+        <checkBox refId="CollectUsageInformation_Enforce">Enforce</checkBox>
+      </presentation>
+      <!--# MEMORY #-->
       <presentation id="UndoSteps">
         <decimalTextBox refId="UndoStepsCount" defaultValue="100" spinStep="10">Number of steps:</decimalTextBox>
+        <checkBox refId="UndoStepsCount_Enforce">Enforce</checkBox>
       </presentation>
-      <!-- View -->
-      <!-- Print -->
+      <!--# VIEW #-->
+      <!--# PRINT # -->
       <presentation id="ConvertToGreyscales">
         <checkBox refId="ConvertToGreyscales_BOOL">Convert colors to grayscale</checkBox>
       </presentation>
-      <!-- Security -->
+      <!--# SECURITY #-->
       <presentation id="MacroSecurityLevel">
         <dropdownList refId="MacroSecurityLevelOp" noSort="true" defaultItem="1">Macro Security:</dropdownList>
         <checkBox refId="MacroSecurityLevel_Enforce">Enforce</checkBox>
       </presentation>
-	  <presentation id="HyperlinksWithCtrlClick">
+      <presentation id="HyperlinksWithCtrlClick">
         <checkBox refId="HyperlinksWithCtrlClick_BOOL">Ctrl-Click required to follow hyperlinks</checkBox>
         <checkBox refId="HyperlinksWithCtrlClick_Enforce">Enforce</checkBox>
       </presentation>
-	  <presentation id="WarnCreatePDF">
+      <presentation id="WarnCreatePDF">
         <checkBox refId="WarnCreatePDF_BOOL">Warn when creating PDF files</checkBox>
         <checkBox refId="WarnCreatePDF_Enforce">Enforce</checkBox>
       </presentation>
-	  <presentation id="WarnSignDoc">
+      <presentation id="WarnSignDoc">
         <checkBox refId="WarnSignDoc_BOOL">Warn when signing a document</checkBox>
         <checkBox refId="WarnSignDoc_Enforce">Enforce</checkBox>
       </presentation>
-	  <presentation id="WarnSaveOrSendDoc">
+      <presentation id="WarnSaveOrSendDoc">
         <checkBox refId="WarnSaveOrSendDoc_BOOL">Warn when saving or sending</checkBox>
         <checkBox refId="WarnSaveOrSendDoc_Enforce">Enforce</checkBox>
       </presentation>
-	  <presentation id="WarnPrintDoc">
+      <presentation id="WarnPrintDoc">
         <checkBox refId="WarnPrintDoc_BOOL">Warn when printing documents</checkBox>
         <checkBox refId="WarnPrintDoc_Enforce">Enforce</checkBox>
       </presentation>
-	  <presentation id="RecommendPasswordProtection">
+      <presentation id="RecommendPasswordProtection">
         <checkBox refId="RecommendPasswordProtection_BOOL">Recommend password protection on saving</checkBox>
         <checkBox refId="RecommendPasswordProtection_Enforce">Enforce</checkBox>
       </presentation>
-	  <presentation id="RemovePersonalInfoOnSaving">
+      <presentation id="RemovePersonalInfoOnSaving">
         <checkBox refId="RemovePersonalInfoOnSaving_BOOL">Remove personal information on saving</checkBox>
         <checkBox refId="RemovePersonalInfoOnSaving_Enforce">Enforce</checkBox>
       </presentation>
-      <!-- Personalization -->
+      <!--# PERSONALIZATION #-->
       <presentation id="Persona">
         <dropdownList refId="PersonaOp" noSort="true" defaultItem="1">Firefox Theme:</dropdownList>
         <checkBox refId="Persona_Enforce">Enforce</checkBox>
       </presentation>
-      <!-- Accessibility -->
+      <!--# ACCESSIBILITY #-->
       <presentation id="IsAllowAnimatedGraphics">
         <checkBox refId="IsAllowAnimatedGraphics_BOOL">Allow animated graphics</checkBox>
         <checkBox refId="IsAllowAnimatedGraphics_Enforce">Enforce</checkBox>
       </presentation>
-      <!-- Load/Save -->
+      <!--## LOAD SAVE ##-->
+      <!--# GENERAL #-->
+      <presentation id="LoadDocumentSettings">
+        <checkBox refId="LoadDocumentSettings_BOOL">Load user-specific settings with the document</checkBox>
+        <checkBox refId="LoadDocumentSettings_Enforce">Enforce</checkBox>
+      </presentation>
+      <presentation id="LoadDocumentPrinterSettings">
+        <checkBox refId="LoadDocumentPrinterSettings_BOOL">Load printer settings with the document</checkBox>
+        <checkBox refId="LoadDocumentPrinterSettings_Enforce">Enforce</checkBox>
+      </presentation>
       <presentation id="FileMetaDataOnSave">
         <checkBox refId="FileMetaDataOnSave_BOOL">Edit Properties on save</checkBox>
         <checkBox refId="FileMetaDataOnSave_Enforce">Enforce</checkBox>
-      </presentation>
-      <presentation id="LoadPrinter">
-        <checkBox refId="LoadPrinter_BOOL">Load Printer settings with the document</checkBox>
-        <checkBox refId="LoadPrinter_Enforce">Enforce</checkBox>
       </presentation>
       <presentation id="Text_FileDefaultSaveType">
         <dropdownList refId="Text_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>
@@ -220,12 +290,13 @@
         <dropdownList refId="Presentation_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>
         <checkBox refId="Presentation_FileDefaultSaveType_Enforce">Enforce</checkBox>
       </presentation>
-	  <!-- Writer General -->
-	  <presentation id="ShowStandardizedPageCount">
+      <!--## LIBREOFFICE WRITER ##-->
+      <!--# GENERAL #-->
+      <presentation id="ShowStandardizedPageCount">
         <checkBox refId="ShowStandardizedPageCount_BOOL">Show Standardized Page Count</checkBox>
         <checkBox refId="ShowStandardizedPageCount_Enforce">Enforce</checkBox>
       </presentation>
-	  <!-- Basic Fonts -->
+      <!--# BASIC FONTS #-->
       <presentation id="BasicFonts">
         <textBox refId="BasicFonts_Caption">
           <label>Caption:</label>

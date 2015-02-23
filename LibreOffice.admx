@@ -1,113 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- 2014 Creator: Thomas Higgins -->
 <policyDefinitions revision="1.0" schemaVersion="1.0">
   <policyNamespaces>
-    <target prefix="LibreOffice" namespace="LibreOffice.Policies.LibreOffice"/>
-    <using prefix="windows" namespace="Microsoft.Policies.Windows"/>
+    <target prefix="LibreOffice" namespace="LibreOffice.Policies.LibreOffice" />
+    <using prefix="windows" namespace="Microsoft.Policies.Windows" />
   </policyNamespaces>
-  <supersededAdm fileName=""/>
-  <resources minRequiredRevision="1.0"/>
+  <supersededAdm fileName="" />
+  <resources minRequiredRevision="1.0" />
   <supportedOn>
     <definitions>
-      <definition name="SupportedLO4_2" displayName="$(string.SupportedLO4_2)"/>
-	  <definition name="SupportedLO4_3" displayName="$(string.SupportedLO4_3)"/>
+      <definition name="SupportedLO4_2" displayName="$(string.SupportedLO4_2)" />
+      <definition name="SupportedLO4_3" displayName="$(string.SupportedLO4_3)" />
+      <definition name="SupportedLO4_4" displayName="$(string.SupportedLO4_4)" />
     </definitions>
   </supportedOn>
   <categories>
     <!-- Root -->
-    <category name="CAT_LibreOfficeRoot" displayName="$(string.CAT_LibreOfficeRoot)"/>
-    <!-- Categories -->
-    <!-- LibreOffce -->
+    <category name="CAT_LibreOfficeRoot" displayName="$(string.CAT_LibreOfficeRoot)" />
+    <!--#### CATEGORIES ####-->
+    <!--## LIBREOFFICE ##-->
     <category name="CAT_LibreOffice" displayName="$(string.CAT_LibreOffice)">
-      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" />
     </category>
     <category name="CAT_LibreOfficeUserData" displayName="$(string.CAT_LibreOfficeUserData)">
-      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOffice" />
     </category>
     <category name="CAT_LibreOfficeGeneral" displayName="$(string.CAT_LibreOfficeGeneral)">
-      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOffice" />
     </category>
     <category name="CAT_LibreOfficeMemory" displayName="$(string.CAT_LibreOfficeMemory)">
-      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOffice" />
     </category>
     <category name="CAT_LibreOfficeView" displayName="$(string.CAT_LibreOfficeView)">
-      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOffice" />
     </category>
     <category name="CAT_LibreOfficePrint" displayName="$(string.CAT_LibreOfficePrint)">
-      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOffice" />
     </category>
     <category name="CAT_LibreOfficePaths" displayName="$(string.CAT_LibreOfficePaths)">
-      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOffice" />
     </category>
     <category name="CAT_LibreOfficeColors" displayName="$(string.CAT_LibreOfficeColors)">
-      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOffice" />
     </category>
     <category name="CAT_LibreOfficeFonts" displayName="$(string.CAT_LibreOfficeFonts)">
-      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOffice" />
     </category>
     <category name="CAT_LibreOfficeSecurity" displayName="$(string.CAT_LibreOfficeSecurity)">
-      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOffice" />
     </category>
     <category name="CAT_LibreOfficePersonalization" displayName="$(string.CAT_LibreOfficePersonalization)">
-      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOffice" />
     </category>
     <category name="CAT_LibreOfficeAppearance" displayName="$(string.CAT_LibreOfficeAppearance)">
-      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOffice" />
     </category>
     <category name="CAT_LibreOfficeAccessibility" displayName="$(string.CAT_LibreOfficeAccessibility)">
-      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOffice" />
     </category>
     <category name="CAT_LibreOfficeAdvanced" displayName="$(string.CAT_LibreOfficeAdvanced)">
-      <parentCategory ref="LibreOffice:CAT_LibreOffice"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOffice" />
     </category>
-    <!-- Load/ Save -->
+    <!--## LOAD SAVE ##-->
     <category name="CAT_LoadSave" displayName="$(string.CAT_LoadSave)">
-      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" />
     </category>
     <category name="CAT_LoadSaveGeneral" displayName="$(string.CAT_LoadSaveGeneral)">
-      <parentCategory ref="LibreOffice:CAT_LoadSave"/>
+      <parentCategory ref="LibreOffice:CAT_LoadSave" />
     </category>
-    <!-- Language Settings -->
-    <!-- LibreOffice Writer -->
+    <!--## LANGUAGE SETTINGS ##-->
+    <!--## LIBREOFFICE WRITER ##-->
     <category name="CAT_LibreOfficeWriter" displayName="$(string.CAT_LibreOfficeWriter)">
-      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" />
     </category>
-	<category name="CAT_LibreOfficeWriterGeneral" displayName="$(string.CAT_LibreOfficeWriterGeneral)">
-      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter"/>
+    <category name="CAT_LibreOfficeWriterGeneral" displayName="$(string.CAT_LibreOfficeWriterGeneral)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
     </category>
     <category name="CAT_LibreOfficeWriterBasicFonts" displayName="$(string.CAT_LibreOfficeWriterBasicFonts)">
-      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter"/>
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
     </category>
-    <!-- LibreOffice Writer/Web -->
-    <!-- LibreOffice Base -->
-    <!-- Charts -->
-    <!-- Internet -->
+    <!--## LIBREOFFICE WRITER/WEB ##-->
+    <!--## LIBREOFFICE BASE ##-->
+    <!--## CHARTS ##-->
+    <!--## INTERNET ##-->
   </categories>
   <policies>
-    <!-- LibreOffce -->
-    <!-- User Data -->
-    <policy name="CompanyName" class="Machine" displayName="$(string.CompanyName)"
-            explainText="$(string.CompanyName_Help)" presentation="$(presentation.CompanyName)"
-            key="Software\policies\LibreOffice\org.openoffice.UserProfile\Data\o">
-      <parentCategory ref="CAT_LibreOfficeUserData"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <!--## LIBREOFFICE ##-->
+    <!--# USER DATA #-->
+    <policy name="CompanyName" class="Machine" displayName="$(string.CompanyName)" explainText="$(string.CompanyName_Help)" presentation="$(presentation.CompanyName)" key="Software\policies\LibreOffice\org.openoffice.UserProfile\Data\o">
+      <parentCategory ref="CAT_LibreOfficeUserData" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <text id="CompanyName_Text" valueName="Value" required="true" expandable="true"/>
+        <text id="CompanyName_Text" valueName="Value" required="true" expandable="true" />
         <boolean id="CompanyName_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-    <!-- General -->
-    <policy name="UseSystemFileDialog" class="Machine" displayName="$(string.UseSystemFileDialog)"
-            explainText="$(string.UseSystemFileDialog_Help)" presentation="$(presentation.UseSystemFileDialog)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\UseSystemFileDialog">
-      <parentCategory ref="CAT_LibreOfficeGeneral"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <!--# GENERAL #-->
+    <!--Help-->
+    <policy name="Tip" class="Machine" displayName="$(string.Tip)" explainText="$(string.Tip_Help)" presentation="$(presentation.Tip)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Help\Tip">
+      <parentCategory ref="CAT_LibreOfficeGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <boolean id="Tip_BOOL" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Tip_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="ExtendedTip" class="Machine" displayName="$(string.ExtendedTip)" explainText="$(string.ExtendedTip_Help)" presentation="$(presentation.ExtendedTip)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Help\ExtendedTip">
+      <parentCategory ref="CAT_LibreOfficeGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <boolean id="ExtendedTip_BOOL" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="ExtendedTip_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <!--Open/Save Dialogs-->
+    <policy name="UseSystemFileDialog" class="Machine" displayName="$(string.UseSystemFileDialog)" explainText="$(string.UseSystemFileDialog_Help)" presentation="$(presentation.UseSystemFileDialog)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\UseSystemFileDialog">
+      <parentCategory ref="CAT_LibreOfficeGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <!-- Yes true / false has to be reversed for this item -->
         <boolean id="UseSystemFileDialog_BOOL" valueName="Value">
@@ -118,33 +162,121 @@
             <string>true</string>
           </falseValue>
         </boolean>
-		<boolean id="UseSystemFileDialog_Enforce" valueName="Final">
+        <boolean id="UseSystemFileDialog_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-    <!-- Memory -->
-    <policy name="UndoSteps" class="Machine" displayName="$(string.UndoSteps)"
-            explainText="$(string.UndoSteps_Help)" presentation="$(presentation.UndoSteps)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Undo\Steps">
-      <parentCategory ref="CAT_LibreOfficeMemory"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <!--Document Status-->
+    <policy name="PrintingModifiesDocument" class="Machine" displayName="$(string.PrintingModifiesDocument)" explainText="$(string.PrintingModifiesDocument_Help)" presentation="$(presentation.PrintingModifiesDocument)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\PrintingModifiesDocument">
+      <parentCategory ref="CAT_LibreOfficeGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <decimal id="UndoStepsCount" valueName="Value" minValue="1" maxValue="999" storeAsText="true"/>
+        <boolean id="PrintingModifiesDocument_BOOL" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="PrintingModifiesDocument_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
-    <!-- View -->
-    <!-- Print -->
-    <policy name="ConvertToGreyscales" class="Machine" displayName="$(string.ConvertToGreyscales)"
-            explainText="$(string.ConvertToGreyscales_Help)" presentation="$(presentation.ConvertToGreyscales)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer\ConvertToGreyscales">
-      <parentCategory ref="CAT_LibreOfficePrint"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <policy name="AlwaysAllowSave" class="Machine" displayName="$(string.AlwaysAllowSave)" explainText="$(string.AlwaysAllowSave_Help)" presentation="$(presentation.AlwaysAllowSave)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\AlwaysAllowSave">
+      <parentCategory ref="CAT_LibreOfficeGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <boolean id="AlwaysAllowSave_BOOL" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="AlwaysAllowSave_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <!--Year (Two Digits)-->
+    <policy name="TwoDigitYear" class="Machine" displayName="$(string.TwoDigitYear)" explainText="$(string.TwoDigitYear_Help)" presentation="$(presentation.TwoDigitYear)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\DateFormat\TwoDigitYear">
+      <parentCategory ref="CAT_LibreOfficeGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <decimal id="TwoDigitYearYear" valueName="Value" minValue="1800" maxValue="3000" storeAsText="true"></decimal>
+        <boolean id="TwoDigitYearYear_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <!--Privacy-->
+    <policy name="CollectUsageInformation" class="Machine" displayName="$(string.CollectUsageInformation)" explainText="$(string.CollectUsageInformation_Help)" presentation="$(presentation.CollectUsageInformation)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\CollectUsageInformation">
+      <parentCategory ref="CAT_LibreOfficeGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <boolean id="CollectUsageInformation_BOOL" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CollectUsageInformation_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <!--# MEMORY #-->
+    <policy name="UndoSteps" class="Machine" displayName="$(string.UndoSteps)" explainText="$(string.UndoSteps_Help)" presentation="$(presentation.UndoSteps)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Undo\Steps">
+      <parentCategory ref="CAT_LibreOfficeMemory" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <decimal id="UndoStepsCount" valueName="Value" minValue="1" maxValue="999" storeAsText="true" />
+        <boolean id="UndoStepsCount_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <!--# VIEW #-->
+    <!--# PRINT #-->
+    <policy name="ConvertToGreyscales" class="Machine" displayName="$(string.ConvertToGreyscales)" explainText="$(string.ConvertToGreyscales_Help)" presentation="$(presentation.ConvertToGreyscales)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer\ConvertToGreyscales">
+      <parentCategory ref="CAT_LibreOfficePrint" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <boolean id="ConvertToGreyscales_BOOL" valueName="Value">
           <trueValue>
@@ -156,13 +288,10 @@
         </boolean>
       </elements>
     </policy>
-    <!-- Paths -->
-    <!-- Security -->
-    <policy name="MacroSecurityLevel" class="Machine" displayName="$(string.MacroSecurityLevel)"
-            explainText="$(string.MacroSecurityLevel_Help)" presentation="$(presentation.MacroSecurityLevel)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\MacroSecurityLevel">
-      <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <!--# SECURITY #-->
+    <policy name="MacroSecurityLevel" class="Machine" displayName="$(string.MacroSecurityLevel)" explainText="$(string.MacroSecurityLevel_Help)" presentation="$(presentation.MacroSecurityLevel)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\MacroSecurityLevel">
+      <parentCategory ref="CAT_LibreOfficeSecurity" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <enum id="MacroSecurityLevelOp" valueName="Value">
           <item displayName="$(string.LibreOfficeCommon_VHigh)">
@@ -188,19 +317,17 @@
         </enum>
         <boolean id="MacroSecurityLevel_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<policy name="HyperlinksWithCtrlClick" class="Machine" displayName="$(string.HyperlinksWithCtrlClick)"
-            explainText="$(string.HyperlinksWithCtrlClick_Help)" presentation="$(presentation.HyperlinksWithCtrlClick)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\HyperlinksWithCtrlClick">
-      <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <policy name="HyperlinksWithCtrlClick" class="Machine" displayName="$(string.HyperlinksWithCtrlClick)" explainText="$(string.HyperlinksWithCtrlClick_Help)" presentation="$(presentation.HyperlinksWithCtrlClick)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\HyperlinksWithCtrlClick">
+      <parentCategory ref="CAT_LibreOfficeSecurity" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <boolean id="HyperlinksWithCtrlClick_BOOL" valueName="Value">
           <trueValue>
@@ -210,21 +337,19 @@
             <string>false</string>
           </falseValue>
         </boolean>
-		<boolean id="HyperlinksWithCtrlClick_Enforce" valueName="Final">
+        <boolean id="HyperlinksWithCtrlClick_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<policy name="WarnCreatePDF" class="Machine" displayName="$(string.WarnCreatePDF)"
-            explainText="$(string.WarnCreatePDF_Help)" presentation="$(presentation.WarnCreatePDF)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnCreatePDF">
-      <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <policy name="WarnCreatePDF" class="Machine" displayName="$(string.WarnCreatePDF)" explainText="$(string.WarnCreatePDF_Help)" presentation="$(presentation.WarnCreatePDF)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnCreatePDF">
+      <parentCategory ref="CAT_LibreOfficeSecurity" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <boolean id="WarnCreatePDF_BOOL" valueName="Value">
           <trueValue>
@@ -234,21 +359,19 @@
             <string>false</string>
           </falseValue>
         </boolean>
-		<boolean id="WarnCreatePDF_Enforce" valueName="Final">
+        <boolean id="WarnCreatePDF_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<policy name="WarnSignDoc" class="Machine" displayName="$(string.WarnSignDoc)"
-            explainText="$(string.WarnSignDoc_Help)" presentation="$(presentation.WarnSignDoc)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnSignDoc">
-      <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <policy name="WarnSignDoc" class="Machine" displayName="$(string.WarnSignDoc)" explainText="$(string.WarnSignDoc_Help)" presentation="$(presentation.WarnSignDoc)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnSignDoc">
+      <parentCategory ref="CAT_LibreOfficeSecurity" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <boolean id="WarnSignDoc_BOOL" valueName="Value">
           <trueValue>
@@ -258,21 +381,19 @@
             <string>false</string>
           </falseValue>
         </boolean>
-		<boolean id="WarnSignDoc_Enforce" valueName="Final">
+        <boolean id="WarnSignDoc_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<policy name="WarnSaveOrSendDoc" class="Machine" displayName="$(string.WarnSaveOrSendDoc)"
-            explainText="$(string.WarnSaveOrSendDoc_Help)" presentation="$(presentation.WarnSaveOrSendDoc)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnSaveOrSendDoc">
-      <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <policy name="WarnSaveOrSendDoc" class="Machine" displayName="$(string.WarnSaveOrSendDoc)" explainText="$(string.WarnSaveOrSendDoc_Help)" presentation="$(presentation.WarnSaveOrSendDoc)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnSaveOrSendDoc">
+      <parentCategory ref="CAT_LibreOfficeSecurity" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <boolean id="WarnSaveOrSendDoc_BOOL" valueName="Value">
           <trueValue>
@@ -282,21 +403,19 @@
             <string>false</string>
           </falseValue>
         </boolean>
-		<boolean id="WarnSaveOrSendDoc_Enforce" valueName="Final">
+        <boolean id="WarnSaveOrSendDoc_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<policy name="WarnPrintDoc" class="Machine" displayName="$(string.WarnPrintDoc)"
-            explainText="$(string.WarnPrintDoc_Help)" presentation="$(presentation.WarnPrintDoc)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnPrintDoc">
-      <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <policy name="WarnPrintDoc" class="Machine" displayName="$(string.WarnPrintDoc)" explainText="$(string.WarnPrintDoc_Help)" presentation="$(presentation.WarnPrintDoc)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnPrintDoc">
+      <parentCategory ref="CAT_LibreOfficeSecurity" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <boolean id="WarnPrintDoc_BOOL" valueName="Value">
           <trueValue>
@@ -306,21 +425,19 @@
             <string>false</string>
           </falseValue>
         </boolean>
-		<boolean id="WarnPrintDoc_Enforce" valueName="Final">
+        <boolean id="WarnPrintDoc_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<policy name="RecommendPasswordProtection" class="Machine" displayName="$(string.RecommendPasswordProtection)"
-            explainText="$(string.RecommendPasswordProtection_Help)" presentation="$(presentation.RecommendPasswordProtection)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\RecommendPasswordProtection">
-      <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <policy name="RecommendPasswordProtection" class="Machine" displayName="$(string.RecommendPasswordProtection)" explainText="$(string.RecommendPasswordProtection_Help)" presentation="$(presentation.RecommendPasswordProtection)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\RecommendPasswordProtection">
+      <parentCategory ref="CAT_LibreOfficeSecurity" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <boolean id="RecommendPasswordProtection_BOOL" valueName="Value">
           <trueValue>
@@ -330,21 +447,19 @@
             <string>false</string>
           </falseValue>
         </boolean>
-		<boolean id="RecommendPasswordProtection_Enforce" valueName="Final">
+        <boolean id="RecommendPasswordProtection_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<policy name="RemovePersonalInfoOnSaving" class="Machine" displayName="$(string.RemovePersonalInfoOnSaving)"
-            explainText="$(string.RemovePersonalInfoOnSaving_Help)" presentation="$(presentation.RemovePersonalInfoOnSaving)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\RemovePersonalInfoOnSaving">
-      <parentCategory ref="CAT_LibreOfficeSecurity"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <policy name="RemovePersonalInfoOnSaving" class="Machine" displayName="$(string.RemovePersonalInfoOnSaving)" explainText="$(string.RemovePersonalInfoOnSaving_Help)" presentation="$(presentation.RemovePersonalInfoOnSaving)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\RemovePersonalInfoOnSaving">
+      <parentCategory ref="CAT_LibreOfficeSecurity" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <boolean id="RemovePersonalInfoOnSaving_BOOL" valueName="Value">
           <trueValue>
@@ -354,22 +469,20 @@
             <string>false</string>
           </falseValue>
         </boolean>
-		<boolean id="RemovePersonalInfoOnSaving_Enforce" valueName="Final">
+        <boolean id="RemovePersonalInfoOnSaving_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-    <!-- Personalization -->
-    <policy name="Persona" class="Machine" displayName="$(string.Persona)" explainText="$(string.Persona_Help)"
-            presentation="$(presentation.Persona)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\Persona">
-      <parentCategory ref="CAT_LibreOfficePersonalization"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <!--# PERSONALIZATION #-->
+    <policy name="Persona" class="Machine" displayName="$(string.Persona)" explainText="$(string.Persona_Help)" presentation="$(presentation.Persona)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\Persona">
+      <parentCategory ref="CAT_LibreOfficePersonalization" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <enum id="PersonaOp" valueName="Value">
           <item displayName="$(string.LibreOfficeCommon_True)">
@@ -385,21 +498,18 @@
         </enum>
         <boolean id="Persona_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-    <!-- Accessibility -->
-    <policy name="IsAllowAnimatedGraphics" class="Machine" displayName="$(string.IsAllowAnimatedGraphics)"
-            explainText="$(string.IsAllowAnimatedGraphics_Help)"
-            presentation="$(presentation.IsAllowAnimatedGraphics)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Accessibility\IsAllowAnimatedGraphics">
-      <parentCategory ref="CAT_LibreOfficeAccessibility"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <!--# ACCESSIBILITY #-->
+    <policy name="IsAllowAnimatedGraphics" class="Machine" displayName="$(string.IsAllowAnimatedGraphics)" explainText="$(string.IsAllowAnimatedGraphics_Help)" presentation="$(presentation.IsAllowAnimatedGraphics)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Accessibility\IsAllowAnimatedGraphics">
+      <parentCategory ref="CAT_LibreOfficeAccessibility" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <boolean id="IsAllowAnimatedGraphics_BOOL" valueName="Value">
           <trueValue>
@@ -411,21 +521,63 @@
         </boolean>
         <boolean id="IsAllowAnimatedGraphics_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-    <!-- Load/Save -->
-    <!-- General -->
-    <policy name="FileMetaDataOnSave" class="Machine" displayName="$(string.FileMetaDataOnSave)"
-            explainText="$(string.FileMetaDataOnSave_Help)" presentation="$(presentation.FileMetaDataOnSave)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\EditProperty">
-      <parentCategory ref="CAT_LoadSaveGeneral"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <!--## LOAD SAVE ##-->
+    <!--# GENERAL #-->
+    <policy name="LoadDocumentSettings" class="Machine" displayName="$(string.LoadDocumentSettings)" explainText="$(string.LoadDocumentSettings_Help)" presentation="$(presentation.LoadDocumentSettings)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Load\UserDefinedSettings">
+      <parentCategory ref="CAT_LoadSaveGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <boolean id="LoadDocumentSettings_BOOL" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="LoadDocumentSettings_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="LoadDocumentPrinterSettings" class="Machine" displayName="$(string.LoadDocumentPrinterSettings)" explainText="$(string.LoadDocumentPrinterSettings_Help)" presentation="$(presentation.LoadDocumentPrinterSettings)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\LoadPrinter">
+      <parentCategory ref="CAT_LoadSaveGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <boolean id="LoadDocumentPrinterSettings_BOOL" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="LoadDocumentPrinterSettings_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="FileMetaDataOnSave" class="Machine" displayName="$(string.FileMetaDataOnSave)" explainText="$(string.FileMetaDataOnSave_Help)" presentation="$(presentation.FileMetaDataOnSave)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\EditProperty">
+      <parentCategory ref="CAT_LoadSaveGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <boolean id="FileMetaDataOnSave_BOOL" valueName="Value">
           <trueValue>
@@ -437,44 +589,17 @@
         </boolean>
         <boolean id="FileMetaDataOnSave_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<policy name="LoadPrinter" class="Machine" displayName="$(string.LoadPrinter)"
-            explainText="$(string.LoadPrinter_Help)" presentation="$(presentation.LoadPrinter)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\LoadPrinter">
-      <parentCategory ref="CAT_LoadSaveGeneral"/>
-      <supportedOn ref="SupportedWinVersion"/>
-      <elements>
-        <boolean id="LoadPrinter_BOOL" valueName="Value">
-          <trueValue>
-            <string>true</string>
-          </trueValue>
-          <falseValue>
-            <string>false</string>
-          </falseValue>
-        </boolean>
-        <boolean id="LoadPrinter_Enforce" valueName="Final">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-	<policy name="Text_FileDefaultSaveType" class="Machine" displayName="$(string.Text_FileDefaultSaveType)"
-            explainText="$(string.Text_FileDefaultSaveType_Help)"
-            presentation="$(presentation.Text_FileDefaultSaveType)"
-            key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.text.TextDocument']\ooSetupFactoryDefaultFilter">
-      <parentCategory ref="CAT_LoadSaveGeneral"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <policy name="Text_FileDefaultSaveType" class="Machine" displayName="$(string.Text_FileDefaultSaveType)" explainText="$(string.Text_FileDefaultSaveType_Help)" presentation="$(presentation.Text_FileDefaultSaveType)" key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.text.TextDocument']\ooSetupFactoryDefaultFilter">
+      <parentCategory ref="CAT_LoadSaveGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <enum id="Text_FileDefaultSaveTypeOp" valueName="Value">
           <item displayName="$(string.Text_FileDefaultSaveType_WR8T)">
@@ -550,21 +675,17 @@
         </enum>
         <boolean id="Text_FileDefaultSaveType_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-    <policy name="Spreadsheet_FileDefaultSaveType" class="Machine"
-            displayName="$(string.Spreadsheet_FileDefaultSaveType)"
-            explainText="$(string.Spreadsheet_FileDefaultSaveType_Help)"
-            presentation="$(presentation.Spreadsheet_FileDefaultSaveType)"
-            key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.sheet.SpreadsheetDocument']\ooSetupFactoryDefaultFilter">
-      <parentCategory ref="CAT_LoadSaveGeneral"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <policy name="Spreadsheet_FileDefaultSaveType" class="Machine" displayName="$(string.Spreadsheet_FileDefaultSaveType)" explainText="$(string.Spreadsheet_FileDefaultSaveType_Help)" presentation="$(presentation.Spreadsheet_FileDefaultSaveType)" key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.sheet.SpreadsheetDocument']\ooSetupFactoryDefaultFilter">
+      <parentCategory ref="CAT_LoadSaveGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <enum id="Spreadsheet_FileDefaultSaveTypeOp" valueName="Value">
           <item displayName="$(string.Spreadsheet_FileDefaultSaveType_ODFT)">
@@ -640,21 +761,17 @@
         </enum>
         <boolean id="Spreadsheet_FileDefaultSaveType_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-    <policy name="Presentation_FileDefaultSaveType" class="Machine"
-            displayName="$(string.Presentation_FileDefaultSaveType)"
-            explainText="$(string.Presentation_FileDefaultSaveType_Help)"
-            presentation="$(presentation.Presentation_FileDefaultSaveType)"
-            key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.presentation.PresentationDocument']\ooSetupFactoryDefaultFilter">
-      <parentCategory ref="CAT_LoadSaveGeneral"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <policy name="Presentation_FileDefaultSaveType" class="Machine" displayName="$(string.Presentation_FileDefaultSaveType)" explainText="$(string.Presentation_FileDefaultSaveType_Help)" presentation="$(presentation.Presentation_FileDefaultSaveType)" key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.presentation.PresentationDocument']\ooSetupFactoryDefaultFilter">
+      <parentCategory ref="CAT_LoadSaveGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
         <enum id="Presentation_FileDefaultSaveTypeOp" valueName="Value">
           <item displayName="$(string.Presentation_FileDefaultSaveType_ODFT)">
@@ -730,21 +847,19 @@
         </enum>
         <boolean id="Presentation_FileDefaultSaveType_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-    <!-- LibreOffice Writer -->
-    <!-- Basic Fonts -->
-	<policy name="ShowStandardizedPageCount" class="Machine" displayName="$(string.ShowStandardizedPageCount)"
-            explainText="$(string.ShowStandardizedPageCount_Help)" presentation="$(presentation.ShowStandardizedPageCount)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Writer\WordCount\ShowStandardizedPageCount">
-      <parentCategory ref="CAT_LibreOfficeWriterGeneral"/>
-      <supportedOn ref="SupportedLO4_3"/>
+    <!--## LIBREOFFICE WRITER ##-->
+    <!--# GENERAL #-->
+    <policy name="ShowStandardizedPageCount" class="Machine" displayName="$(string.ShowStandardizedPageCount)" explainText="$(string.ShowStandardizedPageCount_Help)" presentation="$(presentation.ShowStandardizedPageCount)" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\WordCount\ShowStandardizedPageCount">
+      <parentCategory ref="CAT_LibreOfficeWriterGeneral" />
+      <supportedOn ref="SupportedLO4_3" />
       <elements>
         <boolean id="ShowStandardizedPageCount_BOOL" valueName="Value">
           <trueValue>
@@ -754,37 +869,26 @@
             <string>false</string>
           </falseValue>
         </boolean>
-		<boolean id="ShowStandardizedPageCount_Enforce" valueName="Final">
+        <boolean id="ShowStandardizedPageCount_Enforce" valueName="Final">
           <trueValue>
-            <decimal value="1"/>
+            <decimal value="1" />
           </trueValue>
           <falseValue>
-            <decimal value="0"/>
+            <decimal value="0" />
           </falseValue>
         </boolean>
       </elements>
     </policy>
-	<policy name="DefaultFont" class="Machine" displayName="$(string.BasicFonts)"
-            explainText="$(string.BasicFonts_Help)" presentation="$(presentation.BasicFonts)"
-            key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont">
-      <parentCategory ref="CAT_LibreOfficeWriterBasicFonts"/>
-      <supportedOn ref="SupportedLO4_2"/>
+    <!--# BASIC FONTS #-->
+    <policy name="DefaultFont" class="Machine" displayName="$(string.BasicFonts)" explainText="$(string.BasicFonts_Help)" presentation="$(presentation.BasicFonts)" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont">
+      <parentCategory ref="CAT_LibreOfficeWriterBasicFonts" />
+      <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <text id="BasicFonts_Caption"
-              key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Caption"
-              valueName="Value" required="true" expandable="true"/>
-        <text id="BasicFonts_Index"
-              key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Index"
-              valueName="Value" required="true" expandable="true"/>
-        <text id="BasicFonts_List"
-              key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\List"
-              valueName="Value" required="true" expandable="true"/>
-        <text id="BasicFonts_Standard"
-              key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Standard"
-              valueName="Value" required="true" expandable="true"/>
-        <text id="BasicFonts_Heading"
-              key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Heading"
-              valueName="Value" required="true" expandable="true"/>
+        <text id="BasicFonts_Caption" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Caption" valueName="Value" required="true" expandable="true" />
+        <text id="BasicFonts_Index" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Index" valueName="Value" required="true" expandable="true" />
+        <text id="BasicFonts_List" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\List" valueName="Value" required="true" expandable="true" />
+        <text id="BasicFonts_Standard" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Standard" valueName="Value" required="true" expandable="true" />
+        <text id="BasicFonts_Heading" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Heading" valueName="Value" required="true" expandable="true" />
       </elements>
     </policy>
   </policies>
