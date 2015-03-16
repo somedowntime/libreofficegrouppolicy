@@ -73,6 +73,15 @@
       <!--# SECURITY #-->
       <string id="MacroSecurityLevel">Macro Security Level</string>
       <string id="MacroSecurityLevel_Help">Choose the Macro Security Level</string>
+	  <string id="SecureURL_Help">Paths entered must follow these rules:
+ - File URIs have to begin with 'file:///'
+ - Replace back slashes with forward slashes
+ - Replace spaces with '%20'.
+ - Separate multiple paths with a space.
+ 
+ Example:
+ file:///S:/Important%20Files file:///S:/Documents
+	  </string>
       <string id="HyperlinksWithCtrlClick">Ctrl-Click required to follow Hyperlinks</string>
       <string id="HyperlinksWithCtrlClick_Help">If true, users will need to hold down the Ctrl key in order to click Hyperlinks</string>
       <string id="WarnCreatePDF">Warn when creating PDF files</string>
@@ -87,6 +96,7 @@
       <string id="RecommendPasswordProtection_Help">Recommend password protection on saving</string>
       <string id="RemovePersonalInfoOnSaving">Remove personal information on saving</string>
       <string id="RemovePersonalInfoOnSaving_Help">Remove personal information on saving</string>
+	  <string id="SecureURL">Trusted File Locations</string>
       <!--# PERSONALIZATION #-->
       <string id="Persona">LibreOffice Persona</string>
       <string id="Persona_Help">True will use the pre-installed theme, False will set LibreOffice to plain look</string>
@@ -225,6 +235,12 @@
       <presentation id="MacroSecurityLevel">
         <dropdownList refId="MacroSecurityLevelOp" noSort="true" defaultItem="1">Macro Security:</dropdownList>
         <checkBox refId="MacroSecurityLevel_Enforce">Enforce</checkBox>
+      </presentation>
+	  <presentation id="SecureURL">
+        <textBox refId="SecureURL_Text">
+          <label>Trusted Paths:</label>
+        </textBox>
+        <checkBox refId="SecureURL_Enforce">Enforce</checkBox>
       </presentation>
       <presentation id="HyperlinksWithCtrlClick">
         <checkBox refId="HyperlinksWithCtrlClick_BOOL">Ctrl-Click required to follow hyperlinks</checkBox>

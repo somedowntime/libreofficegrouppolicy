@@ -325,6 +325,21 @@
         </boolean>
       </elements>
     </policy>
+	<policy name="SecureURL" class="Machine" displayName="$(string.SecureURL)" explainText="$(string.SecureURL_Help)" presentation="$(presentation.SecureURL)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\SecureURL">
+      <parentCategory ref="CAT_LibreOfficeSecurity" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <text id="SecureURL_Text" valueName="Value" required="true" expandable="true" />
+        <boolean id="SecureURL_Enforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
     <policy name="HyperlinksWithCtrlClick" class="Machine" displayName="$(string.HyperlinksWithCtrlClick)" explainText="$(string.HyperlinksWithCtrlClick_Help)" presentation="$(presentation.HyperlinksWithCtrlClick)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\HyperlinksWithCtrlClick">
       <parentCategory ref="CAT_LibreOfficeSecurity" />
       <supportedOn ref="SupportedLO4_2" />
