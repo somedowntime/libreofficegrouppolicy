@@ -288,6 +288,60 @@
         </boolean>
       </elements>
     </policy>
+    <policy name="PrinterReduceTransparency" class="Machine" displayName="$(string.PrinterReduceTransparency)" explainText="$(string.PrinterReduceTransparency_Help)" presentation="$(presentation.PrinterReduceTransparency)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer\ReduceTransparency" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficePrint" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+      <elements>
+        <enum id="PrinterReducedTransparencyModeOp" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer\ReducedTransparencyMode" valueName="Value">
+          <item displayName="$(string.PrinterReducedTransparencyAutomatically)">
+            <value>
+              <string>0</string>
+            </value>
+          </item>
+          <item displayName="$(string.PrinterReducedTransparencyNoTransparency)">
+            <value>
+              <string>1</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="PrintWarningPaperOrientation" class="Machine" displayName="$(string.PrintWarningPaperOrientation)" explainText="$(string.PrintWarningPaperOrientation_Help)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Warning\PaperOrientation" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficePrint" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="PrintWarningTransparency" class="Machine" displayName="$(string.PrintWarningTransparency)" explainText="$(string.PrintWarningTransparency_Help)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Warning\Transparency" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficePrint" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="PrintWarningPaperSize" class="Machine" displayName="$(string.PrintWarningPaperSize)" explainText="$(string.PrintWarningPaperSize_Help)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Warning\PaperSize" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficePrint" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
     <!--# SECURITY #-->
     <policy name="MacroSecurityLevel" class="Machine" displayName="$(string.MacroSecurityLevel)" explainText="$(string.MacroSecurityLevel_Help)" presentation="$(presentation.MacroSecurityLevel)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\MacroSecurityLevel">
       <parentCategory ref="CAT_LibreOfficeSecurity" />

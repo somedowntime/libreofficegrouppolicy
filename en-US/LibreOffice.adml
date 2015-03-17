@@ -70,6 +70,16 @@
       <!--# PRINT #-->
       <string id="ConvertToGreyscales">Convert colors to grayscale</string>
       <string id="ConvertToGreyscales_Help">Convert colors to grayscale</string>
+	  <string id="PrinterReduceTransparency">Printer: Reduce Transparency</string>
+      <string id="PrinterReduceTransparency_Help">Printer: Reduce Transparency</string>
+	  <string id="PrinterReducedTransparencyAutomatically">Automatically</string>
+	  <string id="PrinterReducedTransparencyNoTransparency">No Transparency</string>
+	  <string id="PrintWarningPaperOrientation">Printer Warning: Paper Orientation</string>
+      <string id="PrintWarningPaperOrientation_Help">Printer Warning: Paper Orientation</string>
+	  <string id="PrintWarningPaperSize">Printer Warning: Paper Size</string>
+      <string id="PrintWarningPaperSize_Help">Printer Warning: Paper Size</string>
+	  <string id="PrintWarningTransparency">Printer Warning: Transparency</string>
+      <string id="PrintWarningTransparency_Help">Printer Warning: Transparency</string>
       <!--# SECURITY #-->
       <string id="MacroSecurityLevel">Macro Security Level</string>
       <string id="MacroSecurityLevel_Help">Choose the Macro Security Level</string>
@@ -230,6 +240,9 @@
       <!--# PRINT # -->
       <presentation id="ConvertToGreyscales">
         <checkBox refId="ConvertToGreyscales_BOOL">Convert colors to grayscale</checkBox>
+      </presentation>
+      <presentation id="PrinterReduceTransparency">
+        <dropdownList refId="PrinterReducedTransparencyModeOp" noSort="true" defaultItem="0">Reduced Transparency:</dropdownList>
       </presentation>
       <!--# SECURITY #-->
       <presentation id="MacroSecurityLevel">
