@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- 2014 Creator: Thomas Higgins -->
-<policyDefinitionResources revision="1.0" schemaVersion="1.0">
-  <displayName></displayName>
-  <description></description>
+<policyDefinitionResources revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/PolicyDefinitions">
+  <displayName />
+  <description />
   <resources>
     <stringTable>
       <!-- General GPO -->
@@ -41,49 +41,45 @@
       <!--#### DESCRIPTIONS ####-->
       <!--## LIBREOFFICE ##-->
       <!--# USER DATA #-->
-      <string id="CompanyName">Company Name</string>
-      <string id="CompanyName_Help">Enter the Company Name.</string>
+      <string id="UserProfileDatao">Company Name</string>
+      <string id="UserProfileDataoHelp">Enter the Company Name.</string>
       <!--# GENERAL #-->
       <!--Help-->
-      <string id="Tip">Show Tips</string>
-      <string id="Tip_Help">Set whether LibreOffice shows tips</string>
-      <string id="ExtendedTip">Show Extended Tips</string>
-      <string id="ExtendedTip_Help">Show Extended Tips</string>
+      <string id="CommonHelpTip">Show Tips</string>
+      <string id="CommonHelpTipHelp">Set whether LibreOffice shows tips</string>
+      <string id="CommonHelpExtendedTip">Show Extended Tips</string>
+      <string id="CommonHelpExtendedTipHelp">Show Extended Tips</string>
       <!--Open/Save Dialogs-->
-      <string id="UseSystemFileDialog">Use LibreOffice dialogs</string>
-      <string id="UseSystemFileDialog_Help">Set whether LibreOffice uses standard Windows dialogs or LibreOffice ones</string>
+      <string id="CommonMiscUseSystemFileDialog">Use LibreOffice dialogs</string>
+      <string id="CommonMiscUseSystemFileDialogHelp">Set whether LibreOffice uses standard Windows dialogs or LibreOffice ones</string>
       <!--Document Status-->
-      <string id="PrintingModifiesDocument">Printing modifies document</string>
-      <string id="PrintingModifiesDocument_Help">Printing sets "document modified" status</string>
-      <string id="AlwaysAllowSave">Always Allow Saving</string>
-      <string id="AlwaysAllowSave_Help">Allow to save document even when the document is not modified</string>
+      <string id="CommonPrintPrintingModifiesDocument">Printing modifies document</string>
+      <string id="CommonPrintPrintingModifiesDocumentHelp">Printing sets "document modified" status</string>
+      <string id="CommonMiscAlwaysAllowSave">Always Allow Saving</string>
+      <string id="CommonMiscAlwaysAllowSaveHelp">Allow to save document even when the document is not modified</string>
       <!--Year (Two Digits)-->
-      <string id="TwoDigitYear">Interpret two digit years</string>
-      <string id="TwoDigitYear_Help">Interpret two digit years from the year specified + 1000 years.</string>
+      <string id="CommonDateFormatTwoDigitYear">Interpret two digit years</string>
+      <string id="CommonDateFormatTwoDigitYearHelp">Interpret two digit years from the year specified + 1000 years.</string>
       <!--Privacy-->
-      <string id="CollectUsageInformation">Collect usage information</string>
-      <string id="CollectUsageInformation_Help">Collect and send usage information to TDF servers</string>
+      <string id="CommonMiscCollectUsageInformation">Collect usage information</string>
+      <string id="CommonMiscCollectUsageInformationHelp">Collect and send usage information to TDF servers</string>
       <!--# MEMORY #-->
-      <string id="UndoSteps">Number of undo steps</string>
-      <string id="UndoSteps_Help">Set the number of undo steps LibreOffice should remember</string>
+      <string id="CommonUndoSteps">Number of undo steps</string>
+      <string id="CommonUndoStepsHelp">Set the number of undo steps LibreOffice should remember</string>
       <!--# VIEW #-->
       <!--# PRINT #-->
-      <string id="ConvertToGreyscales">Convert colors to grayscale</string>
-      <string id="ConvertToGreyscales_Help">Convert colors to grayscale</string>
-	  <string id="PrinterReduceTransparency">Printer: Reduce Transparency</string>
-      <string id="PrinterReduceTransparency_Help">Printer: Reduce Transparency</string>
-	  <string id="PrinterReducedTransparencyAutomatically">Automatically</string>
-	  <string id="PrinterReducedTransparencyNoTransparency">No Transparency</string>
-	  <string id="PrintWarningPaperOrientation">Printer Warning: Paper Orientation</string>
-      <string id="PrintWarningPaperOrientation_Help">Printer Warning: Paper Orientation</string>
-	  <string id="PrintWarningPaperSize">Printer Warning: Paper Size</string>
-      <string id="PrintWarningPaperSize_Help">Printer Warning: Paper Size</string>
-	  <string id="PrintWarningTransparency">Printer Warning: Transparency</string>
-      <string id="PrintWarningTransparency_Help">Printer Warning: Transparency</string>
+      <string id="CommonPrintOptionPrinter">Reduce Printer Data: Printer</string>
+      <string id="CommonPrintOptionPrinterHelp">Reduce printer data. The values in the drop-down menus will only be set if you check the relevant checkbox.</string>
+      <string id="CommonPrintOptionPrinterReducedTransparencyModeAutomatically">Automatically</string>
+      <string id="CommonPrintOptionPrinterReducedTransparencyModeNoTransparency">No Transparency</string>
+      <string id="CommonPrintOptionPrinterReducedGradientModeGradientStripes">Gradient Stripes</string>
+      <string id="CommonPrintOptionPrinterReducedGradientModeIntermediateColor">Intermediate Color</string>
+      <string id="CommonPrintWarning">Printer Warnings</string>
+      <string id="CommonPrintWarningHelp">Sets Printer Warning</string>
       <!--# SECURITY #-->
       <string id="MacroSecurityLevel">Macro Security Level</string>
       <string id="MacroSecurityLevel_Help">Choose the Macro Security Level</string>
-	  <string id="SecureURL_Help">Paths entered must follow these rules:
+      <string id="SecureURL_Help">Paths entered must follow these rules:
  - File URIs have to begin with 'file:///'
  - Replace back slashes with forward slashes
  - Replace spaces with '%20'.
@@ -106,7 +102,7 @@
       <string id="RecommendPasswordProtection_Help">Recommend password protection on saving</string>
       <string id="RemovePersonalInfoOnSaving">Remove personal information on saving</string>
       <string id="RemovePersonalInfoOnSaving_Help">Remove personal information on saving</string>
-	  <string id="SecureURL">Trusted File Locations</string>
+      <string id="SecureURL">Trusted File Locations</string>
       <!--# PERSONALIZATION #-->
       <string id="Persona">LibreOffice Persona</string>
       <string id="Persona_Help">True will use the pre-installed theme, False will set LibreOffice to plain look</string>
@@ -191,65 +187,74 @@
     <presentationTable>
       <!--## LIBREOFFICE ##-->
       <!--# USER DATA #-->
-      <presentation id="CompanyName">
-        <textBox refId="CompanyName_Text">
+      <presentation id="UserProfileDatao">
+        <textBox refId="UserProfileDataoValue">
           <label>Company Name (o):</label>
         </textBox>
-        <checkBox refId="CompanyName_Enforce">Enforce</checkBox>
+        <checkBox refId="UserProfileDataoEnforce">Enforce</checkBox>
       </presentation>
       <!--# GENERAL #-->
       <!--Help-->
-      <presentation id="Tip">
-        <checkBox refId="Tip_BOOL">Show Tips</checkBox>
-        <checkBox refId="Tip_Enforce">Enforce</checkBox>
+      <presentation id="CommonHelpTip">
+        <checkBox refId="CommonHelpTipValue">Show Tips</checkBox>
+        <checkBox refId="CommonHelpTipEnforce">Enforce</checkBox>
       </presentation>
-      <presentation id="ExtendedTip">
-        <checkBox refId="ExtendedTip_BOOL">Show Extended Tips</checkBox>
-        <checkBox refId="ExtendedTip_Enforce">Enforce</checkBox>
+      <presentation id="CommonHelpExtendedTip">
+        <checkBox refId="CommonHelpExtendedTipValue">Show Extended Tips</checkBox>
+        <checkBox refId="CommonHelpExtendedTipEnforce">Enforce</checkBox>
       </presentation>
       <!--Open/Save Dialogs-->
-      <presentation id="UseSystemFileDialog">
-        <checkBox refId="UseSystemFileDialog_BOOL">Use LibreOffice dialogs</checkBox>
-        <checkBox refId="UseSystemFileDialog_Enforce">Enforce</checkBox>
+      <presentation id="CommonMiscUseSystemFileDialog">
+        <checkBox refId="CommonMiscUseSystemFileDialogValue">Use LibreOffice dialogs</checkBox>
+        <checkBox refId="CommonMiscUseSystemFileDialogEnforce">Enforce</checkBox>
       </presentation>
       <!--Document Status-->
-      <presentation id="PrintingModifiesDocument">
-        <checkBox refId="PrintingModifiesDocument_BOOL">Printing modifies document</checkBox>
-        <checkBox refId="PrintingModifiesDocument_Enforce">Enforce</checkBox>
+      <presentation id="CommonPrintPrintingModifiesDocument">
+        <checkBox refId="CommonPrintPrintingModifiesDocumentValue">Printing modifies document</checkBox>
+        <checkBox refId="CommonPrintPrintingModifiesDocumentEnforce">Enforce</checkBox>
       </presentation>
-      <presentation id="AlwaysAllowSave">
-        <checkBox refId="AlwaysAllowSave_BOOL">Always Allow Save</checkBox>
-        <checkBox refId="AlwaysAllowSave_Enforce">Enforce</checkBox>
+      <presentation id="CommonMiscAlwaysAllowSave">
+        <checkBox refId="CommonMiscAlwaysAllowSaveValue">Always Allow Save</checkBox>
+        <checkBox refId="CommonMiscAlwaysAllowSaveEnforce">Enforce</checkBox>
       </presentation>
       <!--Year (Two Digits)-->
-      <presentation id="TwoDigitYear">
-        <decimalTextBox refId="TwoDigitYearYear" defaultValue="1925" spinStep="1">Initial Year:</decimalTextBox>
-        <checkBox refId="TwoDigitYearYear_Enforce">Enforce</checkBox>
+      <presentation id="CommonDateFormatTwoDigitYear">
+        <decimalTextBox refId="CommonDateFormatTwoDigitYearValue" defaultValue="1925" spinStep="1">Initial Year:</decimalTextBox>
+        <checkBox refId="CommonDateFormatTwoDigitYearEnforce">Enforce</checkBox>
       </presentation>
       <!--Privacy-->
-      <presentation id="CollectUsageInformation">
-        <checkBox refId="CollectUsageInformation_BOOL">Collect usage information</checkBox>
-        <checkBox refId="CollectUsageInformation_Enforce">Enforce</checkBox>
+      <presentation id="CommonMiscCollectUsageInformation">
+        <checkBox refId="CommonMiscCollectUsageInformationValue">Collect usage information</checkBox>
+        <checkBox refId="CommonMiscCollectUsageInformationEnforce">Enforce</checkBox>
       </presentation>
       <!--# MEMORY #-->
-      <presentation id="UndoSteps">
-        <decimalTextBox refId="UndoStepsCount" defaultValue="100" spinStep="10">Number of steps:</decimalTextBox>
-        <checkBox refId="UndoStepsCount_Enforce">Enforce</checkBox>
+      <presentation id="CommonUndoSteps">
+        <decimalTextBox refId="CommonUndoStepsValue" defaultValue="100" spinStep="10">Number of steps:</decimalTextBox>
+        <checkBox refId="CommonUndoStepsEnforce">Enforce</checkBox>
       </presentation>
       <!--# VIEW #-->
       <!--# PRINT # -->
-      <presentation id="ConvertToGreyscales">
-        <checkBox refId="ConvertToGreyscales_BOOL">Convert colors to grayscale</checkBox>
+      <presentation id="CommonPrintOptionPrinter">
+        <checkBox refId="CommonPrintOptionPrinterReduceTransparency">Reduce transparency</checkBox>
+        <dropdownList refId="CommonPrintOptionPrinterReducedTransparencyModeValue" noSort="true" defaultItem="0">Reduce Transparency:</dropdownList>
+        <checkBox refId="CommonPrintOptionPrinterReduceGradientsValue">Reduce gradient</checkBox>
+        <dropdownList refId="CommonPrintOptionPrinterReducedGradientModeValue" noSort="true" defaultItem="0">Reduce Gradient:</dropdownList>
+        <decimalTextBox refId="CommonPrintOptionPrinterReducedGradientStepCountValue" defaultValue="64" spinStep="1">Gradient Stripes:</decimalTextBox>
+        <!-- <checkBox refId="CommonPrintOptionPrinterReduceBitmap">Reduce gradient</checkBox>
+        <dropdownList refId="CommonPrintOptionPrinterReduceBitmapValue" noSort="true" defaultItem="0">Reduce bitmaps:</dropdownList> -->
+        <checkBox refId="CommonPrintOptionPrinterConvertToGreyscalesValue">Convert colors to grayscale</checkBox>
       </presentation>
-      <presentation id="PrinterReduceTransparency">
-        <dropdownList refId="PrinterReducedTransparencyModeOp" noSort="true" defaultItem="0">Reduced Transparency:</dropdownList>
+      <presentation id="CommonPrintWarning">
+        <checkBox refId="CommonPrintWarningPaperSizeValue">Paper Size</checkBox>
+        <checkBox refId="CommonPrintWarningPaperOrientationValue">Paper Orientation</checkBox>
+        <checkBox defaultChecked="true" refId="CommonPrintWarningTransparencyValue">Transparency</checkBox>
       </presentation>
       <!--# SECURITY #-->
       <presentation id="MacroSecurityLevel">
         <dropdownList refId="MacroSecurityLevelOp" noSort="true" defaultItem="1">Macro Security:</dropdownList>
         <checkBox refId="MacroSecurityLevel_Enforce">Enforce</checkBox>
       </presentation>
-	  <presentation id="SecureURL">
+      <presentation id="SecureURL">
         <textBox refId="SecureURL_Text">
           <label>Trusted Paths:</label>
         </textBox>
