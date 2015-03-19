@@ -686,7 +686,7 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="WarnPrintDoc" class="Machine" displayName="$(string.WarnPrintDoc)" explainText="$(string.WarnPrintDoc_Help)" presentation="$(presentation.WarnPrintDoc)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnPrintDoc">
+    <policy name="WarnPrintDoc" class="Machine" displayName="$(string.WarnPrintDoc)" explainText="$(string.WarnPrintDocHelp)" presentation="$(presentation.WarnPrintDoc)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnPrintDoc">
       <parentCategory ref="CAT_LibreOfficeSecurity" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
@@ -708,7 +708,7 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="RecommendPasswordProtection" class="Machine" displayName="$(string.RecommendPasswordProtection)" explainText="$(string.RecommendPasswordProtection_Help)" presentation="$(presentation.RecommendPasswordProtection)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\RecommendPasswordProtection">
+    <policy name="RecommendPasswordProtection" class="Machine" displayName="$(string.RecommendPasswordProtection)" explainText="$(string.RecommendPasswordProtectionHelp)" presentation="$(presentation.RecommendPasswordProtection)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\RecommendPasswordProtection">
       <parentCategory ref="CAT_LibreOfficeSecurity" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
@@ -730,7 +730,7 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="RemovePersonalInfoOnSaving" class="Machine" displayName="$(string.RemovePersonalInfoOnSaving)" explainText="$(string.RemovePersonalInfoOnSaving_Help)" presentation="$(presentation.RemovePersonalInfoOnSaving)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\RemovePersonalInfoOnSaving">
+    <policy name="RemovePersonalInfoOnSaving" class="Machine" displayName="$(string.RemovePersonalInfoOnSaving)" explainText="$(string.RemovePersonalInfoOnSavingHelp)" presentation="$(presentation.RemovePersonalInfoOnSaving)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\RemovePersonalInfoOnSaving">
       <parentCategory ref="CAT_LibreOfficeSecurity" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
@@ -753,7 +753,7 @@
       </elements>
     </policy>
     <!--# PERSONALIZATION #-->
-    <policy name="Persona" class="Machine" displayName="$(string.Persona)" explainText="$(string.Persona_Help)" presentation="$(presentation.Persona)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\Persona">
+    <policy name="Persona" class="Machine" displayName="$(string.Persona)" explainText="$(string.PersonaHelp)" presentation="$(presentation.Persona)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Misc\Persona">
       <parentCategory ref="CAT_LibreOfficePersonalization" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
@@ -780,7 +780,7 @@
       </elements>
     </policy>
     <!--# ACCESSIBILITY #-->
-    <policy name="IsAllowAnimatedGraphics" class="Machine" displayName="$(string.IsAllowAnimatedGraphics)" explainText="$(string.IsAllowAnimatedGraphics_Help)" presentation="$(presentation.IsAllowAnimatedGraphics)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Accessibility\IsAllowAnimatedGraphics">
+    <policy name="IsAllowAnimatedGraphics" class="Machine" displayName="$(string.IsAllowAnimatedGraphics)" explainText="$(string.IsAllowAnimatedGraphicsHelp)" presentation="$(presentation.IsAllowAnimatedGraphics)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Accessibility\IsAllowAnimatedGraphics">
       <parentCategory ref="CAT_LibreOfficeAccessibility" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
@@ -804,7 +804,7 @@
     </policy>
     <!--## LOAD SAVE ##-->
     <!--# GENERAL #-->
-    <policy name="LoadDocumentSettings" class="Machine" displayName="$(string.LoadDocumentSettings)" explainText="$(string.LoadDocumentSettings_Help)" presentation="$(presentation.LoadDocumentSettings)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Load\UserDefinedSettings">
+    <policy name="LoadDocumentSettings" class="Machine" displayName="$(string.LoadDocumentSettings)" explainText="$(string.LoadDocumentSettingsHelp)" presentation="$(presentation.LoadDocumentSettings)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Load\UserDefinedSettings">
       <parentCategory ref="CAT_LoadSaveGeneral" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
@@ -826,7 +826,7 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="LoadDocumentPrinterSettings" class="Machine" displayName="$(string.LoadDocumentPrinterSettings)" explainText="$(string.LoadDocumentPrinterSettings_Help)" presentation="$(presentation.LoadDocumentPrinterSettings)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\LoadPrinter">
+    <policy name="LoadDocumentPrinterSettings" class="Machine" displayName="$(string.LoadDocumentPrinterSettings)" explainText="$(string.LoadDocumentPrinterSettingsHelp)" presentation="$(presentation.LoadDocumentPrinterSettings)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\LoadPrinter">
       <parentCategory ref="CAT_LoadSaveGeneral" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
@@ -848,7 +848,7 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="FileMetaDataOnSave" class="Machine" displayName="$(string.FileMetaDataOnSave)" explainText="$(string.FileMetaDataOnSave_Help)" presentation="$(presentation.FileMetaDataOnSave)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\EditProperty">
+    <policy name="FileMetaDataOnSave" class="Machine" displayName="$(string.FileMetaDataOnSave)" explainText="$(string.FileMetaDataOnSaveHelp)" presentation="$(presentation.FileMetaDataOnSave)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\EditProperty">
       <parentCategory ref="CAT_LoadSaveGeneral" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
@@ -870,7 +870,7 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="Text_FileDefaultSaveType" class="Machine" displayName="$(string.Text_FileDefaultSaveType)" explainText="$(string.Text_FileDefaultSaveType_Help)" presentation="$(presentation.Text_FileDefaultSaveType)" key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.text.TextDocument']\ooSetupFactoryDefaultFilter">
+    <policy name="Text_FileDefaultSaveType" class="Machine" displayName="$(string.Text_FileDefaultSaveType)" explainText="$(string.Text_FileDefaultSaveTypeHelp)" presentation="$(presentation.Text_FileDefaultSaveType)" key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.text.TextDocument']\ooSetupFactoryDefaultFilter">
       <parentCategory ref="CAT_LoadSaveGeneral" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
@@ -956,7 +956,7 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="Spreadsheet_FileDefaultSaveType" class="Machine" displayName="$(string.Spreadsheet_FileDefaultSaveType)" explainText="$(string.Spreadsheet_FileDefaultSaveType_Help)" presentation="$(presentation.Spreadsheet_FileDefaultSaveType)" key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.sheet.SpreadsheetDocument']\ooSetupFactoryDefaultFilter">
+    <policy name="Spreadsheet_FileDefaultSaveType" class="Machine" displayName="$(string.Spreadsheet_FileDefaultSaveType)" explainText="$(string.Spreadsheet_FileDefaultSaveTypeHelp)" presentation="$(presentation.Spreadsheet_FileDefaultSaveType)" key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.sheet.SpreadsheetDocument']\ooSetupFactoryDefaultFilter">
       <parentCategory ref="CAT_LoadSaveGeneral" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
@@ -1042,7 +1042,7 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="Presentation_FileDefaultSaveType" class="Machine" displayName="$(string.Presentation_FileDefaultSaveType)" explainText="$(string.Presentation_FileDefaultSaveType_Help)" presentation="$(presentation.Presentation_FileDefaultSaveType)" key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.presentation.PresentationDocument']\ooSetupFactoryDefaultFilter">
+    <policy name="Presentation_FileDefaultSaveType" class="Machine" displayName="$(string.Presentation_FileDefaultSaveType)" explainText="$(string.Presentation_FileDefaultSaveTypeHelp)" presentation="$(presentation.Presentation_FileDefaultSaveType)" key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.presentation.PresentationDocument']\ooSetupFactoryDefaultFilter">
       <parentCategory ref="CAT_LoadSaveGeneral" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
@@ -1130,7 +1130,41 @@
     </policy>
     <!--## LIBREOFFICE WRITER ##-->
     <!--# GENERAL #-->
-    <policy name="ShowStandardizedPageCount" class="Machine" displayName="$(string.ShowStandardizedPageCount)" explainText="$(string.ShowStandardizedPageCount_Help)" presentation="$(presentation.ShowStandardizedPageCount)" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\WordCount\ShowStandardizedPageCount">
+    <policy name="WriterLayoutOtherMeasureUnit" class="Machine" displayName="$(string.WriterLayoutOtherMeasureUnit)" explainText="$(string.WriterLayoutOtherMeasureUnitHelp)" presentation="$(presentation.WriterLayoutOtherMeasureUnit)" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\Layout\Other\MeasureUnit">
+      <parentCategory ref="CAT_LibreOfficeWriterGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <enum id="WriterLayoutOtherMeasureUnitValue" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\Layout\Other\MeasureUnit" valueName="Value">
+          <item displayName="$(string.WriterLayoutOtherMeasureUnitMillimeter)">
+            <value>
+              <string>1</string>
+            </value>
+          </item>
+          <item displayName="$(string.WriterLayoutOtherMeasureUnitCentimeter)">
+            <value>
+              <string>2</string>
+            </value>
+          </item>
+          <item displayName="$(string.WriterLayoutOtherMeasureUnitInch)">
+            <value>
+              <string>8</string>
+            </value>
+          </item>
+          <item displayName="$(string.WriterLayoutOtherMeasureUnitPica)">
+            <value>
+              <string>7</string>
+            </value>
+          </item>
+          <item displayName="$(string.WriterLayoutOtherMeasureUnitPoint)">
+            <value>
+              <string>6</string>
+            </value>
+          </item>
+        </enum>
+        <decimal id="WriterLayoutOtherTabStopValue" minValue="1" maxValue="5000" storeAsText="true" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\Layout\Other\TabStop" valueName="Value"/>
+      </elements>
+    </policy>
+    <policy name="ShowStandardizedPageCount" class="Machine" displayName="$(string.ShowStandardizedPageCount)" explainText="$(string.ShowStandardizedPageCountHelp)" presentation="$(presentation.ShowStandardizedPageCount)" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\WordCount\ShowStandardizedPageCount">
       <parentCategory ref="CAT_LibreOfficeWriterGeneral" />
       <supportedOn ref="SupportedLO4_3" />
       <elements>
@@ -1153,7 +1187,7 @@
       </elements>
     </policy>
     <!--# BASIC FONTS #-->
-    <policy name="DefaultFont" class="Machine" displayName="$(string.BasicFonts)" explainText="$(string.BasicFonts_Help)" presentation="$(presentation.BasicFonts)" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont">
+    <policy name="DefaultFont" class="Machine" displayName="$(string.BasicFonts)" explainText="$(string.BasicFontsHelp)" presentation="$(presentation.BasicFonts)" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont">
       <parentCategory ref="CAT_LibreOfficeWriterBasicFonts" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>

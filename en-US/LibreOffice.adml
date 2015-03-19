@@ -108,39 +108,46 @@
       <string id="CommonSecurityScriptingWarnSaveOrSendDoc">Warn when saving or sending</string>
       <string id="CommonSecurityScriptingWarnSaveOrSendDocHelp">Warn when saving or sending</string>
       <string id="WarnPrintDoc">Warn when printing documents</string>
-      <string id="WarnPrintDoc_Help">Warn when printing documents</string>
+      <string id="WarnPrintDocHelp">Warn when printing documents</string>
       <string id="RecommendPasswordProtection">Recommend password protection on saving</string>
-      <string id="RecommendPasswordProtection_Help">Recommend password protection on saving</string>
+      <string id="RecommendPasswordProtectionHelp">Recommend password protection on saving</string>
       <string id="RemovePersonalInfoOnSaving">Remove personal information on saving</string>
-      <string id="RemovePersonalInfoOnSaving_Help">Remove personal information on saving</string>
+      <string id="RemovePersonalInfoOnSavingHelp">Remove personal information on saving</string>
       <!--# PERSONALIZATION #-->
       <string id="Persona">LibreOffice Persona</string>
-      <string id="Persona_Help">True will use the pre-installed theme, False will set LibreOffice to plain look</string>
+      <string id="PersonaHelp">True will use the pre-installed theme, False will set LibreOffice to plain look</string>
       <!--# ACCESSIBILITY #-->
       <string id="IsAllowAnimatedGraphics">Allow animated graphics</string>
-      <string id="IsAllowAnimatedGraphics_Help">Enables or disables animated graphics</string>
+      <string id="IsAllowAnimatedGraphicsHelp">Enables or disables animated graphics</string>
       <!--## LOAD SAVE ##-->
       <!--# GENERAL #-->
       <string id="LoadDocumentSettings">Load user-specific settings with the document</string>
-      <string id="LoadDocumentSettings_Help">Load user-specific settings with the document</string>
+      <string id="LoadDocumentSettingsHelp">Load user-specific settings with the document</string>
       <string id="LoadDocumentPrinterSettings">Load printer settings with the document</string>
-      <string id="LoadDocumentPrinterSettings_Help">Load printer settings with the document</string>
+      <string id="LoadDocumentPrinterSettingsHelp">Load printer settings with the document</string>
       <string id="FileMetaDataOnSave">Ask for Document metadata on LibreOffice exit</string>
-      <string id="FileMetaDataOnSave_Help">If true, users will be prompted to enter in file metadata when initially saving a file.</string>
+      <string id="FileMetaDataOnSaveHelp">If true, users will be prompted to enter in file metadata when initially saving a file.</string>
       <!--Default File Format-->
       <string id="Text_FileDefaultSaveType">Writer: Configure default save file type</string>
-      <string id="Text_FileDefaultSaveType_Help">Specify the default file type when saving from Writer. Remember that if you do not enforce the setting, local user configuration will override this.</string>
+      <string id="Text_FileDefaultSaveTypeHelp">Specify the default file type when saving from Writer. Remember that if you do not enforce the setting, local user configuration will override this.</string>
       <string id="Spreadsheet_FileDefaultSaveType">Calc: Configure default save file type</string>
-      <string id="Spreadsheet_FileDefaultSaveType_Help">Specify the default file type when saving from Calc. Remember that if you do not enforce the setting, local user configuration will override this.</string>
+      <string id="Spreadsheet_FileDefaultSaveTypeHelp">Specify the default file type when saving from Calc. Remember that if you do not enforce the setting, local user configuration will override this.</string>
       <string id="Presentation_FileDefaultSaveType">Impress: Configure default save file type</string>
-      <string id="Presentation_FileDefaultSaveType_Help">Specify the default file type when saving from Impress. Remember that if you do not enforce the setting, local user configuration will override this.</string>
+      <string id="Presentation_FileDefaultSaveTypeHelp">Specify the default file type when saving from Impress. Remember that if you do not enforce the setting, local user configuration will override this.</string>
       <!--## LIBREOFFICE WRITER ##-->
       <!--# GENERAL #-->
       <string id="ShowStandardizedPageCount">Show Standardized Page Count</string>
-      <string id="ShowStandardizedPageCount_Help">Show Standardized Page Count</string>
+      <string id="ShowStandardizedPageCountHelp">Show Standardized Page Count</string>
+      <string id="WriterLayoutOtherMeasureUnit">Measurement Units</string>
+      <string id="WriterLayoutOtherMeasureUnitHelp">Set the mesurement unit and the default tab stop. Default tab stop is measured in 1/100mm regardless of the measurement unit used.</string>
+      <string id="WriterLayoutOtherMeasureUnitMillimeter">Millimeter</string>
+      <string id="WriterLayoutOtherMeasureUnitCentimeter">Centimeter</string>
+      <string id="WriterLayoutOtherMeasureUnitInch">Inch</string>
+      <string id="WriterLayoutOtherMeasureUnitPica">Pica</string>
+      <string id="WriterLayoutOtherMeasureUnitPoint">Point</string>
       <!--# BASIC FONTS #-->
       <string id="BasicFonts">Basic Fonts</string>
-      <string id="BasicFonts_Help">Enter the default font.</string>
+      <string id="BasicFontsHelp">Enter the default font.</string>
       <!--## PREDEFINED SETTINGS ##-->
       <string id="LibreOfficeCommon_True">true</string>
       <string id="LibreOfficeCommon_False">false</string>
@@ -341,6 +348,10 @@
       <presentation id="ShowStandardizedPageCount">
         <checkBox refId="ShowStandardizedPageCountValue">Show Standardized Page Count</checkBox>
         <checkBox refId="ShowStandardizedPageCountEnforce">Enforce</checkBox>
+      </presentation>
+      <presentation id="WriterLayoutOtherMeasureUnit">
+        <dropdownList refId="WriterLayoutOtherMeasureUnitValue" noSort="true" defaultItem="2">Measurement Unit:</dropdownList>
+        <decimalTextBox refId="WriterLayoutOtherTabStopValue" defaultValue="1250" spinStep="50">Tab Stop (1/100 mm):</decimalTextBox>
       </presentation>
       <!--# BASIC FONTS #-->
       <presentation id="BasicFonts">
