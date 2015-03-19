@@ -274,6 +274,7 @@
     </policy>
     <!--# VIEW #-->
     <!--# PRINT #-->
+    <!-- Reduce Print Data -->
     <policy name="CommonPrintOptionPrinter" class="Machine" displayName="$(string.CommonPrintOptionPrinter)" explainText="$(string.CommonPrintOptionPrinterHelp)" presentation="$(presentation.CommonPrintOptionPrinter)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer">
       <parentCategory ref="CAT_LibreOfficePrint" />
       <supportedOn ref="SupportedLO4_2" />
@@ -319,6 +320,71 @@
           </item>
         </enum>
         <decimal id="CommonPrintOptionPrinterReducedGradientStepCountValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer\ReducedGradientStepCount" valueName="Value" minValue="1" maxValue="256" storeAsText="true" />
+        <boolean id="CommonPrintOptionPrinterReduceBitmapsValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer\ReduceBitmaps" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CommonPrintOptionPrinterReducedBitmapIncludesTransparencyValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer\ReducedBitmapIncludesTransparency" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <enum id="CommonPrintOptionPrinterReducedBitmapModeValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer\ReducedBitmapMode" valueName="Value">
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapModeHigh)">
+            <value>
+              <string>0</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapModeNormal)">
+            <value>
+              <string>1</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapModeResolution)">
+            <value>
+              <string>2</string>
+            </value>
+          </item>
+        </enum>
+        <enum id="CommonPrintOptionPrinterReducedBitmapResolutionValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer\ReducedBitmapResolution" valueName="Value">
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapResolution0)">
+            <value>
+              <string>0</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapResolution1)">
+            <value>
+              <string>1</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapResolution2)">
+            <value>
+              <string>2</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapResolution3)">
+            <value>
+              <string>3</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapResolution4)">
+            <value>
+              <string>4</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapResolution5)">
+            <value>
+              <string>5</string>
+            </value>
+          </item>
+        </enum>
         <boolean id="CommonPrintOptionPrinterConvertToGreyscalesValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\Printer\ConvertToGreyscales" valueName="Value">
           <trueValue>
             <string>true</string>
@@ -329,6 +395,127 @@
         </boolean>
       </elements>
     </policy>
+    <policy name="CommonPrintOptionFile" class="Machine" displayName="$(string.CommonPrintOptionFile)" explainText="$(string.CommonPrintOptionPrinterHelp)" presentation="$(presentation.CommonPrintOptionPrinter)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\File">
+      <parentCategory ref="CAT_LibreOfficePrint" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <boolean id="CommonPrintOptionPrinterReduceTransparency" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\File\ReduceTransparency" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <enum id="CommonPrintOptionPrinterReducedTransparencyModeValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\File\ReducedTransparencyMode" valueName="Value">
+          <item displayName="$(string.CommonPrintOptionPrinterReducedTransparencyModeAutomatically)">
+            <value>
+              <string>0</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedTransparencyModeNoTransparency)">
+            <value>
+              <string>1</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="CommonPrintOptionPrinterReduceGradientsValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\File\ReduceGradients" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <enum id="CommonPrintOptionPrinterReducedGradientModeValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\File\ReducedGradientMode" valueName="Value">
+          <item displayName="$(string.CommonPrintOptionPrinterReducedGradientModeGradientStripes)">
+            <value>
+              <string>0</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedGradientModeIntermediateColor)">
+            <value>
+              <string>1</string>
+            </value>
+          </item>
+        </enum>
+        <decimal id="CommonPrintOptionPrinterReducedGradientStepCountValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\File\ReducedGradientStepCount" valueName="Value" minValue="1" maxValue="256" storeAsText="true" />
+        <boolean id="CommonPrintOptionPrinterReduceBitmapsValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\File\ReduceBitmaps" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CommonPrintOptionPrinterReducedBitmapIncludesTransparencyValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\File\ReducedBitmapIncludesTransparency" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <enum id="CommonPrintOptionPrinterReducedBitmapModeValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\File\ReducedBitmapMode" valueName="Value">
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapModeHigh)">
+            <value>
+              <string>0</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapModeNormal)">
+            <value>
+              <string>1</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapModeResolution)">
+            <value>
+              <string>2</string>
+            </value>
+          </item>
+        </enum>
+        <enum id="CommonPrintOptionPrinterReducedBitmapResolutionValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\File\ReducedBitmapResolution" valueName="Value">
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapResolution0)">
+            <value>
+              <string>0</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapResolution1)">
+            <value>
+              <string>1</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapResolution2)">
+            <value>
+              <string>2</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapResolution3)">
+            <value>
+              <string>3</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapResolution4)">
+            <value>
+              <string>4</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonPrintOptionPrinterReducedBitmapResolution5)">
+            <value>
+              <string>5</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="CommonPrintOptionPrinterConvertToGreyscalesValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Option\File\ConvertToGreyscales" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <!-- Printer Warnings-->
     <policy name="CommonPrintWarning" class="Machine" displayName="$(string.CommonPrintWarning)" explainText="$(string.CommonPrintWarningHelp)" presentation="$(presentation.CommonPrintWarning)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Print\Warning">
       <parentCategory ref="CAT_LibreOfficePrint" />
       <supportedOn ref="SupportedLO4_2" />
@@ -360,11 +547,11 @@
       </elements>
     </policy>
     <!--# SECURITY #-->
-    <policy name="MacroSecurityLevel" class="Machine" displayName="$(string.MacroSecurityLevel)" explainText="$(string.MacroSecurityLevel_Help)" presentation="$(presentation.MacroSecurityLevel)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\MacroSecurityLevel">
+    <policy name="CommonSecurityScriptingMacroSecurityLevel" class="Machine" displayName="$(string.CommonSecurityScriptingMacroSecurityLevel)" explainText="$(string.CommonSecurityScriptingMacroSecurityLevelHelp)" presentation="$(presentation.CommonSecurityScriptingMacroSecurityLevel)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\MacroSecurityLevel">
       <parentCategory ref="CAT_LibreOfficeSecurity" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <enum id="MacroSecurityLevelOp" valueName="Value">
+        <enum id="CommonSecurityScriptingMacroSecurityLevelValue" valueName="Value">
           <item displayName="$(string.LibreOfficeCommon_VHigh)">
             <value>
               <string>3</string>
@@ -386,7 +573,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="MacroSecurityLevel_Enforce" valueName="Final">
+        <boolean id="CommonSecurityScriptingMacroSecurityLevelEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -396,12 +583,12 @@
         </boolean>
       </elements>
     </policy>
-	<policy name="SecureURL" class="Machine" displayName="$(string.SecureURL)" explainText="$(string.SecureURL_Help)" presentation="$(presentation.SecureURL)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\SecureURL">
+	  <policy name="CommonSecurityScriptingSecureURL" class="Machine" displayName="$(string.CommonSecurityScriptingSecureURL)" explainText="$(string.CommonSecurityScriptingSecureURLHelp)" presentation="$(presentation.CommonSecurityScriptingSecureURL)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\SecureURL">
       <parentCategory ref="CAT_LibreOfficeSecurity" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <text id="SecureURL_Text" valueName="Value" required="true" expandable="true" />
-        <boolean id="SecureURL_Enforce" valueName="Final">
+        <text id="CommonSecurityScriptingSecureURLValue" valueName="Value" required="true" expandable="true" />
+        <boolean id="CommonSecurityScriptingSecureURLEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -411,11 +598,11 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="HyperlinksWithCtrlClick" class="Machine" displayName="$(string.HyperlinksWithCtrlClick)" explainText="$(string.HyperlinksWithCtrlClick_Help)" presentation="$(presentation.HyperlinksWithCtrlClick)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\HyperlinksWithCtrlClick">
+    <policy name="CommonSecurityScriptingHyperlinksWithCtrlClick" class="Machine" displayName="$(string.CommonSecurityScriptingHyperlinksWithCtrlClick)" explainText="$(string.CommonSecurityScriptingHyperlinksWithCtrlClickHelp)" presentation="$(presentation.CommonSecurityScriptingHyperlinksWithCtrlClick)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\HyperlinksWithCtrlClick">
       <parentCategory ref="CAT_LibreOfficeSecurity" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <boolean id="HyperlinksWithCtrlClick_BOOL" valueName="Value">
+        <boolean id="CommonSecurityScriptingHyperlinksWithCtrlClickValue" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -423,7 +610,7 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="HyperlinksWithCtrlClick_Enforce" valueName="Final">
+        <boolean id="CommonSecurityScriptingHyperlinksWithCtrlClickEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -433,11 +620,11 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="WarnCreatePDF" class="Machine" displayName="$(string.WarnCreatePDF)" explainText="$(string.WarnCreatePDF_Help)" presentation="$(presentation.WarnCreatePDF)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnCreatePDF">
+    <policy name="CommonSecurityScriptingWarnCreatePDF" class="Machine" displayName="$(string.CommonSecurityScriptingWarnCreatePDF)" explainText="$(string.CommonSecurityScriptingWarnCreatePDFHelp)" presentation="$(presentation.CommonSecurityScriptingWarnCreatePDF)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnCreatePDF">
       <parentCategory ref="CAT_LibreOfficeSecurity" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <boolean id="WarnCreatePDF_BOOL" valueName="Value">
+        <boolean id="CommonSecurityScriptingWarnCreatePDFValue" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -445,7 +632,7 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="WarnCreatePDF_Enforce" valueName="Final">
+        <boolean id="CommonSecurityScriptingWarnCreatePDFEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -455,11 +642,11 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="WarnSignDoc" class="Machine" displayName="$(string.WarnSignDoc)" explainText="$(string.WarnSignDoc_Help)" presentation="$(presentation.WarnSignDoc)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnSignDoc">
+    <policy name="CommonSecurityScriptingWarnSignDoc" class="Machine" displayName="$(string.CommonSecurityScriptingWarnSignDoc)" explainText="$(string.CommonSecurityScriptingWarnSignDocHelp)" presentation="$(presentation.CommonSecurityScriptingWarnSignDoc)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnSignDoc">
       <parentCategory ref="CAT_LibreOfficeSecurity" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <boolean id="WarnSignDoc_BOOL" valueName="Value">
+        <boolean id="CommonSecurityScriptingWarnSignDocValue" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -467,7 +654,7 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="WarnSignDoc_Enforce" valueName="Final">
+        <boolean id="CommonSecurityScriptingWarnSignDocEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -477,11 +664,11 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="WarnSaveOrSendDoc" class="Machine" displayName="$(string.WarnSaveOrSendDoc)" explainText="$(string.WarnSaveOrSendDoc_Help)" presentation="$(presentation.WarnSaveOrSendDoc)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnSaveOrSendDoc">
+    <policy name="CommonSecurityScriptingWarnSaveOrSendDoc" class="Machine" displayName="$(string.CommonSecurityScriptingWarnSaveOrSendDoc)" explainText="$(string.CommonSecurityScriptingWarnSaveOrSendDocHelp)" presentation="$(presentation.CommonSecurityScriptingWarnSaveOrSendDoc)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\WarnSaveOrSendDoc">
       <parentCategory ref="CAT_LibreOfficeSecurity" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <boolean id="WarnSaveOrSendDoc_BOOL" valueName="Value">
+        <boolean id="CommonSecurityScriptingWarnSaveOrSendDocValue" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -489,7 +676,7 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="WarnSaveOrSendDoc_Enforce" valueName="Final">
+        <boolean id="CommonSecurityScriptingWarnSaveOrSendDocEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -503,7 +690,7 @@
       <parentCategory ref="CAT_LibreOfficeSecurity" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <boolean id="WarnPrintDoc_BOOL" valueName="Value">
+        <boolean id="WarnPrintDocValue" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -511,7 +698,7 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="WarnPrintDoc_Enforce" valueName="Final">
+        <boolean id="WarnPrintDocEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -525,7 +712,7 @@
       <parentCategory ref="CAT_LibreOfficeSecurity" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <boolean id="RecommendPasswordProtection_BOOL" valueName="Value">
+        <boolean id="RecommendPasswordProtectionValue" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -533,7 +720,7 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="RecommendPasswordProtection_Enforce" valueName="Final">
+        <boolean id="RecommendPasswordProtectionEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -547,7 +734,7 @@
       <parentCategory ref="CAT_LibreOfficeSecurity" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <boolean id="RemovePersonalInfoOnSaving_BOOL" valueName="Value">
+        <boolean id="RemovePersonalInfoOnSavingValue" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -555,7 +742,7 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="RemovePersonalInfoOnSaving_Enforce" valueName="Final">
+        <boolean id="RemovePersonalInfoOnSavingEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -582,7 +769,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="Persona_Enforce" valueName="Final">
+        <boolean id="PersonaEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -597,7 +784,7 @@
       <parentCategory ref="CAT_LibreOfficeAccessibility" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <boolean id="IsAllowAnimatedGraphics_BOOL" valueName="Value">
+        <boolean id="IsAllowAnimatedGraphicsValue" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -605,7 +792,7 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="IsAllowAnimatedGraphics_Enforce" valueName="Final">
+        <boolean id="IsAllowAnimatedGraphicsEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -621,7 +808,7 @@
       <parentCategory ref="CAT_LoadSaveGeneral" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <boolean id="LoadDocumentSettings_BOOL" valueName="Value">
+        <boolean id="LoadDocumentSettingsValue" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -629,7 +816,7 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="LoadDocumentSettings_Enforce" valueName="Final">
+        <boolean id="LoadDocumentSettingsEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -643,7 +830,7 @@
       <parentCategory ref="CAT_LoadSaveGeneral" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <boolean id="LoadDocumentPrinterSettings_BOOL" valueName="Value">
+        <boolean id="LoadDocumentPrinterSettingsValue" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -651,7 +838,7 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="LoadDocumentPrinterSettings_Enforce" valueName="Final">
+        <boolean id="LoadDocumentPrinterSettingsEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -665,7 +852,7 @@
       <parentCategory ref="CAT_LoadSaveGeneral" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <boolean id="FileMetaDataOnSave_BOOL" valueName="Value">
+        <boolean id="FileMetaDataOnSaveValue" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -673,7 +860,7 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="FileMetaDataOnSave_Enforce" valueName="Final">
+        <boolean id="FileMetaDataOnSaveEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -759,7 +946,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="Text_FileDefaultSaveType_Enforce" valueName="Final">
+        <boolean id="Text_FileDefaultSaveTypeEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -845,7 +1032,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="Spreadsheet_FileDefaultSaveType_Enforce" valueName="Final">
+        <boolean id="Spreadsheet_FileDefaultSaveTypeEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -931,7 +1118,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="Presentation_FileDefaultSaveType_Enforce" valueName="Final">
+        <boolean id="Presentation_FileDefaultSaveTypeEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -947,7 +1134,7 @@
       <parentCategory ref="CAT_LibreOfficeWriterGeneral" />
       <supportedOn ref="SupportedLO4_3" />
       <elements>
-        <boolean id="ShowStandardizedPageCount_BOOL" valueName="Value">
+        <boolean id="ShowStandardizedPageCountValue" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -955,7 +1142,7 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="ShowStandardizedPageCount_Enforce" valueName="Final">
+        <boolean id="ShowStandardizedPageCountEnforce" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>

@@ -74,12 +74,23 @@
       <string id="CommonPrintOptionPrinterReducedTransparencyModeNoTransparency">No Transparency</string>
       <string id="CommonPrintOptionPrinterReducedGradientModeGradientStripes">Gradient Stripes</string>
       <string id="CommonPrintOptionPrinterReducedGradientModeIntermediateColor">Intermediate Color</string>
+      <string id="CommonPrintOptionPrinterReducedBitmapModeHigh">High Print Quality</string>
+      <string id="CommonPrintOptionPrinterReducedBitmapModeNormal">Normal Print Quality</string>
+      <string id="CommonPrintOptionPrinterReducedBitmapModeResolution">Resolution</string>
+      <string id="CommonPrintOptionPrinterReducedBitmapResolution0">72 DPI</string>
+      <string id="CommonPrintOptionPrinterReducedBitmapResolution1">96 DPI</string>
+      <string id="CommonPrintOptionPrinterReducedBitmapResolution2">150 DPI (Fax)</string>
+      <string id="CommonPrintOptionPrinterReducedBitmapResolution3">200 DPI (default)</string>
+      <string id="CommonPrintOptionPrinterReducedBitmapResolution4">300 DPI</string>
+      <string id="CommonPrintOptionPrinterReducedBitmapResolution5">600 DPI</string>
+      <string id="CommonPrintOptionFile">Reduce Printer Data: Print to File</string>
       <string id="CommonPrintWarning">Printer Warnings</string>
       <string id="CommonPrintWarningHelp">Sets Printer Warning</string>
       <!--# SECURITY #-->
-      <string id="MacroSecurityLevel">Macro Security Level</string>
-      <string id="MacroSecurityLevel_Help">Choose the Macro Security Level</string>
-      <string id="SecureURL_Help">Paths entered must follow these rules:
+      <string id="CommonSecurityScriptingMacroSecurityLevel">Macro Security Level</string>
+      <string id="CommonSecurityScriptingMacroSecurityLevelHelp">Choose the Macro Security Level</string>
+      <string id="CommonSecurityScriptingSecureURL">Trusted File Locations</string>
+      <string id="CommonSecurityScriptingSecureURLHelp">Paths entered must follow these rules:
  - File URIs have to begin with 'file:///'
  - Replace back slashes with forward slashes
  - Replace spaces with '%20'.
@@ -88,21 +99,20 @@
  Example:
  file:///S:/Important%20Files file:///S:/Documents
 	  </string>
-      <string id="HyperlinksWithCtrlClick">Ctrl-Click required to follow Hyperlinks</string>
-      <string id="HyperlinksWithCtrlClick_Help">If true, users will need to hold down the Ctrl key in order to click Hyperlinks</string>
-      <string id="WarnCreatePDF">Warn when creating PDF files</string>
-      <string id="WarnCreatePDF_Help">Warn when creating PDF files</string>
-      <string id="WarnSignDoc">Warn when signing a document</string>
-      <string id="WarnSignDoc_Help">Warn when signing a document</string>
-      <string id="WarnSaveOrSendDoc">Warn when saving or sending</string>
-      <string id="WarnSaveOrSendDoc_Help">Warn when saving or sending</string>
+      <string id="CommonSecurityScriptingHyperlinksWithCtrlClick">Ctrl-Click required to follow Hyperlinks</string>
+      <string id="CommonSecurityScriptingHyperlinksWithCtrlClickHelp">If true, users will need to hold down the Ctrl key in order to click Hyperlinks</string>
+      <string id="CommonSecurityScriptingWarnCreatePDF">Warn when creating PDF files</string>
+      <string id="CommonSecurityScriptingWarnCreatePDFHelp">Warn when creating PDF files</string>
+      <string id="CommonSecurityScriptingWarnSignDoc">Warn when signing a document</string>
+      <string id="CommonSecurityScriptingWarnSignDocHelp">Warn when signing a document</string>
+      <string id="CommonSecurityScriptingWarnSaveOrSendDoc">Warn when saving or sending</string>
+      <string id="CommonSecurityScriptingWarnSaveOrSendDocHelp">Warn when saving or sending</string>
       <string id="WarnPrintDoc">Warn when printing documents</string>
       <string id="WarnPrintDoc_Help">Warn when printing documents</string>
       <string id="RecommendPasswordProtection">Recommend password protection on saving</string>
       <string id="RecommendPasswordProtection_Help">Recommend password protection on saving</string>
       <string id="RemovePersonalInfoOnSaving">Remove personal information on saving</string>
       <string id="RemovePersonalInfoOnSaving_Help">Remove personal information on saving</string>
-      <string id="SecureURL">Trusted File Locations</string>
       <!--# PERSONALIZATION #-->
       <string id="Persona">LibreOffice Persona</string>
       <string id="Persona_Help">True will use the pre-installed theme, False will set LibreOffice to plain look</string>
@@ -240,8 +250,10 @@
         <checkBox refId="CommonPrintOptionPrinterReduceGradientsValue">Reduce gradient</checkBox>
         <dropdownList refId="CommonPrintOptionPrinterReducedGradientModeValue" noSort="true" defaultItem="0">Reduce Gradient:</dropdownList>
         <decimalTextBox refId="CommonPrintOptionPrinterReducedGradientStepCountValue" defaultValue="64" spinStep="1">Gradient Stripes:</decimalTextBox>
-        <!-- <checkBox refId="CommonPrintOptionPrinterReduceBitmap">Reduce gradient</checkBox>
-        <dropdownList refId="CommonPrintOptionPrinterReduceBitmapValue" noSort="true" defaultItem="0">Reduce bitmaps:</dropdownList> -->
+        <checkBox refId="CommonPrintOptionPrinterReduceBitmapsValue">Reduce bitmaps</checkBox>
+        <checkBox refId="CommonPrintOptionPrinterReducedBitmapIncludesTransparencyValue" defaultChecked="true">Bitmaps include transparent objects</checkBox>
+        <dropdownList refId="CommonPrintOptionPrinterReducedBitmapModeValue" noSort="true" defaultItem="1">Reduce bitmaps:</dropdownList>
+        <dropdownList refId="CommonPrintOptionPrinterReducedBitmapResolutionValue" noSort="true" defaultItem="3">Bitmap Resolution:</dropdownList>
         <checkBox refId="CommonPrintOptionPrinterConvertToGreyscalesValue">Convert colors to grayscale</checkBox>
       </presentation>
       <presentation id="CommonPrintWarning">
@@ -250,85 +262,85 @@
         <checkBox defaultChecked="true" refId="CommonPrintWarningTransparencyValue">Transparency</checkBox>
       </presentation>
       <!--# SECURITY #-->
-      <presentation id="MacroSecurityLevel">
-        <dropdownList refId="MacroSecurityLevelOp" noSort="true" defaultItem="1">Macro Security:</dropdownList>
-        <checkBox refId="MacroSecurityLevel_Enforce">Enforce</checkBox>
+      <presentation id="CommonSecurityScriptingMacroSecurityLevel">
+        <dropdownList refId="CommonSecurityScriptingMacroSecurityLevelValue" noSort="true" defaultItem="1">Macro Security:</dropdownList>
+        <checkBox refId="CommonSecurityScriptingMacroSecurityLevelEnforce">Enforce</checkBox>
       </presentation>
-      <presentation id="SecureURL">
-        <textBox refId="SecureURL_Text">
+      <presentation id="CommonSecurityScriptingSecureURL">
+        <textBox refId="CommonSecurityScriptingSecureURLValue">
           <label>Trusted Paths:</label>
         </textBox>
-        <checkBox refId="SecureURL_Enforce">Enforce</checkBox>
+        <checkBox refId="CommonSecurityScriptingSecureURLEnforce">Enforce</checkBox>
       </presentation>
-      <presentation id="HyperlinksWithCtrlClick">
-        <checkBox refId="HyperlinksWithCtrlClick_BOOL">Ctrl-Click required to follow hyperlinks</checkBox>
-        <checkBox refId="HyperlinksWithCtrlClick_Enforce">Enforce</checkBox>
+      <presentation id="CommonSecurityScriptingHyperlinksWithCtrlClick">
+        <checkBox refId="CommonSecurityScriptingHyperlinksWithCtrlClickValue">Ctrl-Click required to follow hyperlinks</checkBox>
+        <checkBox refId="CommonSecurityScriptingHyperlinksWithCtrlClickEnforce">Enforce</checkBox>
       </presentation>
-      <presentation id="WarnCreatePDF">
-        <checkBox refId="WarnCreatePDF_BOOL">Warn when creating PDF files</checkBox>
-        <checkBox refId="WarnCreatePDF_Enforce">Enforce</checkBox>
+      <presentation id="CommonSecurityScriptingWarnCreatePDF">
+        <checkBox refId="CommonSecurityScriptingWarnCreatePDFValue">Warn when creating PDF files</checkBox>
+        <checkBox refId="CommonSecurityScriptingWarnCreatePDFEnforce">Enforce</checkBox>
       </presentation>
-      <presentation id="WarnSignDoc">
-        <checkBox refId="WarnSignDoc_BOOL">Warn when signing a document</checkBox>
-        <checkBox refId="WarnSignDoc_Enforce">Enforce</checkBox>
+      <presentation id="CommonSecurityScriptingWarnSignDoc">
+        <checkBox refId="CommonSecurityScriptingWarnSignDocValue">Warn when signing a document</checkBox>
+        <checkBox refId="CommonSecurityScriptingWarnSignDocEnforce">Enforce</checkBox>
       </presentation>
-      <presentation id="WarnSaveOrSendDoc">
-        <checkBox refId="WarnSaveOrSendDoc_BOOL">Warn when saving or sending</checkBox>
-        <checkBox refId="WarnSaveOrSendDoc_Enforce">Enforce</checkBox>
+      <presentation id="CommonSecurityScriptingWarnSaveOrSendDoc">
+        <checkBox refId="CommonSecurityScriptingWarnSaveOrSendDocValue">Warn when saving or sending</checkBox>
+        <checkBox refId="CommonSecurityScriptingWarnSaveOrSendDocEnforce">Enforce</checkBox>
       </presentation>
       <presentation id="WarnPrintDoc">
-        <checkBox refId="WarnPrintDoc_BOOL">Warn when printing documents</checkBox>
-        <checkBox refId="WarnPrintDoc_Enforce">Enforce</checkBox>
+        <checkBox refId="WarnPrintDocValue">Warn when printing documents</checkBox>
+        <checkBox refId="WarnPrintDocEnforce">Enforce</checkBox>
       </presentation>
       <presentation id="RecommendPasswordProtection">
-        <checkBox refId="RecommendPasswordProtection_BOOL">Recommend password protection on saving</checkBox>
-        <checkBox refId="RecommendPasswordProtection_Enforce">Enforce</checkBox>
+        <checkBox refId="RecommendPasswordProtectionValue">Recommend password protection on saving</checkBox>
+        <checkBox refId="RecommendPasswordProtectionEnforce">Enforce</checkBox>
       </presentation>
       <presentation id="RemovePersonalInfoOnSaving">
-        <checkBox refId="RemovePersonalInfoOnSaving_BOOL">Remove personal information on saving</checkBox>
-        <checkBox refId="RemovePersonalInfoOnSaving_Enforce">Enforce</checkBox>
+        <checkBox refId="RemovePersonalInfoOnSavingValue">Remove personal information on saving</checkBox>
+        <checkBox refId="RemovePersonalInfoOnSavingEnforce">Enforce</checkBox>
       </presentation>
       <!--# PERSONALIZATION #-->
       <presentation id="Persona">
         <dropdownList refId="PersonaOp" noSort="true" defaultItem="1">Firefox Theme:</dropdownList>
-        <checkBox refId="Persona_Enforce">Enforce</checkBox>
+        <checkBox refId="PersonaEnforce">Enforce</checkBox>
       </presentation>
       <!--# ACCESSIBILITY #-->
       <presentation id="IsAllowAnimatedGraphics">
-        <checkBox refId="IsAllowAnimatedGraphics_BOOL">Allow animated graphics</checkBox>
-        <checkBox refId="IsAllowAnimatedGraphics_Enforce">Enforce</checkBox>
+        <checkBox refId="IsAllowAnimatedGraphicsValue">Allow animated graphics</checkBox>
+        <checkBox refId="IsAllowAnimatedGraphicsEnforce">Enforce</checkBox>
       </presentation>
       <!--## LOAD SAVE ##-->
       <!--# GENERAL #-->
       <presentation id="LoadDocumentSettings">
-        <checkBox refId="LoadDocumentSettings_BOOL">Load user-specific settings with the document</checkBox>
-        <checkBox refId="LoadDocumentSettings_Enforce">Enforce</checkBox>
+        <checkBox refId="LoadDocumentSettingsValue">Load user-specific settings with the document</checkBox>
+        <checkBox refId="LoadDocumentSettingsEnforce">Enforce</checkBox>
       </presentation>
       <presentation id="LoadDocumentPrinterSettings">
-        <checkBox refId="LoadDocumentPrinterSettings_BOOL">Load printer settings with the document</checkBox>
-        <checkBox refId="LoadDocumentPrinterSettings_Enforce">Enforce</checkBox>
+        <checkBox refId="LoadDocumentPrinterSettingsValue">Load printer settings with the document</checkBox>
+        <checkBox refId="LoadDocumentPrinterSettingsEnforce">Enforce</checkBox>
       </presentation>
       <presentation id="FileMetaDataOnSave">
-        <checkBox refId="FileMetaDataOnSave_BOOL">Edit Properties on save</checkBox>
-        <checkBox refId="FileMetaDataOnSave_Enforce">Enforce</checkBox>
+        <checkBox refId="FileMetaDataOnSaveValue">Edit Properties on save</checkBox>
+        <checkBox refId="FileMetaDataOnSaveEnforce">Enforce</checkBox>
       </presentation>
       <presentation id="Text_FileDefaultSaveType">
         <dropdownList refId="Text_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>
-        <checkBox refId="Text_FileDefaultSaveType_Enforce">Enforce</checkBox>
+        <checkBox refId="Text_FileDefaultSaveTypeEnforce">Enforce</checkBox>
       </presentation>
       <presentation id="Spreadsheet_FileDefaultSaveType">
         <dropdownList refId="Spreadsheet_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>
-        <checkBox refId="Spreadsheet_FileDefaultSaveType_Enforce">Enforce</checkBox>
+        <checkBox refId="Spreadsheet_FileDefaultSaveTypeEnforce">Enforce</checkBox>
       </presentation>
       <presentation id="Presentation_FileDefaultSaveType">
         <dropdownList refId="Presentation_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>
-        <checkBox refId="Presentation_FileDefaultSaveType_Enforce">Enforce</checkBox>
+        <checkBox refId="Presentation_FileDefaultSaveTypeEnforce">Enforce</checkBox>
       </presentation>
       <!--## LIBREOFFICE WRITER ##-->
       <!--# GENERAL #-->
       <presentation id="ShowStandardizedPageCount">
-        <checkBox refId="ShowStandardizedPageCount_BOOL">Show Standardized Page Count</checkBox>
-        <checkBox refId="ShowStandardizedPageCount_Enforce">Enforce</checkBox>
+        <checkBox refId="ShowStandardizedPageCountValue">Show Standardized Page Count</checkBox>
+        <checkBox refId="ShowStandardizedPageCountEnforce">Enforce</checkBox>
       </presentation>
       <!--# BASIC FONTS #-->
       <presentation id="BasicFonts">
