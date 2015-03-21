@@ -119,12 +119,14 @@
       <!--# ACCESSIBILITY #-->
       <string id="IsAllowAnimatedGraphics">Allow animated graphics</string>
       <string id="IsAllowAnimatedGraphicsHelp">Enables or disables animated graphics</string>
+      <string id="CommonAccessibilityHighContrast">High Contrast Appearance options</string>
+      <string id="CommonAccessibilityHighContrastHelp">Options for High Contrast Appearance</string>
       <!--## LOAD SAVE ##-->
       <!--# GENERAL #-->
-      <string id="LoadDocumentSettings">Load user-specific settings with the document</string>
-      <string id="LoadDocumentSettingsHelp">Load user-specific settings with the document</string>
-      <string id="LoadDocumentPrinterSettings">Load printer settings with the document</string>
-      <string id="LoadDocumentPrinterSettingsHelp">Load printer settings with the document</string>
+      <string id="CommonLoadDocument">Document Load Settings</string>
+      <string id="CommonLoadDocumentHelp">Settings that relate to loading files</string>
+      <string id="CommonSaveDocument">Document Save Settings</string>
+      <string id="CommonSaveDocumentHelp">Settings that relate to saving files</string>
       <string id="FileMetaDataOnSave">Ask for Document metadata on LibreOffice exit</string>
       <string id="FileMetaDataOnSaveHelp">If true, users will be prompted to enter in file metadata when initially saving a file.</string>
       <!--Default File Format-->
@@ -317,19 +319,28 @@
         <checkBox refId="IsAllowAnimatedGraphicsValue">Allow animated graphics</checkBox>
         <checkBox refId="IsAllowAnimatedGraphicsEnforce">Enforce</checkBox>
       </presentation>
+      <presentation id="CommonAccessibilityHighContrast">
+        <checkBox refId="CommonAccessibilityAutoDetectSystemHCValue">Automatically detect OS contrast</checkBox>
+        <checkBox refId="CommonAccessibilityIsAutomaticFontColorValue">Automatic font color for screen display</checkBox>
+        <checkBox refId="CommonAccessibilityIsForPagePreviewsValue" defaultChecked="true">System colors for page previews</checkBox>
+      </presentation>
       <!--## LOAD SAVE ##-->
       <!--# GENERAL #-->
-      <presentation id="LoadDocumentSettings">
+      <presentation id="CommonLoadDocument">
         <checkBox refId="LoadDocumentSettingsValue">Load user-specific settings with the document</checkBox>
         <checkBox refId="LoadDocumentSettingsEnforce">Enforce</checkBox>
-      </presentation>
-      <presentation id="LoadDocumentPrinterSettings">
         <checkBox refId="LoadDocumentPrinterSettingsValue">Load printer settings with the document</checkBox>
         <checkBox refId="LoadDocumentPrinterSettingsEnforce">Enforce</checkBox>
       </presentation>
-      <presentation id="FileMetaDataOnSave">
-        <checkBox refId="FileMetaDataOnSaveValue">Edit Properties on save</checkBox>
-        <checkBox refId="FileMetaDataOnSaveEnforce">Enforce</checkBox>
+      <presentation id="CommonSaveDocument">
+        <checkBox refId="RecoveryAutoSaveEnabledValue" defaultChecked="true">Save AutoRecovery information</checkBox>
+        <decimalTextBox refId="RecoveryAutoSaveTimeIntervallValue" defaultValue="15" spinStep="1">Autosave Interval:</decimalTextBox>
+        <checkBox refId="RecoveryAutoSaveUserAutoSaveEnabledValue">Automatically save the document too</checkBox>
+        <checkBox refId="CommonSaveDocumentEditPropertyValue">Edit document properties before saving</checkBox>
+        <checkBox refId="CommonSaveDocumentEditPropertyFinal">Enforce: Edit document properties before saving</checkBox>
+        <checkBox refId="CommonSaveDocumentCreateBackupValue">Always create backup copy</checkBox>
+        <checkBox refId="CommonSaveURLFileSystemValue" defaultChecked="true">Save URLs relative to the file system</checkBox>
+        <checkBox refId="CommonSaveURLInternetValue" defaultChecked="true">Save URLs relative to internet</checkBox>
       </presentation>
       <presentation id="Text_FileDefaultSaveType">
         <dropdownList refId="Text_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>

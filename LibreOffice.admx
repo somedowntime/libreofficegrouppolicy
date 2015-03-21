@@ -802,13 +802,43 @@
         </boolean>
       </elements>
     </policy>
+    <policy name="CommonAccessibilityHighContrast" class="Machine" displayName="$(string.CommonAccessibilityHighContrast)" explainText="$(string.CommonAccessibilityHighContrastHelp)" presentation="$(presentation.CommonAccessibilityHighContrast)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Accessibility">
+      <parentCategory ref="CAT_LibreOfficeAccessibility" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <boolean id="CommonAccessibilityAutoDetectSystemHCValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Accessibility\AutoDetectSystemHC" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CommonAccessibilityIsAutomaticFontColorValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Accessibility\IsAutomaticFontColor" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CommonAccessibilityIsForPagePreviewsValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Accessibility\IsForPagePreviews" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
     <!--## LOAD SAVE ##-->
     <!--# GENERAL #-->
-    <policy name="LoadDocumentSettings" class="Machine" displayName="$(string.LoadDocumentSettings)" explainText="$(string.LoadDocumentSettingsHelp)" presentation="$(presentation.LoadDocumentSettings)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Load\UserDefinedSettings">
+    <policy name="CommonLoadDocument" class="Machine" displayName="$(string.CommonLoadDocument)" explainText="$(string.CommonLoadDocumentHelp)" presentation="$(presentation.CommonLoadDocument)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Load">
       <parentCategory ref="CAT_LoadSaveGeneral" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <boolean id="LoadDocumentSettingsValue" valueName="Value">
+        <boolean id="LoadDocumentSettingsValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Load\UserDefinedSettings" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -816,7 +846,23 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="LoadDocumentSettingsEnforce" valueName="Final">
+        <boolean id="LoadDocumentSettingsEnforce" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Load\UserDefinedSettings" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="LoadDocumentPrinterSettingsValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\LoadPrinter" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="LoadDocumentPrinterSettingsEnforce" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\LoadPrinter" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -826,11 +872,11 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="LoadDocumentPrinterSettings" class="Machine" displayName="$(string.LoadDocumentPrinterSettings)" explainText="$(string.LoadDocumentPrinterSettingsHelp)" presentation="$(presentation.LoadDocumentPrinterSettings)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\LoadPrinter">
+    <policy name="CommonSaveDocument" class="Machine" displayName="$(string.CommonSaveDocument)" explainText="$(string.CommonSaveDocumentHelp)" presentation="$(presentation.CommonSaveDocument)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save">
       <parentCategory ref="CAT_LoadSaveGeneral" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <boolean id="LoadDocumentPrinterSettingsValue" valueName="Value">
+        <boolean id="RecoveryAutoSaveEnabledValue" key="Software\policies\LibreOffice\org.openoffice.Office.Recovery\AutoSave\Enabled" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -838,21 +884,8 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="LoadDocumentPrinterSettingsEnforce" valueName="Final">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="FileMetaDataOnSave" class="Machine" displayName="$(string.FileMetaDataOnSave)" explainText="$(string.FileMetaDataOnSaveHelp)" presentation="$(presentation.FileMetaDataOnSave)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\EditProperty">
-      <parentCategory ref="CAT_LoadSaveGeneral" />
-      <supportedOn ref="SupportedLO4_2" />
-      <elements>
-        <boolean id="FileMetaDataOnSaveValue" valueName="Value">
+        <decimal id="RecoveryAutoSaveTimeIntervallValue" key="Software\policies\LibreOffice\org.openoffice.Office.Recovery\AutoSave\TimeIntervall" valueName="Value" minValue="1" maxValue="99" storeAsText="true" />
+        <boolean id="RecoveryAutoSaveUserAutoSaveEnabledValue" key="Software\policies\LibreOffice\org.openoffice.Office.Recovery\AutoSave\UserAutoSaveEnabled" valueName="Value">
           <trueValue>
             <string>true</string>
           </trueValue>
@@ -860,12 +893,44 @@
             <string>false</string>
           </falseValue>
         </boolean>
-        <boolean id="FileMetaDataOnSaveEnforce" valueName="Final">
+        <boolean id="CommonSaveDocumentEditPropertyValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\EditProperty" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CommonSaveDocumentEditPropertyFinal" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\EditProperty" valueName="Final">
           <trueValue>
             <decimal value="1" />
           </trueValue>
           <falseValue>
             <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="CommonSaveDocumentCreateBackupValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\CreateBackup" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CommonSaveURLFileSystemValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\URL\FileSystem" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CommonSaveURLInternetValue" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\URL\Internet" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
           </falseValue>
         </boolean>
       </elements>
