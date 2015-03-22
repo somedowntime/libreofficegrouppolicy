@@ -127,8 +127,14 @@
       <string id="CommonLoadDocumentHelp">Settings that relate to loading files</string>
       <string id="CommonSaveDocument">Document Save Settings</string>
       <string id="CommonSaveDocumentHelp">Settings that relate to saving files</string>
-      <string id="FileMetaDataOnSave">Ask for Document metadata on LibreOffice exit</string>
-      <string id="FileMetaDataOnSaveHelp">If true, users will be prompted to enter in file metadata when initially saving a file.</string>
+      <string id="CommonSaveODFDefaultVersion">ODF format version</string>
+      <string id="CommonSaveODFDefaultVersionHelp">sets the default ODF version</string>
+      <string id="CommonSaveODFDefaultVersion2">1.0/1.1</string>
+      <string id="CommonSaveODFDefaultVersion3">1.2 Extended (recommended)</string>
+      <string id="CommonSaveODFDefaultVersion4">1.2</string>
+      <string id="CommonSaveODFDefaultVersion8">1.2 Extended (compatibility mode)</string>
+      <string id="CommonSaveDocumentWarnAlienFormat">Warn when not saving in ODF or default format</string>
+      <string id="CommonSaveDocumentWarnAlienFormatHelp">Warn when not saving in ODF or default format</string>
       <!--Default File Format-->
       <string id="Text_FileDefaultSaveType">Writer: Configure default save file type</string>
       <string id="Text_FileDefaultSaveTypeHelp">Specify the default file type when saving from Writer. Remember that if you do not enforce the setting, local user configuration will override this.</string>
@@ -341,6 +347,14 @@
         <checkBox refId="CommonSaveDocumentCreateBackupValue">Always create backup copy</checkBox>
         <checkBox refId="CommonSaveURLFileSystemValue" defaultChecked="true">Save URLs relative to the file system</checkBox>
         <checkBox refId="CommonSaveURLInternetValue" defaultChecked="true">Save URLs relative to internet</checkBox>
+      </presentation>
+      <presentation id="CommonSaveODFDefaultVersion">
+        <dropdownList refId="CommonSaveODFDefaultVersionValue" noSort="true" defaultItem="3">ODF format version:</dropdownList>
+        <checkBox refId="CommonSaveODFDefaultVersionEnforce">Enforce</checkBox>
+      </presentation>
+      <presentation id="CommonSaveDocumentWarnAlienFormat">
+        <checkBox refId="CommonSaveDocumentWarnAlienFormatValue" defaultChecked="true">Warn when not saving in ODF or default format</checkBox>
+        <checkBox refId="CommonSaveDocumentWarnAlienFormatEnforce">Enforce</checkBox>
       </presentation>
       <presentation id="Text_FileDefaultSaveType">
         <dropdownList refId="Text_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>

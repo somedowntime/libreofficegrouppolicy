@@ -935,6 +935,64 @@
         </boolean>
       </elements>
     </policy>
+    <policy name="CommonSaveODFDefaultVersion" class="Machine" displayName="$(string.CommonSaveODFDefaultVersion)" explainText="$(string.CommonSaveODFDefaultVersionHelp)" presentation="$(presentation.CommonSaveODFDefaultVersion)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\ODF\DefaultVersion">
+      <parentCategory ref="CAT_LoadSaveGeneral"/>
+      <supportedOn ref="SupportedLO4_2"/>
+      <elements>
+        <enum id="CommonSaveODFDefaultVersionValue" valueName="Value">
+          <item displayName="$(string.CommonSaveODFDefaultVersion2)">
+            <value>
+              <string>2</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonSaveODFDefaultVersion4)">
+            <value>
+              <string>4</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonSaveODFDefaultVersion8)">
+            <value>
+              <string>8</string>
+            </value>
+          </item>
+          <item displayName="$(string.CommonSaveODFDefaultVersion3)">
+            <value>
+              <string>3</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="CommonSaveODFDefaultVersionEnforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="CommonSaveDocumentWarnAlienFormat" class="Machine" displayName="$(string.CommonSaveDocumentWarnAlienFormat)" explainText="$(string.CommonSaveDocumentWarnAlienFormatHelp)" presentation="$(presentation.CommonSaveDocumentWarnAlienFormat)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Save\Document\WarnAlienFormat">
+      <parentCategory ref="CAT_LoadSaveGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <boolean id="CommonSaveDocumentWarnAlienFormatValue" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CommonSaveDocumentWarnAlienFormatEnforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
     <policy name="Text_FileDefaultSaveType" class="Machine" displayName="$(string.Text_FileDefaultSaveType)" explainText="$(string.Text_FileDefaultSaveTypeHelp)" presentation="$(presentation.Text_FileDefaultSaveType)" key="Software\policies\LibreOffice\org.openoffice.Setup\Office\Factories\org.openoffice.Setup:Factory['com.sun.star.text.TextDocument']\ooSetupFactoryDefaultFilter">
       <parentCategory ref="CAT_LoadSaveGeneral" />
       <supportedOn ref="SupportedLO4_2" />
