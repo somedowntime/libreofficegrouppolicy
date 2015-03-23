@@ -30,10 +30,15 @@
       <string id="CAT_LoadSave">Load / Save</string>
       <string id="CAT_LoadSaveGeneral">General</string>
       <!--## LANGUAGE SETTINGS ##-->
+      <string id="CAT_LanguageSettings">Language Settings</string>
+      <string id="CAT_LanguageSettingsSentenceChecking">English sentence checking</string>
       <!--## LIBREOFFICE WRITER ##-->
       <string id="CAT_LibreOfficeWriter">LibreOffice Writer</string>
       <string id="CAT_LibreOfficeWriterGeneral">General</string>
       <string id="CAT_LibreOfficeWriterBasicFonts">Basic Fonts</string>
+      <!--## LIBREOFFICE CALC ##-->
+      <string id="CAT_LibreOfficeCalc">LibreOffice Calc</string>
+      <string id="CAT_LibreOfficeCalcGeneral">General</string>
       <!--## LIBREOFFICE WRITER/WEB ##-->
       <!--## LIBREOFFICE BASE ##-->
       <!--## CHARTS ##-->
@@ -142,6 +147,10 @@
       <string id="Spreadsheet_FileDefaultSaveTypeHelp">Specify the default file type when saving from Calc. Remember that if you do not enforce the setting, local user configuration will override this.</string>
       <string id="Presentation_FileDefaultSaveType">Impress: Configure default save file type</string>
       <string id="Presentation_FileDefaultSaveTypeHelp">Specify the default file type when saving from Impress. Remember that if you do not enforce the setting, local user configuration will override this.</string>
+      <!--## LANGUAGE SETTINGS ##-->
+      <!--# ENGLISH SENTENCE CHECKING #-->
+      <string id="Lightproof_enLeavesengrammar">Grammar checking settings</string>
+      <string id="Lightproof_enLeavesengrammarHelp">Grammar checking</string>
       <!--## LIBREOFFICE WRITER ##-->
       <!--# GENERAL #-->
       <string id="ShowStandardizedPageCount">Show Standardized Page Count</string>
@@ -208,6 +217,19 @@
       <string id="Presentation_FileDefaultSaveType_PPT">Microsoft PowerPoint 97/2000/XP/2003</string>
       <string id="Presentation_FileDefaultSaveType_PPTXA">Microsoft PowerPoint 2007/2010/2013 XML AutoPlay</string>
       <string id="Presentation_FileDefaultSaveType_PPTX">Microsoft PowerPoint 2007/2010/2013 XML</string>
+      <!--## LIBREOFFICE CALC ##-->
+      <!--# GENERAL #-->
+      <string id="CalcContentUpdateLink">Updating</string>
+      <string id="CalcContentUpdateLinkHelp">Update links when opening</string>
+      <string id="CalcContentUpdateLinkAlways">Always</string>
+      <string id="CalcContentUpdateLinkOnRequest">On Request</string>
+      <string id="CalcContentUpdateLinkNever">Never</string>
+      <string id="CalcInput">Input Settings</string>
+      <string id="CalcInputHelp">set calc input settings</string>
+      <string id="CalcInputMoveSelectionDirectionDown">Down</string>
+      <string id="CalcInputMoveSelectionDirectionRight">Right</string>
+      <string id="CalcInputMoveSelectionDirectionUp">Up</string>
+      <string id="CalcInputMoveSelectionDirectionLeft">Left</string>
     </stringTable>
     <presentationTable>
       <!--## LIBREOFFICE ##-->
@@ -368,6 +390,14 @@
         <dropdownList refId="Presentation_FileDefaultSaveTypeOp" noSort="true" defaultItem="7">Default Save Type:</dropdownList>
         <checkBox refId="Presentation_FileDefaultSaveTypeEnforce">Enforce</checkBox>
       </presentation>
+      <!--## LANGUAGE SETTINGS ##-->
+      <!--# ENGLISH SENTENCE CHECKING #-->
+      <presentation id="Lightproof_enLeavesengrammar">
+        <checkBox refId="Lightproof_enLeavesengrammarValue">Possible mistakes</checkBox>
+        <checkBox refId="Lightproof_enLeavesencapValue">Capitalization</checkBox>
+        <checkBox refId="Lightproof_enLeavesendupValue">Word duplication</checkBox>
+        <checkBox refId="Lightproof_enLeavesenellipsisValue">Parentheses</checkBox>
+      </presentation>
       <!--## LIBREOFFICE WRITER ##-->
       <!--# GENERAL #-->
       <presentation id="ShowStandardizedPageCount">
@@ -395,6 +425,23 @@
         <textBox refId="BasicFonts_Heading">
           <label>Heading:</label>
         </textBox>
+      </presentation>
+      <!--## LIBREOFFICE CALC ##-->
+      <!--# GENERAL #-->
+      <presentation id="CalcContentUpdateLink">
+        <dropdownList refId="CalcContentUpdateLinkValue" noSort="true" defaultItem="1">Update links when opening:</dropdownList>
+      </presentation>
+      <presentation id="CalcInput">
+        <checkBox refId="CalcInputMoveSelectionValue" defaultChecked="true">Press Enter to move selection</checkBox>
+        <dropdownList refId="CalcInputMoveSelectionDirectionValue" noSort="true" defaultItem="0">Enter move direction:</dropdownList>
+        <checkBox refId="CalcInputSwitchToEditModeValue">Press Enter to switch to edit mode</checkBox>
+        <checkBox refId="CalcInputExpandFormattingValue">Expand formatting</checkBox>
+        <checkBox refId="CalcInputExpandReferenceValue">Expand references when inserting</checkBox>
+        <checkBox refId="CalcInputUpdateReferenceOnSortValue">Update references when sorting</checkBox>
+        <checkBox refId="CalcInputUseHighlightSelectionValue" defaultChecked="true">Highligh selection in column/row headers</checkBox>
+        <checkBox refId="CalcInputUsePrinterMetricsValue">Use printer metrics for text formatting</checkBox>
+        <checkBox refId="CalcInputReplaceCellsWarningValue" defaultChecked="true">Show overwrite warning when pasting data</checkBox>
+        <checkBox refId="CalcInputLegacyCellSelectionValue">Use legacy cursor movement when selecting</checkBox>
       </presentation>
     </presentationTable>
   </resources>

@@ -69,6 +69,12 @@
       <parentCategory ref="LibreOffice:CAT_LoadSave" />
     </category>
     <!--## LANGUAGE SETTINGS ##-->
+    <category name="CAT_LanguageSettings" displayName="$(string.CAT_LanguageSettings)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" />
+    </category>
+    <category name="CAT_LanguageSettingsSentenceChecking" displayName="$(string.CAT_LanguageSettingsSentenceChecking)">
+      <parentCategory ref="LibreOffice:CAT_LanguageSettings" />
+    </category>
     <!--## LIBREOFFICE WRITER ##-->
     <category name="CAT_LibreOfficeWriter" displayName="$(string.CAT_LibreOfficeWriter)">
       <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" />
@@ -78,6 +84,13 @@
     </category>
     <category name="CAT_LibreOfficeWriterBasicFonts" displayName="$(string.CAT_LibreOfficeWriterBasicFonts)">
       <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
+    </category>
+    <!--## LIBREOFFICE CALC ##-->
+    <category name="CAT_LibreOfficeCalc" displayName="$(string.CAT_LibreOfficeCalc)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" />
+    </category>
+    <category name="CAT_LibreOfficeCalcGeneral" displayName="$(string.CAT_LibreOfficeCalcGeneral)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeCalc" />
     </category>
     <!--## LIBREOFFICE WRITER/WEB ##-->
     <!--## LIBREOFFICE BASE ##-->
@@ -1251,6 +1264,48 @@
         </boolean>
       </elements>
     </policy>
+    <!--## LANGUAGE SETTINGS ##-->
+    <!--# ENGLISH SENTENCE CHECKING #-->
+    <!-- Note: For some reason I cannot set the grammer settings. Feel free to help with this! - Thomas -->
+    <!-- 
+    <policy name="Lightproof_enLeavesengrammar" class="Machine" displayName="$(string.Lightproof_enLeavesengrammar)" explainText="$(string.Lightproof_enLeavesengrammarHelp)" presentation="$(presentation.Lightproof_enLeavesengrammar)" key="Software\policies\LibreOffice\org.openoffice.Lightproof_en\Leaves\en">
+      <parentCategory ref="CAT_LanguageSettingsSentenceChecking" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <boolean id="Lightproof_enLeavesencapValue" key="Software\policies\LibreOffice\org.openoffice.Lightproof_en\Leaves\en\cap" valueName="Value">
+          <trueValue>
+            <string>1</string>
+          </trueValue>
+          <falseValue>
+            <string>0</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Lightproof_enLeavesendupValue" key="Software\policies\LibreOffice\org.openoffice.Lightproof_en\Leaves\en\dup" valueName="Value">
+          <trueValue>
+            <string>1</string>
+          </trueValue>
+          <falseValue>
+            <string>0</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Lightproof_enLeavesenellipsisValue" key="Software\policies\LibreOffice\org.openoffice.Lightproof_en\Leaves\en\ellipsis" valueName="Value">
+          <trueValue>
+            <string>1</string>
+          </trueValue>
+          <falseValue>
+            <string>0</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Lightproof_enLeavesengrammarValue" key="Software\policies\LibreOffice\org.openoffice.Lightproof_en\Leaves\en\grammar" valueName="Value">
+          <trueValue>
+            <string>1</string>
+          </trueValue>
+          <falseValue>
+            <string>0</string>
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy> -->
     <!--## LIBREOFFICE WRITER ##-->
     <!--# GENERAL #-->
     <policy name="WriterLayoutOtherMeasureUnit" class="Machine" displayName="$(string.WriterLayoutOtherMeasureUnit)" explainText="$(string.WriterLayoutOtherMeasureUnitHelp)" presentation="$(presentation.WriterLayoutOtherMeasureUnit)" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\Layout\Other\MeasureUnit">
@@ -1319,6 +1374,131 @@
         <text id="BasicFonts_List" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\List" valueName="Value" required="true" expandable="true" />
         <text id="BasicFonts_Standard" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Standard" valueName="Value" required="true" expandable="true" />
         <text id="BasicFonts_Heading" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Heading" valueName="Value" required="true" expandable="true" />
+      </elements>
+    </policy>
+    <!--## LIBREOFFICE CALC ##-->
+    <!--# GENERAL #-->
+    <policy name="CalcContentUpdateLink" class="Machine" displayName="$(string.CalcContentUpdateLink)" explainText="$(string.CalcContentUpdateLinkHelp)" presentation="$(presentation.CalcContentUpdateLink)" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Content\Update\Link">
+      <parentCategory ref="CAT_LibreOfficeCalcGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <enum id="CalcContentUpdateLinkValue" valueName="Value">
+          <item displayName="$(string.CalcContentUpdateLinkAlways)">
+            <value>
+              <string>0</string>
+            </value>
+          </item>
+          <item displayName="$(string.CalcContentUpdateLinkOnRequest)">
+            <value>
+              <string>2</string>
+            </value>
+          </item>
+          <item displayName="$(string.CalcContentUpdateLinkNever)">
+            <value>
+              <string>1</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="CalcInput" class="Machine" displayName="$(string.CalcInput)" explainText="$(string.CalcInputHelp)" presentation="$(presentation.CalcInput)" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Input">
+      <parentCategory ref="CAT_LibreOfficeCalcGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <boolean id="CalcInputMoveSelectionValue" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Input\MoveSelection" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <enum id="CalcInputMoveSelectionDirectionValue" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Input\MoveSelectionDirection" valueName="Value">
+          <item displayName="$(string.CalcInputMoveSelectionDirectionDown)">
+            <value>
+              <string>0</string>
+            </value>
+          </item>
+          <item displayName="$(string.CalcInputMoveSelectionDirectionRight)">
+            <value>
+              <string>1</string>
+            </value>
+          </item>
+          <item displayName="$(string.CalcInputMoveSelectionDirectionUp)">
+            <value>
+              <string>2</string>
+            </value>
+          </item>
+          <item displayName="$(string.CalcInputMoveSelectionDirectionLeft)">
+            <value>
+              <string>3</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="CalcInputSwitchToEditModeValue" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Input\SwitchToEditMode" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CalcInputExpandFormattingValue" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Input\ExpandFormatting" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CalcInputExpandReferenceValue" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Input\ExpandReference" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CalcInputUpdateReferenceOnSortValue" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Input\UpdateReferenceOnSort" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CalcInputUseHighlightSelectionValue" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Input\HighlightSelection" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CalcInputUsePrinterMetricsValue" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Input\UsePrinterMetrics" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CalcInputReplaceCellsWarningValue" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Input\ReplaceCellsWarning" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="CalcInputLegacyCellSelectionValue" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Input\LegacyCellSelection" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
   </policies>
