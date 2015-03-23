@@ -155,16 +155,22 @@
       <!--# GENERAL #-->
       <string id="ShowStandardizedPageCount">Show Standardized Page Count</string>
       <string id="ShowStandardizedPageCountHelp">Show Standardized Page Count</string>
-      <string id="WriterLayoutOtherMeasureUnit">Measurement Units</string>
-      <string id="WriterLayoutOtherMeasureUnitHelp">Set the mesurement unit and the default tab stop. Default tab stop is measured in 1/100mm regardless of the measurement unit used.</string>
-      <string id="WriterLayoutOtherMeasureUnitMillimeter">Millimeter</string>
-      <string id="WriterLayoutOtherMeasureUnitCentimeter">Centimeter</string>
-      <string id="WriterLayoutOtherMeasureUnitInch">Inch</string>
-      <string id="WriterLayoutOtherMeasureUnitPica">Pica</string>
-      <string id="WriterLayoutOtherMeasureUnitPoint">Point</string>
       <!--# BASIC FONTS #-->
       <string id="BasicFonts">Basic Fonts</string>
       <string id="BasicFontsHelp">Enter the default font.</string>
+      <!--## LIBREOFFICE CALC ##-->
+      <!--# GENERAL #-->
+      <string id="CalcContentUpdateLink">Updating</string>
+      <string id="CalcContentUpdateLinkHelp">Update links when opening</string>
+      <string id="CalcContentUpdateLinkAlways">Always</string>
+      <string id="CalcContentUpdateLinkOnRequest">On Request</string>
+      <string id="CalcContentUpdateLinkNever">Never</string>
+      <string id="CalcInput">Input Settings</string>
+      <string id="CalcInputHelp">set calc input settings</string>
+      <string id="CalcInputMoveSelectionDirectionDown">Down</string>
+      <string id="CalcInputMoveSelectionDirectionRight">Right</string>
+      <string id="CalcInputMoveSelectionDirectionUp">Up</string>
+      <string id="CalcInputMoveSelectionDirectionLeft">Left</string>
       <!--## PREDEFINED SETTINGS ##-->
       <string id="LibreOfficeCommon_True">true</string>
       <string id="LibreOfficeCommon_False">false</string>
@@ -172,6 +178,14 @@
       <string id="LibreOfficeCommon_High">high</string>
       <string id="LibreOfficeCommon_Medium">medium</string>
       <string id="LibreOfficeCommon_Low">low</string>
+      <!-- Measurements -->
+      <string id="LibreOfficeCommon_MeasureUnit">Measurement Units</string>
+      <string id="LibreOfficeCommon_MeasureUnitHelp">Set the mesurement unit and the default tab stop. Default tab stop is measured in 1/100mm regardless of the measurement unit used.</string>
+      <string id="LibreOfficeCommon_Millimeter">Millimeter</string>
+      <string id="LibreOfficeCommon_Centimeter">Centimeter</string>
+      <string id="LibreOfficeCommon_Inch">Inch</string>
+      <string id="LibreOfficeCommon_Pica">Pica</string>
+      <string id="LibreOfficeCommon_Point">Point</string>
       <!-- Load/Save Text document defaults -->
       <string id="Text_FileDefaultSaveType_WR8T">ODF Text Document Template</string>
       <string id="Text_FileDefaultSaveType_WR8">ODF Text Document</string>
@@ -217,19 +231,6 @@
       <string id="Presentation_FileDefaultSaveType_PPT">Microsoft PowerPoint 97/2000/XP/2003</string>
       <string id="Presentation_FileDefaultSaveType_PPTXA">Microsoft PowerPoint 2007/2010/2013 XML AutoPlay</string>
       <string id="Presentation_FileDefaultSaveType_PPTX">Microsoft PowerPoint 2007/2010/2013 XML</string>
-      <!--## LIBREOFFICE CALC ##-->
-      <!--# GENERAL #-->
-      <string id="CalcContentUpdateLink">Updating</string>
-      <string id="CalcContentUpdateLinkHelp">Update links when opening</string>
-      <string id="CalcContentUpdateLinkAlways">Always</string>
-      <string id="CalcContentUpdateLinkOnRequest">On Request</string>
-      <string id="CalcContentUpdateLinkNever">Never</string>
-      <string id="CalcInput">Input Settings</string>
-      <string id="CalcInputHelp">set calc input settings</string>
-      <string id="CalcInputMoveSelectionDirectionDown">Down</string>
-      <string id="CalcInputMoveSelectionDirectionRight">Right</string>
-      <string id="CalcInputMoveSelectionDirectionUp">Up</string>
-      <string id="CalcInputMoveSelectionDirectionLeft">Left</string>
     </stringTable>
     <presentationTable>
       <!--## LIBREOFFICE ##-->
@@ -404,10 +405,6 @@
         <checkBox refId="ShowStandardizedPageCountValue">Show Standardized Page Count</checkBox>
         <checkBox refId="ShowStandardizedPageCountEnforce">Enforce</checkBox>
       </presentation>
-      <presentation id="WriterLayoutOtherMeasureUnit">
-        <dropdownList refId="WriterLayoutOtherMeasureUnitValue" noSort="true" defaultItem="2">Measurement Unit:</dropdownList>
-        <decimalTextBox refId="WriterLayoutOtherTabStopValue" defaultValue="1250" spinStep="50">Tab Stop (1/100 mm):</decimalTextBox>
-      </presentation>
       <!--# BASIC FONTS #-->
       <presentation id="BasicFonts">
         <textBox refId="BasicFonts_Caption">
@@ -442,6 +439,11 @@
         <checkBox refId="CalcInputUsePrinterMetricsValue">Use printer metrics for text formatting</checkBox>
         <checkBox refId="CalcInputReplaceCellsWarningValue" defaultChecked="true">Show overwrite warning when pasting data</checkBox>
         <checkBox refId="CalcInputLegacyCellSelectionValue">Use legacy cursor movement when selecting</checkBox>
+      </presentation>
+      <!--## COMMON ##-->
+      <presentation id="LibreOfficeCommon_MeasureUnit">
+        <dropdownList refId="LibreOfficeCommon_MeasureUnitValue" noSort="true" defaultItem="2">Measurement Unit:</dropdownList>
+        <decimalTextBox refId="LibreOfficeCommon_TabStopValue" defaultValue="1250" spinStep="50">Tab Stop (1/100 mm):</decimalTextBox>
       </presentation>
     </presentationTable>
   </resources>

@@ -1308,38 +1308,38 @@
     </policy> -->
     <!--## LIBREOFFICE WRITER ##-->
     <!--# GENERAL #-->
-    <policy name="WriterLayoutOtherMeasureUnit" class="Machine" displayName="$(string.WriterLayoutOtherMeasureUnit)" explainText="$(string.WriterLayoutOtherMeasureUnitHelp)" presentation="$(presentation.WriterLayoutOtherMeasureUnit)" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\Layout\Other\MeasureUnit">
+    <policy name="WriterLayoutOtherMeasureUnit" class="Machine" displayName="$(string.LibreOfficeCommon_MeasureUnit)" explainText="$(string.LibreOfficeCommon_MeasureUnitHelp)" presentation="$(presentation.LibreOfficeCommon_MeasureUnit)" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\Layout\Other\MeasureUnit">
       <parentCategory ref="CAT_LibreOfficeWriterGeneral" />
       <supportedOn ref="SupportedLO4_2" />
       <elements>
-        <enum id="WriterLayoutOtherMeasureUnitValue" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\Layout\Other\MeasureUnit" valueName="Value">
-          <item displayName="$(string.WriterLayoutOtherMeasureUnitMillimeter)">
+        <enum id="LibreOfficeCommon_MeasureUnitValue" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\Layout\Other\MeasureUnit" valueName="Value">
+          <item displayName="$(string.LibreOfficeCommon_Millimeter)">
             <value>
               <string>1</string>
             </value>
           </item>
-          <item displayName="$(string.WriterLayoutOtherMeasureUnitCentimeter)">
+          <item displayName="$(string.LibreOfficeCommon_Centimeter)">
             <value>
               <string>2</string>
             </value>
           </item>
-          <item displayName="$(string.WriterLayoutOtherMeasureUnitInch)">
+          <item displayName="$(string.LibreOfficeCommon_Inch)">
             <value>
               <string>8</string>
             </value>
           </item>
-          <item displayName="$(string.WriterLayoutOtherMeasureUnitPica)">
+          <item displayName="$(string.LibreOfficeCommon_Pica)">
             <value>
               <string>7</string>
             </value>
           </item>
-          <item displayName="$(string.WriterLayoutOtherMeasureUnitPoint)">
+          <item displayName="$(string.LibreOfficeCommon_Point)">
             <value>
               <string>6</string>
             </value>
           </item>
         </enum>
-        <decimal id="WriterLayoutOtherTabStopValue" minValue="1" maxValue="5000" storeAsText="true" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\Layout\Other\TabStop" valueName="Value"/>
+        <decimal id="LibreOfficeCommon_TabStopValue" minValue="1" maxValue="5000" storeAsText="true" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\Layout\Other\TabStop" valueName="Value"/>
       </elements>
     </policy>
     <policy name="ShowStandardizedPageCount" class="Machine" displayName="$(string.ShowStandardizedPageCount)" explainText="$(string.ShowStandardizedPageCountHelp)" presentation="$(presentation.ShowStandardizedPageCount)" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\WordCount\ShowStandardizedPageCount">
@@ -1378,6 +1378,40 @@
     </policy>
     <!--## LIBREOFFICE CALC ##-->
     <!--# GENERAL #-->
+    <policy name="CalcLayoutOtherMeasureUnit" class="Machine" displayName="$(string.LibreOfficeCommon_MeasureUnit)" explainText="$(string.LibreOfficeCommon_MeasureUnitHelp)" presentation="$(presentation.LibreOfficeCommon_MeasureUnit)" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Layout\Other\MeasureUnit">
+      <parentCategory ref="CAT_LibreOfficeCalcGeneral" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <enum id="LibreOfficeCommon_MeasureUnitValue" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Layout\Other\MeasureUnit\NonMetric" valueName="Value">
+          <item displayName="$(string.LibreOfficeCommon_Millimeter)">
+            <value>
+              <string>1</string>
+            </value>
+          </item>
+          <item displayName="$(string.LibreOfficeCommon_Centimeter)">
+            <value>
+              <string>2</string>
+            </value>
+          </item>
+          <item displayName="$(string.LibreOfficeCommon_Inch)">
+            <value>
+              <string>8</string>
+            </value>
+          </item>
+          <item displayName="$(string.LibreOfficeCommon_Pica)">
+            <value>
+              <string>7</string>
+            </value>
+          </item>
+          <item displayName="$(string.LibreOfficeCommon_Point)">
+            <value>
+              <string>6</string>
+            </value>
+          </item>
+        </enum>
+        <decimal id="LibreOfficeCommon_TabStopValue" minValue="1" maxValue="5000" storeAsText="true" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Layout\Other\TabStop\NonMetric" valueName="Value"/>
+      </elements>
+    </policy>
     <policy name="CalcContentUpdateLink" class="Machine" displayName="$(string.CalcContentUpdateLink)" explainText="$(string.CalcContentUpdateLinkHelp)" presentation="$(presentation.CalcContentUpdateLink)" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Content\Update\Link">
       <parentCategory ref="CAT_LibreOfficeCalcGeneral" />
       <supportedOn ref="SupportedLO4_2" />
