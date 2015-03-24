@@ -45,6 +45,36 @@
       <!--## INTERNET ##-->
       <!--#### DESCRIPTIONS ####-->
       <!--## LIBREOFFICE ##-->
+      <string id="OptionsDialogHideUserData">Hide User Data Options</string>
+      <string id="OptionsDialogHideUserDataHelp">Hide User Data Options</string>
+      <string id="OptionsDialogHideGeneral">Hide General Options</string>
+      <string id="OptionsDialogHideGeneralHelp">Hide General Options</string>
+      <string id="OptionsDialogHideMemory">Hide Memory Options</string>
+      <string id="OptionsDialogHideMemoryHelp">Hide Memory Options</string>
+      <string id="OptionsDialogHideView">Hide View Options</string>
+      <string id="OptionsDialogHideViewHelp">Hide View Options</string>
+      <string id="OptionsDialogHidePrint">Hide Print Options</string>
+      <string id="OptionsDialogHidePrintHelp">Hide Print Options</string>
+      <string id="OptionsDialogHidePaths">Hide Path Options</string>
+      <string id="OptionsDialogHidePathsHelp">Hide Path Options</string>
+      <string id="OptionsDialogHideColors">Hide Colors Options</string>
+      <string id="OptionsDialogHideColorsHelp">Hide Colors Options</string>
+      <string id="OptionsDialogHideFonts">Hide Fonts Options</string>
+      <string id="OptionsDialogHideFontsHelp">Hide Fonts Options</string>
+      <string id="OptionsDialogHideSecurity">Hide Security Options</string>
+      <string id="OptionsDialogHideSecurityHelp">Hide Security Options</string>
+      <string id="OptionsDialogHidePersonalization">Hide Personalization Options</string>
+      <string id="OptionsDialogHidePersonalizationHelp">Hide Personalization Options</string>
+      <string id="OptionsDialogHideAppearance">Hide Appearance Options</string>
+      <string id="OptionsDialogHideAppearanceHelp">Hide Appearance Options</string>
+      <string id="OptionsDialogHideAccessibility">Hide Accessibility Options</string>
+      <string id="OptionsDialogHideAccessibilityHelp">Hide Accessibility Options</string>
+      <string id="OptionsDialogHideAdvanced">Hide Advanced Options</string>
+      <string id="OptionsDialogHideAdvancedHelp">Hide Advanced Options</string>
+      <string id="OptionsDialogHideBasicIDEOptions">Hide Basic IDE Options</string>
+      <string id="OptionsDialogHideBasicIDEOptionsHelp">Hide Basic IDE Options</string>
+      <string id="OptionsDialogHideOnlineUpdate">Hide Online Update Options</string>
+      <string id="OptionsDialogHideOnlineUpdateHelp">Hide Online Update Options</string>
       <!--# USER DATA #-->
       <string id="UserProfileDatao">Company Name</string>
       <string id="UserProfileDataoHelp">Enter the Company Name.</string>
