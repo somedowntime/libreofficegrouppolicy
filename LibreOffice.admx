@@ -68,9 +68,24 @@
     <category name="CAT_LoadSaveGeneral" displayName="$(string.CAT_LoadSaveGeneral)">
       <parentCategory ref="LibreOffice:CAT_LoadSave" />
     </category>
+    <category name="CAT_LoadSaveVBAProperties" displayName="$(string.CAT_LoadSaveVBAProperties)">
+      <parentCategory ref="LibreOffice:CAT_LoadSave" />
+    </category>
+    <category name="CAT_LoadSaveMicrosoftOffice" displayName="$(string.CAT_LoadSaveMicrosoftOffice)">
+      <parentCategory ref="LibreOffice:CAT_LoadSave" />
+    </category>
+    <category name="CAT_LoadSaveHTMLCompatibility" displayName="$(string.CAT_LoadSaveHTMLCompatibility)">
+      <parentCategory ref="LibreOffice:CAT_LoadSave" />
+    </category>
     <!--## LANGUAGE SETTINGS ##-->
     <category name="CAT_LanguageSettings" displayName="$(string.CAT_LanguageSettings)">
       <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" />
+    </category>
+    <category name="CAT_LanguageSettingsLanguages" displayName="$(string.CAT_LanguageSettingsLanguages)">
+      <parentCategory ref="LibreOffice:CAT_LanguageSettings" />
+    </category>
+    <category name="CAT_LanguageSettingsWritingAids" displayName="$(string.CAT_LanguageSettingsWritingAids)">
+      <parentCategory ref="LibreOffice:CAT_LanguageSettings" />
     </category>
     <category name="CAT_LanguageSettingsSentenceChecking" displayName="$(string.CAT_LanguageSettingsSentenceChecking)">
       <parentCategory ref="LibreOffice:CAT_LanguageSettings" />
@@ -82,8 +97,60 @@
     <category name="CAT_LibreOfficeWriterGeneral" displayName="$(string.CAT_LibreOfficeWriterGeneral)">
       <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
     </category>
+    <category name="CAT_LibreOfficeWriterView" displayName="$(string.CAT_LibreOfficeWriterView)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
+    </category>
+    <category name="CAT_LibreOfficeWriterFormattingAids" displayName="$(string.CAT_LibreOfficeWriterFormattingAids)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
+    </category>
+    <category name="CAT_LibreOfficeWriterGrid" displayName="$(string.CAT_LibreOfficeWriterGrid)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
+    </category>
     <category name="CAT_LibreOfficeWriterBasicFonts" displayName="$(string.CAT_LibreOfficeWriterBasicFonts)">
       <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
+    </category>
+    <category name="CAT_LibreOfficeWriterPrint" displayName="$(string.CAT_LibreOfficeWriterPrint)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
+    </category>
+    <category name="CAT_LibreOfficeWriterTable" displayName="$(string.CAT_LibreOfficeWriterTable)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
+    </category>
+    <category name="CAT_LibreOfficeWriterChanges" displayName="$(string.CAT_LibreOfficeWriterChanges)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
+    </category>
+    <category name="CAT_LibreOfficeWriterComparison" displayName="$(string.CAT_LibreOfficeWriterComparison)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
+    </category>
+    <category name="CAT_LibreOfficeWriterCompatibility" displayName="$(string.CAT_LibreOfficeWriterCompatibility)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
+    </category>
+    <category name="CAT_LibreOfficeWriterAutoCaption" displayName="$(string.CAT_LibreOfficeWriterAutoCaption)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
+    </category>
+    <category name="CAT_LibreOfficeWriterMailMerge" displayName="$(string.CAT_LibreOfficeWriterMailMerge)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriter" />
+    </category>
+    <!--## LIBREOFFICE WRITER/WEB ##-->
+    <category name="CAT_LibreOfficeWriterWeb" displayName="$(string.CAT_LibreOfficeWriterWeb)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" />
+    </category>
+    <category name="CAT_LibreOfficeWriterWebView" displayName="$(string.CAT_LibreOfficeWriterWebView)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriterWeb" />
+    </category>
+    <category name="CAT_LibreOfficeWriterWebFormattingAids" displayName="$(string.CAT_LibreOfficeWriterWebFormattingAids)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriterWeb" />
+    </category>
+    <category name="CAT_LibreOfficeWriterWebGrid" displayName="$(string.CAT_LibreOfficeWriterWebGrid)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriterWeb" />
+    </category>
+    <category name="CAT_LibreOfficeWriterWebPrint" displayName="$(string.CAT_LibreOfficeWriterWebPrint)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriterWeb" />
+    </category>
+    <category name="CAT_LibreOfficeWriterWebTable" displayName="$(string.CAT_LibreOfficeWriterWebTable)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriterWeb" />
+    </category>
+    <category name="CAT_LibreOfficeWriterWebBackground" displayName="$(string.CAT_LibreOfficeWriterWebBackground)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeWriterWeb" />
     </category>
     <!--## LIBREOFFICE CALC ##-->
     <category name="CAT_LibreOfficeCalc" displayName="$(string.CAT_LibreOfficeCalc)">
@@ -92,10 +159,73 @@
     <category name="CAT_LibreOfficeCalcGeneral" displayName="$(string.CAT_LibreOfficeCalcGeneral)">
       <parentCategory ref="LibreOffice:CAT_LibreOfficeCalc" />
     </category>
-    <!--## LIBREOFFICE WRITER/WEB ##-->
+    <category name="CAT_LibreOfficeCalcDefaults" displayName="$(string.CAT_LibreOfficeCalcDefaults)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeCalc" />
+    </category>
+    <category name="CAT_LibreOfficeCalcView" displayName="$(string.CAT_LibreOfficeCalcView)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeCalc" />
+    </category>
+    <category name="CAT_LibreOfficeCalcCalculate" displayName="$(string.CAT_LibreOfficeCalcCalculate)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeCalc" />
+    </category>
+    <category name="CAT_LibreOfficeCalcFormula" displayName="$(string.CAT_LibreOfficeCalcFormula)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeCalc" />
+    </category>
+    <category name="CAT_LibreOfficeCalcSortLists" displayName="$(string.CAT_LibreOfficeCalcSortLists)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeCalc" />
+    </category>
+    <category name="CAT_LibreOfficeCalcChanges" displayName="$(string.CAT_LibreOfficeCalcChanges)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeCalc" />
+    </category>
+    <category name="CAT_LibreOfficeCalcCompatibility" displayName="$(string.CAT_LibreOfficeCalcCompatibility)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeCalc" />
+    </category>
+    <category name="CAT_LibreOfficeCalcGrid" displayName="$(string.CAT_LibreOfficeCalcGrid)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeCalc" />
+    </category>
+    <category name="CAT_LibreOfficeCalcPrint" displayName="$(string.CAT_LibreOfficeCalcPrint)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeCalc" />
+    </category>
+    <!--## LIBREOFFICE IMPRESS ##-->
+    <category name="CAT_LibreOfficeImpress" displayName="$(string.CAT_LibreOfficeImpress)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" />
+    </category>
+    <category name="CAT_LibreOfficeImpressGeneral" displayName="$(string.CAT_LibreOfficeImpressGeneral)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeImpress" />
+    </category>
+    <category name="CAT_LibreOfficeImpressView" displayName="$(string.CAT_LibreOfficeImpressView)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeImpress" />
+    </category>
+    <category name="CAT_LibreOfficeImpressGrid" displayName="$(string.CAT_LibreOfficeImpressGrid)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeImpress" />
+    </category>
+    <category name="CAT_LibreOfficeImpressPrint" displayName="$(string.CAT_LibreOfficeImpressPrint)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeImpress" />
+    </category>
     <!--## LIBREOFFICE BASE ##-->
+    <category name="CAT_LibreOfficeBase" displayName="$(string.CAT_LibreOfficeBase)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" />
+    </category>
+    <category name="CAT_LibreOfficeBaseConnections" displayName="$(string.CAT_LibreOfficeBaseConnections)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeBase" />
+    </category>
+    <category name="CAT_LibreOfficeBaseDatabases" displayName="$(string.CAT_LibreOfficeBaseDatabases)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeBase" />
+    </category>
     <!--## CHARTS ##-->
+    <category name="CAT_Charts" displayName="$(string.CAT_Charts)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" />
+    </category>
+    <category name="CAT_ChartsDefaultColors" displayName="$(string.CAT_ChartsDefaultColors)">
+      <parentCategory ref="LibreOffice:CAT_Charts" />
+    </category>
     <!--## INTERNET ##-->
+    <category name="CAT_Internet" displayName="$(string.CAT_Internet)">
+      <parentCategory ref="LibreOffice:CAT_LibreOfficeRoot" />
+    </category>
+    <category name="CAT_InternetProxy" displayName="$(string.CAT_InternetProxy)">
+      <parentCategory ref="LibreOffice:CAT_Internet" />
+    </category>
   </categories>
   <policies>
     <!--### ROOT ###-->
@@ -1117,6 +1247,46 @@
       </elements>
     </policy>
     <!--## LOAD SAVE ##-->
+    <policy name="OptionsDialogHideLoadSaveGeneral" class="Machine" displayName="$(string.OptionsDialogHideLoadSaveGeneral)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\LoadSave/#fuse\Pages\General/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LoadSave" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideLoadSaveVBAProperties" class="Machine" displayName="$(string.OptionsDialogHideLoadSaveVBAProperties)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\LoadSave/#fuse\Pages\VBAProperties/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LoadSave" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideLoadSaveMicrosoftOffice" class="Machine" displayName="$(string.OptionsDialogHideLoadSaveMicrosoftOffice)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\LoadSave/#fuse\Pages\MicrosoftOffice/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LoadSave" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideLoadSaveHTMLCompatibility" class="Machine" displayName="$(string.OptionsDialogHideLoadSaveHTMLCompatibility)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\LoadSave/#fuse\Pages\HTMLCompatibility/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LoadSave" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
     <!--# GENERAL #-->
     <policy name="CommonLoadDocument" class="Machine" displayName="$(string.CommonLoadDocument)" explainText="$(string.CommonLoadDocumentHelp)" presentation="$(presentation.CommonLoadDocument)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Load">
       <parentCategory ref="CAT_LoadSaveGeneral" />
@@ -1536,6 +1706,26 @@
       </elements>
     </policy>
     <!--## LANGUAGE SETTINGS ##-->
+    <policy name="OptionsDialogHideLanguageSettingsLanguages" class="Machine" displayName="$(string.OptionsDialogHideLanguageSettingsLanguages)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\LanguageSettings/#fuse\Pages\Languages/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LanguageSettings" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideLanguageSettingsWritingAids" class="Machine" displayName="$(string.OptionsDialogHideLanguageSettingsWritingAids)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\LanguageSettings/#fuse\Pages\WritingAids/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LanguageSettings" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
     <!--# ENGLISH SENTENCE CHECKING #-->
     <!-- Note: For some reason I cannot set the grammer settings. Feel free to help with this! - Thomas -->
     <!-- 
@@ -1578,6 +1768,126 @@
       </elements>
     </policy> -->
     <!--## LIBREOFFICE WRITER ##-->
+    <policy name="OptionsDialogHideWriterGeneral" class="Machine" displayName="$(string.OptionsDialogHideWriterGeneral)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Writer/#fuse\Pages\General/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriter" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterView" class="Machine" displayName="$(string.OptionsDialogHideWriterView)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Writer/#fuse\Pages\View/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriter" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterFormattingAids" class="Machine" displayName="$(string.OptionsDialogHideWriterFormattingAids)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Writer/#fuse\Pages\FormattingAids/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriter" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterGrid" class="Machine" displayName="$(string.OptionsDialogHideWriterGrid)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Writer/#fuse\Pages\Grid/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriter" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterBasicFontsWestern" class="Machine" displayName="$(string.OptionsDialogHideWriterBasicFontsWestern)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Writer/#fuse\Pages\BasicFontsWestern/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriter" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterPrint" class="Machine" displayName="$(string.OptionsDialogHideWriterPrint)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Writer/#fuse\Pages\Print/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriter" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterTable" class="Machine" displayName="$(string.OptionsDialogHideWriterTable)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Writer/#fuse\Pages\Table/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriter" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterChanges" class="Machine" displayName="$(string.OptionsDialogHideWriterChanges)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Writer/#fuse\Pages\Changes/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriter" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterComparison" class="Machine" displayName="$(string.OptionsDialogHideWriterComparison)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Writer/#fuse\Pages\Comparison/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriter" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterCompatibility" class="Machine" displayName="$(string.OptionsDialogHideWriterCompatibility)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Writer/#fuse\Pages\Compatibility/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriter" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterAutoCaption" class="Machine" displayName="$(string.OptionsDialogHideWriterAutoCaption)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Writer/#fuse\Pages\AutoCaption/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriter" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterMailMerge" class="Machine" displayName="$(string.OptionsDialogHideWriterMailMerge)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Writer/#fuse\Pages\MailMerge/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriter" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
     <!--# GENERAL #-->
     <policy name="WriterLayoutOtherMeasureUnit" class="Machine" displayName="$(string.LibreOfficeCommon_MeasureUnit)" explainText="$(string.LibreOfficeCommon_MeasureUnitHelp)" presentation="$(presentation.LibreOfficeCommon_MeasureUnit)" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\Layout\Other\MeasureUnit">
       <parentCategory ref="CAT_LibreOfficeWriterGeneral" />
@@ -1647,7 +1957,169 @@
         <text id="BasicFonts_Heading" key="Software\policies\LibreOffice\org.openoffice.Office.Writer\DefaultFont\Heading" valueName="Value" required="true" expandable="true" />
       </elements>
     </policy>
+    <!--## LIBREOFFICE WRITER/WEB ##-->
+    <policy name="OptionsDialogHideWriterWebView" class="Machine" displayName="$(string.OptionsDialogHideWriterWebView)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\WriterWeb/#fuse\Pages\View/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriterWeb" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterWebFormattingAids" class="Machine" displayName="$(string.OptionsDialogHideWriterWebFormattingAids)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\WriterWeb/#fuse\Pages\FormattingAids/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriterWeb" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterWebGrid" class="Machine" displayName="$(string.OptionsDialogHideWriterWebGrid)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\WriterWeb/#fuse\Pages\Grid/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriterWeb" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterWebPrint" class="Machine" displayName="$(string.OptionsDialogHideWriterWebPrint)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\WriterWeb/#fuse\Pages\Print/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriterWeb" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterWebTable" class="Machine" displayName="$(string.OptionsDialogHideWriterWebTable)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\WriterWeb/#fuse\Pages\Table/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriterWeb" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterWebBackground" class="Machine" displayName="$(string.OptionsDialogHideWriterWebBackground)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\WriterWeb/#fuse\Pages\Background/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeWriterWeb" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
     <!--## LIBREOFFICE CALC ##-->
+    <policy name="OptionsDialogHideCalcGeneral" class="Machine" displayName="$(string.OptionsDialogHideCalcGeneral)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Calc/#fuse\Pages\General/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeCalc" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <!-- 
+    <policy name="OptionsDialogHideCalcDefaults" class="Machine" displayName="$(string.OptionsDialogHideCalcDefaults)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Calc/#fuse\Pages\Defaults/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeCalc" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy> -->
+    <policy name="OptionsDialogHideCalcView" class="Machine" displayName="$(string.OptionsDialogHideCalcView)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Calc/#fuse\Pages\View/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeCalc" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideCalcCalculate" class="Machine" displayName="$(string.OptionsDialogHideCalcCalculate)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Calc/#fuse\Pages\Calculate/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeCalc" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideCalcFormula" class="Machine" displayName="$(string.OptionsDialogHideCalcFormula)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Calc/#fuse\Pages\Formula/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeCalc" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideCalcSortLists" class="Machine" displayName="$(string.OptionsDialogHideCalcSortLists)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Calc/#fuse\Pages\SortLists/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeCalc" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideCalcChanges" class="Machine" displayName="$(string.OptionsDialogHideCalcChanges)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Calc/#fuse\Pages\Changes/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeCalc" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideCalcCompatibility" class="Machine" displayName="$(string.OptionsDialogHideCalcCompatibility)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Calc/#fuse\Pages\Compatibility/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeCalc" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideCalcGrid" class="Machine" displayName="$(string.OptionsDialogHideCalcGrid)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Calc/#fuse\Pages\Grid/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeCalc" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideCalcPrint" class="Machine" displayName="$(string.OptionsDialogHideCalcPrint)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Calc/#fuse\Pages\Print/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeCalc" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
     <!--# GENERAL #-->
     <policy name="CalcLayoutOtherMeasureUnit" class="Machine" displayName="$(string.LibreOfficeCommon_MeasureUnit)" explainText="$(string.LibreOfficeCommon_MeasureUnitHelp)" presentation="$(presentation.LibreOfficeCommon_MeasureUnit)" key="Software\policies\LibreOffice\org.openoffice.Office.Calc\Layout\Other\MeasureUnit">
       <parentCategory ref="CAT_LibreOfficeCalcGeneral" />
@@ -1805,6 +2277,90 @@
           </falseValue>
         </boolean>
       </elements>
+    </policy>
+    <!--## LIBREOFFICE IMPRESS ##-->
+    <policy name="OptionsDialogHideImpressGeneral" class="Machine" displayName="$(string.OptionsDialogHideImpressGeneral)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Impress/#fuse\Pages\General/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeImpress" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideImpressView" class="Machine" displayName="$(string.OptionsDialogHideImpressView)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Impress/#fuse\Pages\View/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeImpress" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideImpressGrid" class="Machine" displayName="$(string.OptionsDialogHideImpressGrid)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Impress/#fuse\Pages\Grid/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeImpress" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideImpressPrint" class="Machine" displayName="$(string.OptionsDialogHideImpressPrint)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Impress/#fuse\Pages\Print/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeImpress" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <!--## LIBREOFFICE BASE ##-->
+    <policy name="OptionsDialogHideBaseConnections" class="Machine" displayName="$(string.OptionsDialogHideBaseConnections)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Base/#fuse\Pages\Connections/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeBase" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideBaseDatabases" class="Machine" displayName="$(string.OptionsDialogHideBaseDatabases)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Base/#fuse\Pages\Databases/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeBase" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <!--## CHARTS ##-->
+    <policy name="OptionsDialogHideChartsDefaultColors" class="Machine" displayName="$(string.OptionsDialogHideChartsDefaultColors)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Charts/#fuse\Pages\DefaultColors/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_Charts" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <!--## CHARTS ##-->
+    <policy name="OptionsDialogHideInternetProxy" class="Machine" displayName="$(string.OptionsDialogHideInternetProxy)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Internet/#fuse\Pages\Proxy/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_Internet" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
     </policy>
   </policies>
 </policyDefinitions>

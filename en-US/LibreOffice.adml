@@ -29,20 +29,64 @@
       <!--## LOAD SAVE ##-->
       <string id="CAT_LoadSave">Load / Save</string>
       <string id="CAT_LoadSaveGeneral">General</string>
+      <string id="CAT_LoadSaveVBAProperties">VBA Properties</string>
+      <string id="CAT_LoadSaveMicrosoftOffice">Microsoft Office</string>
+      <string id="CAT_LoadSaveHTMLCompatibility">HTML Compatibility</string>
       <!--## LANGUAGE SETTINGS ##-->
       <string id="CAT_LanguageSettings">Language Settings</string>
+      <string id="CAT_LanguageSettingsLanguages">Languages</string>
+      <string id="CAT_LanguageSettingsWritingAids">Writing Aids</string>
       <string id="CAT_LanguageSettingsSentenceChecking">English sentence checking</string>
       <!--## LIBREOFFICE WRITER ##-->
       <string id="CAT_LibreOfficeWriter">LibreOffice Writer</string>
       <string id="CAT_LibreOfficeWriterGeneral">General</string>
+      <string id="CAT_LibreOfficeWriterView">View</string>
+      <string id="CAT_LibreOfficeWriterFormattingAids">Formatting Aids</string>
+      <string id="CAT_LibreOfficeWriterGrid">Grid</string>
       <string id="CAT_LibreOfficeWriterBasicFonts">Basic Fonts</string>
+      <string id="CAT_LibreOfficeWriterPrint">Print</string>
+      <string id="CAT_LibreOfficeWriterTable">Table</string>
+      <string id="CAT_LibreOfficeWriterChanges">Changes</string>
+      <string id="CAT_LibreOfficeWriterComparison">Comparison</string>
+      <string id="CAT_LibreOfficeWriterCompatibility">Compatibility</string>
+      <string id="CAT_LibreOfficeWriterAutoCaption">Auto Caption</string>
+      <string id="CAT_LibreOfficeWriterMailMerge">Mail Merge E-Mail</string>
+      <!--## LIBREOFFICE WRITER/WEB ##-->
+      <string id="CAT_LibreOfficeWriterWeb">LibreOffice Writer/Web</string>
+      <string id="CAT_LibreOfficeWriterWebView">View</string>
+      <string id="CAT_LibreOfficeWriterWebFormattingAids">Formatting Aids</string>
+      <string id="CAT_LibreOfficeWriterWebGrid">Grid</string>
+      <string id="CAT_LibreOfficeWriterWebPrint">Print</string>
+      <string id="CAT_LibreOfficeWriterWebTable">Table</string>
+      <string id="CAT_LibreOfficeWriterWebBackground">Background</string>
       <!--## LIBREOFFICE CALC ##-->
       <string id="CAT_LibreOfficeCalc">LibreOffice Calc</string>
       <string id="CAT_LibreOfficeCalcGeneral">General</string>
-      <!--## LIBREOFFICE WRITER/WEB ##-->
+      <string id="CAT_LibreOfficeCalcDefaults">Defaults</string>
+      <string id="CAT_LibreOfficeCalcView">View</string>
+      <string id="CAT_LibreOfficeCalcCalculate">Calculate</string>
+      <string id="CAT_LibreOfficeCalcFormula">Formula</string>
+      <string id="CAT_LibreOfficeCalcSortLists">Sort Lists</string>
+      <string id="CAT_LibreOfficeCalcChanges">Changes</string>
+      <string id="CAT_LibreOfficeCalcCompatibility">Compatibility</string>
+      <string id="CAT_LibreOfficeCalcGrid">Grid</string>
+      <string id="CAT_LibreOfficeCalcPrint">Print</string>
+      <!--## LIBREOFFICE IMPRESS ##-->
+      <string id="CAT_LibreOfficeImpress">LibreOffice Impress</string>
+      <string id="CAT_LibreOfficeImpressGeneral">General</string>
+      <string id="CAT_LibreOfficeImpressView">View</string>
+      <string id="CAT_LibreOfficeImpressGrid">Grid</string>
+      <string id="CAT_LibreOfficeImpressPrint">Print</string>
       <!--## LIBREOFFICE BASE ##-->
+      <string id="CAT_LibreOfficeBase">LibreOffice Base</string>
+      <string id="CAT_LibreOfficeBaseConnections">Connections</string>
+      <string id="CAT_LibreOfficeBaseDatabases">Databases</string>
       <!--## CHARTS ##-->
+      <string id="CAT_Charts">Charts</string>
+      <string id="CAT_ChartsDefaultColors">Default Colors</string>
       <!--## INTERNET ##-->
+      <string id="CAT_Internet">Internet</string>
+      <string id="CAT_InternetProxy">Proxy</string>
       <!--#### DESCRIPTIONS ####-->
       <!--### ROOT ###-->
       <string id="OptionsDialogHideHelp">Enabling this policy will hide the menu option from the Options Window. If you do not configure or disable this policy the menu option will be available.</string>
@@ -156,6 +200,10 @@
       <string id="CommonAccessibilityHighContrast">High Contrast Appearance options</string>
       <string id="CommonAccessibilityHighContrastHelp">Options for High Contrast Appearance</string>
       <!--## LOAD SAVE ##-->
+      <string id="OptionsDialogHideLoadSaveGeneral">Hide General Options</string>
+      <string id="OptionsDialogHideLoadSaveVBAProperties">Hide VBA Properties Options</string>
+      <string id="OptionsDialogHideLoadSaveMicrosoftOffice">Hide Microsoft Office Options</string>
+      <string id="OptionsDialogHideLoadSaveHTMLCompatibility">Hide HTML Compatibility Options</string>
       <!--# GENERAL #-->
       <string id="CommonLoadDocument">Document Load Settings</string>
       <string id="CommonLoadDocumentHelp">Settings that relate to loading files</string>
@@ -177,17 +225,48 @@
       <string id="Presentation_FileDefaultSaveType">Impress: Configure default save file type</string>
       <string id="Presentation_FileDefaultSaveTypeHelp">Specify the default file type when saving from Impress. Remember that if you do not enforce the setting, local user configuration will override this.</string>
       <!--## LANGUAGE SETTINGS ##-->
+      <string id="OptionsDialogHideLanguageSettingsLanguages">Hide Languages Options</string>
+      <string id="OptionsDialogHideLanguageSettingsWritingAids">Hide Writing Aids Options</string>
       <!--# ENGLISH SENTENCE CHECKING #-->
       <string id="Lightproof_enLeavesengrammar">Grammar checking settings</string>
       <string id="Lightproof_enLeavesengrammarHelp">Grammar checking</string>
       <!--## LIBREOFFICE WRITER ##-->
+      <string id="OptionsDialogHideWriterGeneral">Hide General Options</string>
+      <string id="OptionsDialogHideWriterView">Hide View Options</string>
+      <string id="OptionsDialogHideWriterFormattingAids">Hide Formatting Aids Options</string>
+      <string id="OptionsDialogHideWriterGrid">Hide Grid Options</string>
+      <string id="OptionsDialogHideWriterBasicFontsWestern">Hide Basic Fonts (Western) Options</string>
+      <string id="OptionsDialogHideWriterPrint">Hide Print Options</string>
+      <string id="OptionsDialogHideWriterTable">Hide Table Options</string>
+      <string id="OptionsDialogHideWriterChanges">Hide Changes Options</string>
+      <string id="OptionsDialogHideWriterComparison">Hide Comparison Options</string>
+      <string id="OptionsDialogHideWriterCompatibility">Hide Compatibility Options</string>
+      <string id="OptionsDialogHideWriterAutoCaption">Hide Auto Caption Options</string>
+      <string id="OptionsDialogHideWriterMailMerge">Hide Mail Merge Options</string>
       <!--# GENERAL #-->
       <string id="ShowStandardizedPageCount">Show Standardized Page Count</string>
       <string id="ShowStandardizedPageCountHelp">Show Standardized Page Count</string>
       <!--# BASIC FONTS #-->
       <string id="BasicFonts">Basic Fonts</string>
       <string id="BasicFontsHelp">Enter the default font.</string>
+      <!--## LIBREOFFICE WRITER/WEB ##-->
+      <string id="OptionsDialogHideWriterWebView">Hide View Options</string>
+      <string id="OptionsDialogHideWriterWebFormattingAids">Hide Formatting Aids Options</string>
+      <string id="OptionsDialogHideWriterWebGrid">Hide Grid Options</string>
+      <string id="OptionsDialogHideWriterWebPrint">Hide Print Options</string>
+      <string id="OptionsDialogHideWriterWebTable">Hide Table Options</string>
+      <string id="OptionsDialogHideWriterWebBackground">Hide Background Options</string>
       <!--## LIBREOFFICE CALC ##-->
+      <string id="OptionsDialogHideCalcGeneral">Hide General Options</string>
+      <string id="OptionsDialogHideCalcDefaults">Hide Defaults Options</string>
+      <string id="OptionsDialogHideCalcView">Hide View Options</string>
+      <string id="OptionsDialogHideCalcCalculate">Hide Calculate Options</string>
+      <string id="OptionsDialogHideCalcFormula">Hide Formula Options</string>
+      <string id="OptionsDialogHideCalcSortLists">Hide Sort Lists Fonts Options</string>
+      <string id="OptionsDialogHideCalcChanges">Hide Changes Options</string>
+      <string id="OptionsDialogHideCalcCompatibility">Hide Compatibility Options</string>
+      <string id="OptionsDialogHideCalcGrid">Hide Grid Options</string>
+      <string id="OptionsDialogHideCalcPrint">Hide Print Options</string>
       <!--# GENERAL #-->
       <string id="CalcContentUpdateLink">Updating</string>
       <string id="CalcContentUpdateLinkHelp">Update links when opening</string>
@@ -200,6 +279,18 @@
       <string id="CalcInputMoveSelectionDirectionRight">Right</string>
       <string id="CalcInputMoveSelectionDirectionUp">Up</string>
       <string id="CalcInputMoveSelectionDirectionLeft">Left</string>
+      <!--## LIBREOFFICE IMPRESS ##-->
+      <string id="OptionsDialogHideImpressGeneral">Hide General Options</string>
+      <string id="OptionsDialogHideImpressView">Hide View Options</string>
+      <string id="OptionsDialogHideImpressGrid">Hide Grid Options</string>
+      <string id="OptionsDialogHideImpressPrint">Hide Print Options</string>
+      <!--## LIBREOFFICE BASE ##-->
+      <string id="OptionsDialogHideBaseConnections">Hide Connections Options</string>
+      <string id="OptionsDialogHideBaseDatabases">Hide Databases Options</string>
+      <!--## CHARTS ##-->
+      <string id="OptionsDialogHideChartsDefaultColors">Hide Default Colors Options</string>
+      <!--## INTERNET ##-->
+      <string id="OptionsDialogHideInternetProxy">Hide Internet Proxy Options</string>
       <!--## PREDEFINED SETTINGS ##-->
       <string id="LibreOfficeCommon_True">true</string>
       <string id="LibreOfficeCommon_False">false</string>
