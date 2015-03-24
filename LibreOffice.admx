@@ -98,8 +98,129 @@
     <!--## INTERNET ##-->
   </categories>
   <policies>
+    <!--### ROOT ###-->
+    <policy name="OptionsDialogHideLibreOffice" class="Machine" displayName="$(string.OptionsDialogHideLibreOffice)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeRoot" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideLoadSave" class="Machine" displayName="$(string.OptionsDialogHideLoadSave)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\LoadSave/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeRoot" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideLanguageSettings" class="Machine" displayName="$(string.OptionsDialogHideLanguageSettings)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\LanguageSettings/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeRoot" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriter" class="Machine" displayName="$(string.OptionsDialogHideWriter)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Writer/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeRoot" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideWriterWeb" class="Machine" displayName="$(string.OptionsDialogHideWriterWeb)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\WriterWeb/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeRoot" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideCalc" class="Machine" displayName="$(string.OptionsDialogHideCalc)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Calc/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeRoot" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideImpress" class="Machine" displayName="$(string.OptionsDialogHideImpress)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Impress/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeRoot" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideBase" class="Machine" displayName="$(string.OptionsDialogHideBase)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Base/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeRoot" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideDraw" class="Machine" displayName="$(string.OptionsDialogHideDraw)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Draw/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeRoot" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideMath" class="Machine" displayName="$(string.OptionsDialogHideMath)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Math/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeRoot" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideCharts" class="Machine" displayName="$(string.OptionsDialogHideCharts)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Charts/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeRoot" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    <policy name="OptionsDialogHideInternet" class="Machine" displayName="$(string.OptionsDialogHideInternet)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\Internet/#fuse\Hide" valueName="Value">
+      <parentCategory ref="CAT_LibreOfficeRoot" />
+      <supportedOn ref="SupportedLO4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
     <!--## LIBREOFFICE ##-->
-    <policy name="OptionsDialogHideUserData" class="Machine" displayName="$(string.OptionsDialogHideUserData)" explainText="$(string.OptionsDialogHideUserDataHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\UserData/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHideUserData" class="Machine" displayName="$(string.OptionsDialogHideUserData)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\UserData/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -109,7 +230,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHideGeneral" class="Machine" displayName="$(string.OptionsDialogHideGeneral)" explainText="$(string.OptionsDialogHideGeneralHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\General/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHideGeneral" class="Machine" displayName="$(string.OptionsDialogHideGeneral)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\General/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -119,7 +240,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHideMemory" class="Machine" displayName="$(string.OptionsDialogHideMemory)" explainText="$(string.OptionsDialogHideMemoryHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Memory/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHideMemory" class="Machine" displayName="$(string.OptionsDialogHideMemory)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Memory/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -129,7 +250,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHideView" class="Machine" displayName="$(string.OptionsDialogHideView)" explainText="$(string.OptionsDialogHideViewHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\View/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHideView" class="Machine" displayName="$(string.OptionsDialogHideView)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\View/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -139,7 +260,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHidePrint" class="Machine" displayName="$(string.OptionsDialogHidePrint)" explainText="$(string.OptionsDialogHidePrintHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Print/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHidePrint" class="Machine" displayName="$(string.OptionsDialogHidePrint)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Print/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -149,7 +270,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHidePaths" class="Machine" displayName="$(string.OptionsDialogHidePaths)" explainText="$(string.OptionsDialogHidePathsHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Paths/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHidePaths" class="Machine" displayName="$(string.OptionsDialogHidePaths)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Paths/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -159,7 +280,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHideColors" class="Machine" displayName="$(string.OptionsDialogHideColors)" explainText="$(string.OptionsDialogHideColorsHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Colors/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHideColors" class="Machine" displayName="$(string.OptionsDialogHideColors)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Colors/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -169,7 +290,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHideFonts" class="Machine" displayName="$(string.OptionsDialogHideFonts)" explainText="$(string.OptionsDialogHideFontsHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Fonts/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHideFonts" class="Machine" displayName="$(string.OptionsDialogHideFonts)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Fonts/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -179,7 +300,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHideSecurity" class="Machine" displayName="$(string.OptionsDialogHideSecurity)" explainText="$(string.OptionsDialogHideSecurityHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Security/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHideSecurity" class="Machine" displayName="$(string.OptionsDialogHideSecurity)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Security/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -189,7 +310,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHidePersonalization" class="Machine" displayName="$(string.OptionsDialogHidePersonalization)" explainText="$(string.OptionsDialogHidePersonalizationHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Personalization/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHidePersonalization" class="Machine" displayName="$(string.OptionsDialogHidePersonalization)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Personalization/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -199,7 +320,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHideAppearance" class="Machine" displayName="$(string.OptionsDialogHideAppearance)" explainText="$(string.OptionsDialogHideAppearanceHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Appearance/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHideAppearance" class="Machine" displayName="$(string.OptionsDialogHideAppearance)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Appearance/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -209,7 +330,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHideAccessibility" class="Machine" displayName="$(string.OptionsDialogHideAccessibility)" explainText="$(string.OptionsDialogHideAccessibilityHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Accessibility/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHideAccessibility" class="Machine" displayName="$(string.OptionsDialogHideAccessibility)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Accessibility/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -219,7 +340,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHideAdvanced" class="Machine" displayName="$(string.OptionsDialogHideAdvanced)" explainText="$(string.OptionsDialogHideAdvancedHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Java/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHideAdvanced" class="Machine" displayName="$(string.OptionsDialogHideAdvanced)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Java/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -229,7 +350,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHideBasicIDEOptions" class="Machine" displayName="$(string.OptionsDialogHideBasicIDEOptions)" explainText="$(string.OptionsDialogHideBasicIDEOptionsHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\BasicIDEOptions/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHideBasicIDEOptions" class="Machine" displayName="$(string.OptionsDialogHideBasicIDEOptions)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\BasicIDEOptions/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
@@ -239,7 +360,7 @@
         <string>false</string>
       </disabledValue>
     </policy>
-    <policy name="OptionsDialogHideOnlineUpdate" class="Machine" displayName="$(string.OptionsDialogHideOnlineUpdate)" explainText="$(string.OptionsDialogHideOnlineUpdateHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\OnlineUpdate/#fuse\Hide" valueName="Value">
+    <policy name="OptionsDialogHideOnlineUpdate" class="Machine" displayName="$(string.OptionsDialogHideOnlineUpdate)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\OnlineUpdate/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOffice" />
       <supportedOn ref="SupportedLO4_2" />
       <enabledValue>
