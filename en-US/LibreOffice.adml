@@ -89,8 +89,8 @@
       <string id="CAT_InternetProxy">Proxy</string>
       <!--#### DESCRIPTIONS ####-->
       <!--### ROOT ###-->
-      <string id="SetupProductooName">Name Title Bar</string>
-      <string id="SetupProductooNameHelp">Rename the LibreOffice title bar (the default is "LibreOffice")</string>
+      <string id="SetupProductooName">Rename LibreOffice</string>
+      <string id="SetupProductooNameHelp">This will rename all instances of LibreOffice throughout the program. This will not affect the shortcut names.</string>
       <string id="OptionsDialogHideHelp">Enabling this policy will hide the menu option from the Options Window. If you do not configure or disable this policy the menu option will be available.</string>
       <string id="OptionsDialogHideLibreOffice">Hide General LibreOffice Options</string>
       <string id="OptionsDialogHideLoadSave">Hide Load/Save Options</string>
