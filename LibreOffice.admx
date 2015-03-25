@@ -229,6 +229,13 @@
   </categories>
   <policies>
     <!--### ROOT ###-->
+    <policy name="SetupProductooName" class="Machine" displayName="$(string.SetupProductooName)" explainText="$(string.SetupProductooNameHelp)" presentation="$(presentation.SetupProductooName)" key="Software\policies\LibreOffice\org.openoffice.Setup\Product\ooName">
+      <parentCategory ref="CAT_LibreOfficeRoot" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <text id="SetupProductooNameValue" valueName="Value" required="true" expandable="true" />
+      </elements>
+    </policy>
     <policy name="OptionsDialogHideLibreOffice" class="Machine" displayName="$(string.OptionsDialogHideLibreOffice)" explainText="$(string.OptionsDialogHideHelp)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Hide" valueName="Value">
       <parentCategory ref="CAT_LibreOfficeRoot" />
       <supportedOn ref="SupportedLO4_2" />
