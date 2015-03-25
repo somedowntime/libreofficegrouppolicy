@@ -358,7 +358,7 @@
       <!--## LIBREOFFICE ##-->
       <presentation id="SetupProductooName">
         <textBox refId="SetupProductooNameValue">
-          <label>Title Bar name:</label>
+          <label>Replacement Name:</label>
         </textBox>
       </presentation>
       <!--# USER DATA #-->
