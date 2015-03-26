@@ -967,6 +967,47 @@
         </boolean>
       </elements>
     </policy>
+    <!--# PATHS #-->
+    <policy name="PathsPathsGallery" class="Machine" displayName="$(string.PathsPathsGallery)" explainText="$(string.PathsPathsHelp)" presentation="$(presentation.PathsPathsGallery)" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths">
+      <parentCategory ref="CAT_LibreOfficePaths" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <text id="PathsPathsGalleryWritePath" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths\NamedPath['Gallery']\WritePath" valueName="Value" required="true"/>
+        <text id="PathsPathsGalleryUserPaths" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths\NamedPath['Gallery']\UserPaths" valueName="Value"/>
+      </elements>
+    </policy>
+    <policy name="PathsPathsTemplate" class="Machine" displayName="$(string.PathsPathsTemplate)" explainText="$(string.PathsPathsHelp)" presentation="$(presentation.PathsPathsTemplate)" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths">
+      <parentCategory ref="CAT_LibreOfficePaths" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <text id="PathsPathsTemplateWritePath" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths\NamedPath['Template']\WritePath" valueName="Value" required="true"/>
+        <text id="PathsPathsTemplateUserPaths" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths\NamedPath['Template']\UserPaths" valueName="Value"/>
+      </elements>
+    </policy>
+    <policy name="PathsPathsDictionary" class="Machine" displayName="$(string.PathsPathsDictionary)" explainText="$(string.PathsPathsHelp)" presentation="$(presentation.PathsPathsDictionary)" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths">
+      <parentCategory ref="CAT_LibreOfficePaths" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <text id="PathsPathsDictionaryWritePath" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths\NamedPath['Dictionary']\WritePath" valueName="Value" required="true"/>
+        <text id="PathsPathsDictionaryUserPaths" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths\NamedPath['Dictionary']\UserPaths" valueName="Value"/>
+      </elements>
+    </policy>
+    <policy name="PathsPathsAutoText" class="Machine" displayName="$(string.PathsPathsAutoText)" explainText="$(string.PathsPathsHelp)" presentation="$(presentation.PathsPathsAutoText)" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths">
+      <parentCategory ref="CAT_LibreOfficePaths" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <text id="PathsPathsAutoTextWritePath" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths\NamedPath['AutoText']\WritePath" valueName="Value" required="true"/>
+        <text id="PathsPathsAutoTextUserPaths" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths\NamedPath['AutoText']\UserPaths" valueName="Value"/>
+      </elements>
+    </policy>
+    <policy name="PathsPathsAutoCorrect" class="Machine" displayName="$(string.PathsPathsAutoCorrect)" explainText="$(string.PathsPathsHelp)" presentation="$(presentation.PathsPathsAutoCorrect)" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths">
+      <parentCategory ref="CAT_LibreOfficePaths" />
+      <supportedOn ref="SupportedLO4_2" />
+      <elements>
+        <text id="PathsPathsAutoCorrectWritePath" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths\NamedPath['AutoCorrect']\WritePath" valueName="Value" required="true"/>
+        <text id="PathsPathsAutoCorrectUserPaths" key="Software\policies\LibreOffice\org.openoffice.Office.Paths\Paths\NamedPath['AutoCorrect']\UserPaths" valueName="Value"/>
+      </elements>
+    </policy>
     <!--# SECURITY #-->
     <policy name="CommonSecurityScriptingMacroSecurityLevel" class="Machine" displayName="$(string.CommonSecurityScriptingMacroSecurityLevel)" explainText="$(string.CommonSecurityScriptingMacroSecurityLevelHelp)" presentation="$(presentation.CommonSecurityScriptingMacroSecurityLevel)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\MacroSecurityLevel">
       <parentCategory ref="CAT_LibreOfficeSecurity" />

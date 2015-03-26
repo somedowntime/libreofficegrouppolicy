@@ -166,6 +166,25 @@
       <string id="CommonPrintOptionFile">Reduce Printer Data: Print to File</string>
       <string id="CommonPrintWarning">Printer Warnings</string>
       <string id="CommonPrintWarningHelp">Sets Printer Warning</string>
+      <!--# PATHS #-->
+      <string id="PathsPathsHelp">LibreOffice requires the default path to contain a value. The default path is the path LibreOffice will write to by default. Additional paths will be read from.
+
+Unfortuantely while the default path will be overridden, the LibreOffice default additional user paths will not be removed.
+
+Paths entered must follow these rules:
+ - File URIs have to begin with 'file:///'
+ - Replace back slashes with forward slashes
+ - Replace spaces with '%20'.
+ - Separate multiple paths with a space.
+
+Example:
+file:///S:/Important%20Files file:///S:/Documents
+      </string>
+      <string id="PathsPathsGallery">Set Gallery Paths</string>
+      <string id="PathsPathsTemplate">Set Template Paths</string>
+      <string id="PathsPathsDictionary">Set Dictionary Paths</string>
+      <string id="PathsPathsAutoText">Set AutoText Paths</string>
+      <string id="PathsPathsAutoCorrect">Set AutoCorrect Paths</string>
       <!--# SECURITY #-->
       <string id="CommonSecurityScriptingMacroSecurityLevel">Macro Security Level</string>
       <string id="CommonSecurityScriptingMacroSecurityLevelHelp">Choose the Macro Security Level</string>
@@ -425,6 +444,47 @@
         <checkBox refId="CommonPrintWarningPaperSizeValue">Paper Size</checkBox>
         <checkBox refId="CommonPrintWarningPaperOrientationValue">Paper Orientation</checkBox>
         <checkBox defaultChecked="true" refId="CommonPrintWarningTransparencyValue">Transparency</checkBox>
+      </presentation>
+      <!--# PATHS # -->
+      <presentation id="PathsPathsGallery">
+        <textBox refId="PathsPathsGalleryWritePath">
+          <label>Default (write) path:</label>
+        </textBox>
+        <textBox refId="PathsPathsGalleryUserPaths">
+          <label>Additional paths:</label>
+        </textBox>
+      </presentation>
+      <presentation id="PathsPathsTemplate">
+        <textBox refId="PathsPathsTemplateWritePath">
+          <label>Default (write) path:</label>
+        </textBox>
+        <textBox refId="PathsPathsTemplateUserPaths">
+          <label>Additional paths:</label>
+        </textBox>
+      </presentation>
+      <presentation id="PathsPathsDictionary">
+        <textBox refId="PathsPathsDictionaryWritePath">
+          <label>Default (write) path:</label>
+        </textBox>
+        <textBox refId="PathsPathsDictionaryUserPaths">
+          <label>Additional paths:</label>
+        </textBox>
+      </presentation>
+      <presentation id="PathsPathsAutoText">
+        <textBox refId="PathsPathsAutoTextWritePath">
+          <label>Default (write) path:</label>
+        </textBox>
+        <textBox refId="PathsPathsAutoTextUserPaths">
+          <label>Additional paths:</label>
+        </textBox>
+      </presentation>
+      <presentation id="PathsPathsAutoCorrect">
+        <textBox refId="PathsPathsAutoCorrectWritePath">
+          <label>Default (write) path:</label>
+        </textBox>
+        <textBox refId="PathsPathsAutoCorrectUserPaths">
+          <label>Additional paths:</label>
+        </textBox>
       </presentation>
       <!--# SECURITY #-->
       <presentation id="CommonSecurityScriptingMacroSecurityLevel">
