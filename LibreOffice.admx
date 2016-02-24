@@ -12,6 +12,7 @@
       <definition name="SupportedLO4_2" displayName="$(string.SupportedLO4_2)" />
       <definition name="SupportedLO4_3" displayName="$(string.SupportedLO4_3)" />
       <definition name="SupportedLO4_4" displayName="$(string.SupportedLO4_4)" />
+      <definition name="SupportedLO5_0" displayName="$(string.SupportedLO5_0)" />
     </definitions>
   </supportedOn>
   <categories>

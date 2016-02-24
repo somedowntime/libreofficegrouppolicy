@@ -9,6 +9,7 @@
       <string id="SupportedLO4_2">At least LibreOffice 4.2</string>
       <string id="SupportedLO4_3">At least LibreOffice 4.3</string>
       <string id="SupportedLO4_4">At least LibreOffice 4.4</string>
+      <string id="SupportedLO5_01">At least LibreOffice 5.0</string>
       <!--#### CATEGORIES ####-->
       <!--## LIBREOFFICE ##-->
       <string id="CAT_LibreOfficeRoot">LibreOffice</string>
