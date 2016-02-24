@@ -9,6 +9,7 @@
       <string id="SupportedLO4_2">At least LibreOffice 4.2</string>
       <string id="SupportedLO4_3">At least LibreOffice 4.3</string>
       <string id="SupportedLO4_4">At least LibreOffice 4.4</string>
+      <string id="SupportedLO5_0">At least LibreOffice 5.0</string>
       <!--#### CATEGORIES ####-->
       <!--## LIBREOFFICE ##-->
       <string id="CAT_LibreOfficeRoot">LibreOffice</string>
@@ -124,6 +125,9 @@
       <string id="UserProfileDatao">Company Name</string>
       <string id="UserProfileDataoHelp">Enter the Company Name.</string>
       <!--# GENERAL #-->
+      <!--View-->
+      <string id="UseOpenGL">Use full OpenGL rendering </string>
+      <string id="ForceOpenGL">Force full OpenGL rendering, even if blacklisted</string>
       <!--Help-->
       <string id="CommonHelpTip">Show Tips</string>
       <string id="CommonHelpTipHelp">Set whether LibreOffice shows tips</string>
@@ -194,7 +198,7 @@ file:///S:/Important%20Files file:///S:/Documents
  - Replace back slashes with forward slashes
  - Replace spaces with '%20'.
  - Separate multiple paths with a space.
- 
+
  Example:
  file:///S:/Important%20Files file:///S:/Documents
 	  </string>
@@ -388,6 +392,15 @@ file:///S:/Important%20Files file:///S:/Documents
         <checkBox refId="UserProfileDataoEnforce">Enforce</checkBox>
       </presentation>
       <!--# GENERAL #-->
+      <!--View-->
+      <presentation id="UseOpenGL">
+        <checkBox refId="UseOpenGLValue">Use OpenGL</checkBox>
+        <checkBox refId="UseOpenGLEnforce">Enforce</checkBox>
+      </presentation>
+      <presentation id="ForceOpenGL">
+        <checkBox refId="ForceOpenGLValue">Force OpenGL</checkBox>
+        <checkBox refId="ForceOpenGLEnforce">Enforce</checkBox>
+      </presentation>
       <!--Help-->
       <presentation id="CommonHelpTip">
         <checkBox refId="CommonHelpTipValue">Show Tips</checkBox>

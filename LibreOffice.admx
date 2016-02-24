@@ -12,6 +12,7 @@
       <definition name="SupportedLO4_2" displayName="$(string.SupportedLO4_2)" />
       <definition name="SupportedLO4_3" displayName="$(string.SupportedLO4_3)" />
       <definition name="SupportedLO4_4" displayName="$(string.SupportedLO4_4)" />
+      <definition name="SupportedLO5_0" displayName="$(string.SupportedLO5_0)" />
     </definitions>
   </supportedOn>
   <categories>
@@ -524,6 +525,51 @@
       </elements>
     </policy>
     <!--# GENERAL #-->
+    <!--View-->
+    <policy name="UseOpenGL" class="Machine" displayName="$(string.UseOpenGL)" explainText="$(string.UseOpenGL)" presentation="$(presentation.UseOpenGL)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\VCL\UseOpenGL">
+      <parentCategory ref="CAT_LibreOfficeGeneral" />
+      <supportedOn ref="SupportedLO5_0" />
+      <elements>
+        <boolean id="UseOpenGLValue" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="UseOpenGLEnforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="ForceOpenGL" class="Machine" displayName="$(string.ForceOpenGL)" explainText="$(string.ForceOpenGL)" presentation="$(presentation.ForceOpenGL)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\VCL\ForceOpenGL">
+      <parentCategory ref="CAT_LibreOfficeGeneral" />
+      <supportedOn ref="SupportedLO5_0" />
+      <elements>
+        <boolean id="ForceOpenGLValue" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="ForceOpenGLEnforce" valueName="Final">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
     <!--Help-->
     <policy name="CommonHelpTip" class="Machine" displayName="$(string.CommonHelpTip)" explainText="$(string.CommonHelpTipHelp)" presentation="$(presentation.CommonHelpTip)" key="Software\policies\LibreOffice\org.openoffice.Office.Common\Help\Tip">
       <parentCategory ref="CAT_LibreOfficeGeneral" />
